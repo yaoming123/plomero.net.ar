@@ -129,7 +129,290 @@
             <input type="text" id="tableSearch" placeholder="Escribe una provincia, localidad o barrio">
 
             <table class="dataframe dataframe">
-            <p>Todavía no hay información...</p>
+              <thead>
+                <tr style="text-align: right;">
+                  <th>URL</th>
+                  <th>Clics</th>
+                  <th>Impresiones</th>
+                  <th>Precio total (ARS)</th>
+                  <th>Seleccionar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>https://www.plomero.net.ar/cordoba/villa-carlos-paz.html</td>
+                  <td>1</td>
+                  <td>8</td>
+                  <td>212.80</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/cordoba/villa-carlos-paz.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/olavarria.html</td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>198.13</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/olavarria.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/cordoba/villa-maria.html</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>190.79</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/cordoba/villa-maria.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/mendoza/godoy-cruz.html</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>47.70</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/mendoza/godoy-cruz.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/entre-rios/el-pingo.html</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>36.69</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/entre-rios/el-pingo.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/ciudad-autonoma-de-buenos-aires/villa-lugano.html</td>
+                  <td>0</td>
+                  <td>8</td>
+                  <td>29.35</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/ciudad-autonoma-de-buenos-aires/villa-lugano.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/ciudad-autonoma-de-buenos-aires/palermo.html</td>
+                  <td>0</td>
+                  <td>7</td>
+                  <td>25.68</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/ciudad-autonoma-de-buenos-aires/palermo.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/misiones/posadas.html</td>
+                  <td>0</td>
+                  <td>4</td>
+                  <td>14.68</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/misiones/posadas.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/villa-gesell.html</td>
+                  <td>0</td>
+                  <td>4</td>
+                  <td>14.68</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/villa-gesell.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/salta.html</td>
+                  <td>0</td>
+                  <td>4</td>
+                  <td>14.68</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/salta.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/bahia-blanca.html</td>
+                  <td>0</td>
+                  <td>3</td>
+                  <td>11.01</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/bahia-blanca.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/ciudad-autonoma-de-buenos-aires/caballito.html</td>
+                  <td>0</td>
+                  <td>3</td>
+                  <td>11.01</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/ciudad-autonoma-de-buenos-aires/caballito.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/ensenada.html</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>7.34</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/ensenada.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/mendoza/lujan-de-cuyo.html</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>7.34</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/mendoza/lujan-de-cuyo.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/tierra-del-fuego-antartida-e-islas-del-atlantico-sur/ushuaia.html</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>7.34</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/tierra-del-fuego-antartida-e-islas-del-atlantico-sur/ushuaia.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/santa-cruz/rio-gallegos.html</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>7.34</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/santa-cruz/rio-gallegos.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/san-luis.html</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>7.34</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/san-luis.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/la-plata.html</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>7.34</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/la-plata.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/la-plata/abasto.html</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>7.34</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/la-plata/abasto.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/corrientes.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/corrientes.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/santiago-del-estero.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/santiago-del-estero.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/tierra-del-fuego-antartida-e-islas-del-atlantico-sur/rio-grande.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/tierra-del-fuego-antartida-e-islas-del-atlantico-sur/rio-grande.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/cordoba/rio-cuarto.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/cordoba/rio-cuarto.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/entre-rios/parana.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/entre-rios/parana.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/la-plata/villa-elisa.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/la-plata/villa-elisa.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/misiones.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/misiones.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/chaco/resistencia.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/chaco/resistencia.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/jujuy.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/jujuy.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/neuquen.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/neuquen.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/rio-negro/barrio-mar-del-plata.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/rio-negro/barrio-mar-del-plata.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/tucuman.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/tucuman.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/ciudad-autonoma-de-buenos-aires/recoleta.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/ciudad-autonoma-de-buenos-aires/recoleta.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/chubut.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/chubut.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/mar-del-plata.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/mar-del-plata.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/misiones/barrio-nuevo-garupa.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/misiones/barrio-nuevo-garupa.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/cordoba/pilar.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/cordoba/pilar.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/ciudad-autonoma-de-buenos-aires.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/ciudad-autonoma-de-buenos-aires.html">Seleccionar Sección</button></td>
+                </tr>
+                <tr>
+                  <td>https://www.plomero.net.ar/buenos-aires/villa-la-serrania.html</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3.67</td>
+                  <td><button class="select-url-btn" data-url="https://www.plomero.net.ar/buenos-aires/villa-la-serrania.html">Seleccionar Sección</button></td>
+                </tr>
+              </tbody>
             </table>
           </section>
 
