@@ -11,10 +11,11 @@
         <meta name="robots" content="index, follow">
         <meta name="author" content="Directorio plomeros Salta">
 
-        <link rel="icon" type="image/x-icon" href=favicon.ico>
-        <title>Plomero a Domicilio Profesional en Salta | Disponible 24 horas</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>🛠️ Plomero a Domicilio Profesional en Salta | Disponible 24 horas</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
         <link rel="stylesheet" href="estilos.css">
@@ -23,7 +24,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+
         <link rel="canonical" href="https://www.plomero.net.ar/salta.html">
+
+        <script defer src="busqueda.js"></script>
+        <script defer src="form.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
         <meta property="og:title" content="Plomero a Domicilio Profesional en Salta | Disponible 24 horas">
         <meta property="og:description" content="Plomero a domicilio profesional en Salta. Servicios confiables y disponibles 24/7.">
@@ -32,26 +40,18 @@
 
         <script type="application/ld+json">
             {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Directorio plomeros Salta",
             "url": "https://www.plomero.net.ar/salta.html",
             "logo": "https://www.plomero.net.ar/plomeria.png",
             "contactPoint": [{
                 "@type": "ContactPoint",
-                "telephone": "+541111111111",
+                "telephone": "null",
                 "contactType": "Directorio plomeros Salta"
             }]
             }
         </script>
-
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-W4NSZ7JP');</script>
-        <!-- End Google Tag Manager -->
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-18J0H89SVT"></script>
@@ -62,6 +62,14 @@
 
         gtag('config', 'G-18J0H89SVT');
         </script>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W4NSZ7JP');</script>
+        <!-- End Google Tag Manager -->
 
 
         <link rel="stylesheet" href="votacion.css">
@@ -81,14 +89,14 @@
          
 
         <p style="font-size: 1.5em;text-align: center;color:var(--rojo);">🔴 No hay un plomero disponible en esta sección.
-            <!-- Si no hay nadie en un barrio o localidad cercana -->
-            <a style="text-align: center;color: var(--verde-intenso); text-decoration: none;" href="publicidad.html" class="back-button">📣 Publicite Aquí</a>
+            <a href="#formulario-publicidad" class="back-button" aria-label="Ir a completar el formulario para anunciarse aquí" title="Ir a completar el formulario para anunciarse aquí" style="text-align: center;color: var(--verde-intenso); text-decoration: none;">📣 Publicite Aquí</a>
+
         </p>              
         
         <div class="box_logo">
-            <img src="plomeria.png" class="animation_back_in_rigth" alt="logotipo">
+            <img src="plomeria.png" class="animation_back_in_rigth" alt="logotipo" loading="lazy">
             <p>https://www.plomero.net.ar/salta.html</p>
-            <p>Anuncia tus servicios de plomería en este espacio durante 15 días por: ARS $25.26<br> desde: 2025-02-01 hasta: 2025-02-15</p>
+            <p>Anuncia tus servicios de plomería en este espacio durante 1 mes por: ARS $10.000,00</p>
         </div>
         
     
@@ -139,8 +147,9 @@
         <h3>Contacto</h3>
         <h4>Reserve una consulta con nuestros expertos y obtenga asistencia inmediata.</h4>
         <br>
-        <a class="button button1 my-element" href="tel:+541111111111">📞 ¡HAZ CLICK PARA LLAMAR! AL +541111111111</a>
-        <a class="button button1 my-element" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=Hola,%20vengo%20desde%20el%20sitio%20web:%20https://www.plomero.net.ar/salta.html%20Tengo%20una%20consulta" onclick="trackDynamicWhatsAppClick(this)"><i class="fa fa-whatsapp" style="font-size:16px;color:green;"></i> ¡Haz click para ENVIAR WHATSAPP!</a>
+        <a class="button button1" style="margin-top: 2em;width: 80%;height: 4rem; align-content: center;" href="tel:null" aria-label="Llamar por teléfono" title="Llamar por teléfono">📞 ¡Haz click para llamar!</a>
+        <a class="button button1" style="margin-top: 2em;width: 80%;height: 4rem; align-content: center;" href="https://api.whatsapp.com/send?phone=null&amp;text=Hola,%20vengo%20desde%20el%20sitio%20web:%20https://www.plomero.net.ar/salta.html%20Tengo%20una%20consulta" onclick="trackDynamicWhatsAppClick(this)" aria-label="Enviar un whatsapp" title="Enviar un whatsapp"><i class="fa fa-whatsapp" style="font-size:16px;color:green;"></i> ¡Haz click para enviar whatsapp!</a>
+        <p>Al llamar o mandar un mensaje, confirmo que he leído y acepto los <a href="terminos-y-condiciones.html">Términos y Condiciones</a>.</p>
 
         <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25596424.265591845!2d-63.598995699999996!3d-38.451550000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses-419!2sar!4v1699647692265!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <!-- Fin seccion Contacto -->
@@ -179,10 +188,10 @@
     <h4></h4>
     <p>Reparaciones de cañerías o tuberías, inodoros, sistemas de calefacción, pérdidas de gas y filtraciones en techos.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20detección%20y%20arreglo%20de%20fugas%20de%20cañerías%20de%20gas,%20agua%20corriente%20o%20cloacales/pluviales" data-servicio="Consultar por detección y arreglo de fugas en cañerías de gas, agua corriente o cloacales/pluviales" onclick="trackDynamicWhatsAppClick(this)">Consultar por detección y arreglo de fugas en cañerías de gas, agua corriente o cloacales/pluviales</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20reemplazo%20de%20tuberías%20dañadas" data-servicio="Consultar por reemplazo de tuberías" onclick="trackDynamicWhatsAppClick(this)">Consultar por reemplazo de tuberías</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20arreglo%20de%20fugas%20en%20inodoros/artefactos%20de%20baño" data-servicio="Consultar por arreglo de fugas en inodoros/artefactos de baños" onclick="trackDynamicWhatsAppClick(this)">Consultar por arreglo de fugas en inodoros/artefactos de baños</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20reparación%20de%20mecanismos%20de%20carga%20y%20descarga%20de%20inodoros" data-servicio="Consultar por reparación de mecanismos de carga y descarga de baños" onclick="trackDynamicWhatsAppClick(this)">Consultar por reparación de mecanismos de carga y descarga de baños</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20detección%20y%20arreglo%20de%20fugas%20de%20cañerías%20de%20gas,%20agua%20corriente%20o%20cloacales/pluviales" data-servicio="Consultar por detección y arreglo de fugas en cañerías de gas, agua corriente o cloacales/pluviales" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por detección y arreglo de fugas en cañerías de gas, agua corriente o cloacales/pluviales</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20reemplazo%20de%20tuberías%20dañadas" data-servicio="Consultar por reemplazo de tuberías" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por reemplazo de tuberías</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20arreglo%20de%20fugas%20en%20inodoros/artefactos%20de%20baño" data-servicio="Consultar por arreglo de fugas en inodoros/artefactos de baños" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por arreglo de fugas en inodoros/artefactos de baños</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20reparación%20de%20mecanismos%20de%20carga%20y%20descarga%20de%20inodoros" data-servicio="Consultar por reparación de mecanismos de carga y descarga de baños" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por reparación de mecanismos de carga y descarga de baños</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
@@ -193,11 +202,11 @@
     <h4></h4>
     <p>Instalación de grifería, sanitarios, termotanques, sistemas de agua caliente, sistemas de riego y líneas de gas.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20grifería%20(grifos,%20duchas%20y%20mezcladores)" data-servicio="Consultar por instalación de grifería" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalación de grifería</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20sanitarios%20(inodoros,%20bidés,%20lavabos%20y%20bañeras)" data-servicio="Consultar por instalación de sanitarios" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalación de sanitarios</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20termotanques%20o%20sistemas%20de%20agua%20caliente" data-servicio="Consultar por instalación de termotanques o sistemas de agua caliente" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalación de termotanques o sistemas de agua caliente</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20sistemas%20de%20riego%20(manuales%20o%20automáticos)" data-servicio="Consultar por instalación de sistemas de riego" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalación de sistemas de riego</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20líneas%20de%20gas" data-servicio="Consultar por instalación de líneas de gas" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalación de líneas de gas</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20grifería%20(grifos,%20duchas%20y%20mezcladores)" data-servicio="Consultar por instalación de grifería" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalación de grifería</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20sanitarios%20(inodoros,%20bidés,%20lavabos%20y%20bañeras)" data-servicio="Consultar por instalación de sanitarios" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalación de sanitarios</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20termotanques%20o%20sistemas%20de%20agua%20caliente" data-servicio="Consultar por instalación de termotanques o sistemas de agua caliente" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalación de termotanques o sistemas de agua caliente</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20sistemas%20de%20riego%20(manuales%20o%20automáticos)" data-servicio="Consultar por instalación de sistemas de riego" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalación de sistemas de riego</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20líneas%20de%20gas" data-servicio="Consultar por instalación de líneas de gas" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalación de líneas de gas</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
@@ -208,9 +217,9 @@
     <h4></h4>
     <p>Destape de cañerías y desagües, sistemas de drenaje y cloacas, y resolución de inundaciones.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20destape%20de%20cañerías%20o%20desagües" data-servicio="Consultar por destape de cañerías o desagües" onclick="trackDynamicWhatsAppClick(this)">Consultar por destape de cañerías o desagües</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20o%20reparación%20de%20sistemas%20de%20drenaje%20y%20cloacas" data-servicio="Consultar por sistemas de drenaje y cloacas" onclick="trackDynamicWhatsAppClick(this)">Consultar por sistemas de drenaje y cloacas</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20resolución%20de%20inundaciones" data-servicio="Consultar por resolución de inundaciones" onclick="trackDynamicWhatsAppClick(this)">Consultar por resolución de inundaciones</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20destape%20de%20cañerías%20o%20desagües" data-servicio="Consultar por destape de cañerías o desagües" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por destape de cañerías o desagües</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20o%20reparación%20de%20sistemas%20de%20drenaje%20y%20cloacas" data-servicio="Consultar por sistemas de drenaje y cloacas" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por sistemas de drenaje y cloacas</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20resolución%20de%20inundaciones" data-servicio="Consultar por resolución de inundaciones" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por resolución de inundaciones</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
@@ -221,9 +230,9 @@
     <h4></h4>
     <p>Mantenimiento preventivo, rehabilitación de baños antiguos y mantenimiento de sistemas de bombeo.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20mantenimiento%20preventivo%20de%20tuberías%20y%20sistemas%20hidráulicos" data-servicio="Consultar por mantenimiento preventivo" onclick="trackDynamicWhatsAppClick(this)">Consultar por mantenimiento preventivo</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20rehabilitación%20de%20baños%20antiguos" data-servicio="Consultar por rehabilitación de baños antiguos" onclick="trackDynamicWhatsAppClick(this)">Consultar por rehabilitación de baños antiguos</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20mantenimiento%20de%20sistemas%20de%20bombeo" data-servicio="Consultar por mantenimiento de sistemas de bombeo" onclick="trackDynamicWhatsAppClick(this)">Consultar por mantenimiento de sistemas de bombeo</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20mantenimiento%20preventivo%20de%20tuberías%20y%20sistemas%20hidráulicos" data-servicio="Consultar por mantenimiento preventivo" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por mantenimiento preventivo</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20rehabilitación%20de%20baños%20antiguos" data-servicio="Consultar por rehabilitación de baños antiguos" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por rehabilitación de baños antiguos</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20mantenimiento%20de%20sistemas%20de%20bombeo" data-servicio="Consultar por mantenimiento de sistemas de bombeo" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por mantenimiento de sistemas de bombeo</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
@@ -234,8 +243,8 @@
     <h4></h4>
     <p>Atención 24/7 para reparaciones urgentes, obstrucciones graves y problemas hidráulicos críticos.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20atención%20de%20emergencias%2024/7" data-servicio="Consultar por emergencias 24/7" onclick="trackDynamicWhatsAppClick(this)">Consultar por emergencias 24/7</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20urgente%20de%20desbloqueo%20y%20evacuación%20de%20agua%20por%20inundaciones" data-servicio="Consultar por servicio urgente de desbloqueo y evacuación de agua" onclick="trackDynamicWhatsAppClick(this)">Consultar por servicio urgente de desbloqueo y evacuación de agua</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20atención%20de%20emergencias%2024/7" data-servicio="Consultar por emergencias 24/7" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por emergencias 24/7</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20urgente%20de%20desbloqueo%20y%20evacuación%20de%20agua%20por%20inundaciones" data-servicio="Consultar por servicio urgente de desbloqueo y evacuación de agua" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por servicio urgente de desbloqueo y evacuación de agua</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
@@ -246,928 +255,155 @@
     <h4></h4>
     <p>Instalaciones completas para viviendas, edificios, piscinas, restaurantes, hoteles y oficinas.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20instalaciones%20completas%20para%20obras%20nuevas%20(viviendas%20y%20edificios)" data-servicio="Consultar por instalaciones completas para obras nuevas" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalaciones completas para obras nuevas</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20servicios%20de%20plomería%20para%20piscinas" data-servicio="Consultar por plomería para piscinas" onclick="trackDynamicWhatsAppClick(this)">Consultar por plomería para piscinas</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20servicios%20para%20proyectos%20comerciales%20(restaurantes,%20hoteles,%20oficinas)" data-servicio="Consultar por servicios para proyectos comerciales" onclick="trackDynamicWhatsAppClick(this)">Consultar por servicios para proyectos comerciales</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20instalaciones%20completas%20para%20obras%20nuevas%20(viviendas%20y%20edificios)" data-servicio="Consultar por instalaciones completas para obras nuevas" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalaciones completas para obras nuevas</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20servicios%20de%20plomería%20para%20piscinas" data-servicio="Consultar por plomería para piscinas" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por plomería para piscinas</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/salta.html%20%7C%20 Quería%20consultar%20por%20servicios%20para%20proyectos%20comerciales%20(restaurantes,%20hoteles,%20oficinas)" data-servicio="Consultar por servicios para proyectos comerciales" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por servicios para proyectos comerciales</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
 <!-- Fin servicios -->
 </div>
-                <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Fin del Espacio Publicitario</p>
 
+                <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Fin del Espacio Publicitario</p>
+                <!-- Seccion localidades -->
                 <div id="opciones" style="padding-top: 2em;">
                     <h2 class="scroll-section" id="localidades_provincia">Elija una localidad</h2>
-                    <p>Los botones de color <a href="#" style="color: var(--rojo);font-size: 2em;">Rojo</a> indica que no hay un plomero disponible en esa seccion</p>
-                    <p>Los botones de color <a href="#" style="color: var(--verde-intenso);font-size: 2em;">Verde</a> indica que si hay un plomero disponible en esa seccion</p>
-                    <select id="localidades" class="button button2" style="width:100%;color: var(--gris-claro);font-weight: bold;font-family: 'Bebas Neue';"> 
+                    <p>Los botones de color <a href="#" style="color: darkred;font-size: 2em;">Rojo</a> indica que no hay un plomero disponible en esa seccion</p>
+                    <p>Los botones de color <a href="#" style="color: darkgreen;font-size: 2em;">Verde</a> indica que si hay un plomero disponible en esa seccion</p>
+                    
+                    <select id="localidades" onchange="window.location.href=this.value;" class="button button2" style="width:80%;"> 
                     <option value="">Selecciona una localidad</option>
-                    <option value='acoyte' style='color: var(--rojo);'>Acoyte</option>
-<option value='aguaray' style='color: var(--rojo);'>Aguaray</option>
-<option value='aguas-blancas' style='color: var(--rojo);'>Aguas Blancas</option>
-<option value='alto-de-la-sierra' style='color: var(--rojo);'>Alto de la Sierra</option>
-<option value='ampascachi' style='color: var(--rojo);'>Ampascachi</option>
-<option value='angastaco' style='color: var(--rojo);'>Angastaco</option>
-<option value='animana' style='color: var(--rojo);'>Animaná</option>
-<option value='antilla' style='color: var(--rojo);'>Antillá</option>
-<option value='apolinario-saravia' style='color: var(--rojo);'>Apolinario Saravia</option>
-<option value='atocha' style='color: var(--rojo);'>Atocha</option>
-<option value='barrio-finca-la-maroma' style='color: var(--rojo);'>Barrio Finca La Maroma</option>
-<option value='barrio-la-rotonda' style='color: var(--rojo);'>Barrio La Rotonda</option>
-<option value='barrio-santa-teresita' style='color: var(--rojo);'>Barrio Santa Teresita</option>
-<option value='cabra-corral' style='color: var(--rojo);'>Cabra Corral</option>
-<option value='cachi' style='color: var(--rojo);'>Cachi</option>
-<option value='cafayate' style='color: var(--rojo);'>Cafayate</option>
-<option value='campamento-vespucio' style='color: var(--rojo);'>Campamento Vespucio</option>
-<option value='campichuelo' style='color: var(--rojo);'>Campichuelo</option>
-<option value='campo-duran' style='color: var(--rojo);'>Campo Durán</option>
-<option value='campo-la-cruz' style='color: var(--rojo);'>Campo La Cruz</option>
-<option value='campo-quijano' style='color: var(--rojo);'>Campo Quijano</option>
-<option value='campo-santo' style='color: var(--rojo);'>Campo Santo</option>
-<option value='capiazuti' style='color: var(--rojo);'>Capiazuti</option>
-<option value='capitan-juan-page' style='color: var(--rojo);'>Capitán Juan Pagé</option>
-<option value='carboncito' style='color: var(--rojo);'>Carboncito</option>
-<option value='ceibalito' style='color: var(--rojo);'>Ceibalito</option>
-<option value='centro-25-de-junio' style='color: var(--rojo);'>Centro 25 de Junio</option>
-<option value='cerrillos' style='color: var(--rojo);'>Cerrillos</option>
-<option value='chicoana' style='color: var(--rojo);'>Chicoana</option>
-<option value='cobos' style='color: var(--rojo);'>Cobos</option>
-<option value='cobres' style='color: var(--rojo);'>Cobres</option>
-<option value='colonia-santa-rosa' style='color: var(--rojo);'>Colonia Santa Rosa</option>
-<option value='copo-quile' style='color: var(--rojo);'>Copo Quile</option>
-<option value='coronel-cornejo' style='color: var(--rojo);'>Coronel Cornejo</option>
-<option value='coronel-juan-sola' style='color: var(--rojo);'>Coronel Juan Solá</option>
-<option value='coronel-moldes' style='color: var(--rojo);'>Coronel Moldes</option>
-<option value='coronel-mollinedo' style='color: var(--rojo);'>Coronel Mollinedo</option>
-<option value='coronel-olleros' style='color: var(--rojo);'>Coronel Olleros</option>
-<option value='dragones' style='color: var(--rojo);'>Dragones</option>
-<option value='el-barrial' style='color: var(--rojo);'>El Barrial</option>
-<option value='el-bordo' style='color: var(--rojo);'>El Bordo</option>
-<option value='el-carril' style='color: var(--rojo);'>El Carril</option>
-<option value='el-galpon' style='color: var(--rojo);'>El Galpón</option>
-<option value='el-jardin' style='color: var(--rojo);'>El Jardín</option>
-<option value='el-naranjo' style='color: var(--rojo);'>El Naranjo</option>
-<option value='el-potrero' style='color: var(--rojo);'>El Potrero</option>
-<option value='el-quebrachal' style='color: var(--rojo);'>El Quebrachal</option>
-<option value='el-tabacal' style='color: var(--rojo);'>El Tabacal</option>
-<option value='el-tala' style='color: var(--rojo);'>El Tala</option>
-<option value='el-tunal' style='color: var(--rojo);'>El Tunal</option>
-<option value='embarcacion' style='color: var(--rojo);'>Embarcación</option>
-<option value='gaona' style='color: var(--rojo);'>Gaona</option>
-<option value='general-ballivian' style='color: var(--rojo);'>General Ballivián</option>
-<option value='general-guemes' style='color: var(--rojo);'>General Güemes</option>
-<option value='general-mosconi' style='color: var(--rojo);'>General Mosconi</option>
-<option value='general-pizarro' style='color: var(--rojo);'>General Pizarro</option>
-<option value='guachipas' style='color: var(--rojo);'>Guachipas</option>
-<option value='hickman' style='color: var(--rojo);'>Hickman</option>
-<option value='hipolito-yrigoyen' style='color: var(--rojo);'>Hipólito Yrigoyen</option>
-<option value='hito-1' style='color: var(--rojo);'>Hito 1</option>
-<option value='iruya' style='color: var(--rojo);'>Iruya</option>
-<option value='isla-de-canas' style='color: var(--rojo);'>Isla de Cañas</option>
-<option value='joaquin-v-gonzalez' style='color: var(--rojo);'>Joaquín V. González</option>
-<option value='la-caldera' style='color: var(--rojo);'>La Caldera</option>
-<option value='la-candelaria' style='color: var(--rojo);'>La Candelaria</option>
-<option value='la-cienaga-y-barrio-san-rafael' style='color: var(--rojo);'>La Ciénaga y Barrio San Rafael</option>
-<option value='la-merced' style='color: var(--rojo);'>La Merced</option>
-<option value='la-merced-del-encon' style='color: var(--rojo);'>La Merced del Encón</option>
-<option value='la-poma' style='color: var(--rojo);'>La Poma</option>
-<option value='la-puerta' style='color: var(--rojo);'>La Puerta</option>
-<option value='la-silleta' style='color: var(--rojo);'>La Silleta</option>
-<option value='la-union' style='color: var(--rojo);'>La Unión</option>
-<option value='la-vina' style='color: var(--rojo);'>La Viña</option>
-<option value='las-costas' style='color: var(--rojo);'>Las Costas</option>
-<option value='las-lajitas' style='color: var(--rojo);'>Las Lajitas</option>
-<option value='los-blancos' style='color: var(--rojo);'>Los Blancos</option>
-<option value='los-toldos' style='color: var(--rojo);'>Los Toldos</option>
-<option value='luis-burela' style='color: var(--rojo);'>Luis Burela</option>
-<option value='lumbreras' style='color: var(--rojo);'>Lumbreras</option>
-<option value='macapillo' style='color: var(--rojo);'>Macapillo</option>
-<option value='metan-viejo' style='color: var(--rojo);'>Metán Viejo</option>
-<option value='mision-chaquena' style='color: var(--rojo);'>Misión Chaqueña</option>
-<option value='mision-el-cruce-el-milagro-el-jardin-de-san-martin' style='color: var(--rojo);'>Misión El Cruce - El Milagro - El Jardín de San Martín</option>
-<option value='mision-kilometro-6' style='color: var(--rojo);'>Misión Kilómetro 6</option>
-<option value='molinos' style='color: var(--rojo);'>Molinos</option>
-<option value='nazareno' style='color: var(--rojo);'>Nazareno</option>
-<option value='nuestra-senora-de-talavera' style='color: var(--rojo);'>Nuestra Señora de Talavera</option>
-<option value='olacapato' style='color: var(--rojo);'>Olacapato</option>
-<option value='pacara' style='color: var(--rojo);'>Pacará</option>
-<option value='padre-lozano' style='color: var(--rojo);'>Padre Lozano</option>
-<option value='payogasta' style='color: var(--rojo);'>Payogasta</option>
-<option value='pichanal' style='color: var(--rojo);'>Pichanal</option>
-<option value='piquete-cabado' style='color: var(--rojo);'>Piquete Cabado</option>
-<option value='piquirenda' style='color: var(--rojo);'>Piquirenda</option>
-<option value='pluma-de-pato' style='color: var(--rojo);'>Pluma de Pato</option>
-<option value='poscaya' style='color: var(--rojo);'>Poscaya</option>
-<option value='profesor-salvador-mazza' style='color: var(--rojo);'>Profesor Salvador Mazza</option>
-<option value='pueblo-viejo' style='color: var(--rojo);'>Pueblo Viejo</option>
-<option value='rio-del-valle' style='color: var(--rojo);'>Río del Valle</option>
-<option value='rio-piedras' style='color: var(--rojo);'>Río Piedras</option>
-<option value='rivadavia' style='color: var(--rojo);'>Rivadavia</option>
-<option value='rosario-de-la-frontera' style='color: var(--rojo);'>Rosario de la Frontera</option>
-<option value='rosario-de-lerma' style='color: var(--rojo);'>Rosario de Lerma</option>
-<option value='san-agustin' style='color: var(--rojo);'>San Agustín</option>
-<option value='san-antonio-de-los-cobres' style='color: var(--rojo);'>San Antonio de los Cobres</option>
-<option value='san-carlos' style='color: var(--rojo);'>San Carlos</option>
-<option value='san-felipe' style='color: var(--rojo);'>San Felipe</option>
-<option value='san-jose-de-metan-(est-metan)' style='color: var(--rojo);'>San José de Metán (Est. Metán)</option>
-<option value='san-jose-de-orquera' style='color: var(--rojo);'>San José de Orquera</option>
-<option value='san-marcos' style='color: var(--rojo);'>San Marcos</option>
-<option value='san-ramon-de-la-nueva-oran' style='color: var(--rojo);'>San Ramón de la Nueva Orán</option>
-<option value='santa-maria' style='color: var(--rojo);'>Santa María</option>
-<option value='santa-rosa' style='color: var(--rojo);'>Santa Rosa</option>
-<option value='santa-rosa-de-los-pastos-grandes' style='color: var(--rojo);'>Santa Rosa de los Pastos Grandes</option>
-<option value='santa-victoria' style='color: var(--rojo);'>Santa Victoria</option>
-<option value='santa-victoria-este' style='color: var(--rojo);'>Santa Victoria Este</option>
-<option value='seclantas' style='color: var(--rojo);'>Seclantás</option>
-<option value='talapampa' style='color: var(--rojo);'>Talapampa</option>
-<option value='tartagal' style='color: var(--rojo);'>Tartagal</option>
-<option value='tobantirenda' style='color: var(--rojo);'>Tobantirenda</option>
-<option value='tolar-grande' style='color: var(--rojo);'>Tolar Grande</option>
-<option value='tolloche' style='color: var(--rojo);'>Tolloche</option>
-<option value='tolombon' style='color: var(--rojo);'>Tolombón</option>
-<option value='tranquitas' style='color: var(--rojo);'>Tranquitas</option>
-<option value='urundel' style='color: var(--rojo);'>Urundel</option>
-<option value='vaqueros' style='color: var(--rojo);'>Vaqueros</option>
-<option value='villa-los-alamos-el-congreso-las-tunas-los-pinares-los-olmos' style='color: var(--rojo);'>Villa Los Álamos - El Congreso - Las Tunas - Los Pinares - Los Olmos</option>
-<option value='villa-san-lorenzo' style='color: var(--rojo);'>Villa San Lorenzo</option>
-<option value='yacuy' style='color: var(--rojo);'>Yacuy</option> 
+                    <option value='./salta/acoyte.html' style='color: darkred;'>Acoyte</option>
+<option value='./salta/aguaray.html' style='color: darkred;'>Aguaray</option>
+<option value='./salta/aguas-blancas.html' style='color: darkred;'>Aguas Blancas</option>
+<option value='./salta/alto-de-la-sierra.html' style='color: darkred;'>Alto de la Sierra</option>
+<option value='./salta/ampascachi.html' style='color: darkred;'>Ampascachi</option>
+<option value='./salta/angastaco.html' style='color: darkred;'>Angastaco</option>
+<option value='./salta/animana.html' style='color: darkred;'>Animaná</option>
+<option value='./salta/antilla.html' style='color: darkred;'>Antillá</option>
+<option value='./salta/apolinario-saravia.html' style='color: darkred;'>Apolinario Saravia</option>
+<option value='./salta/atocha.html' style='color: darkred;'>Atocha</option>
+<option value='./salta/barrio-finca-la-maroma.html' style='color: darkred;'>Barrio Finca La Maroma</option>
+<option value='./salta/barrio-la-rotonda.html' style='color: darkred;'>Barrio La Rotonda</option>
+<option value='./salta/barrio-santa-teresita.html' style='color: darkred;'>Barrio Santa Teresita</option>
+<option value='./salta/cabra-corral.html' style='color: darkred;'>Cabra Corral</option>
+<option value='./salta/cachi.html' style='color: darkred;'>Cachi</option>
+<option value='./salta/cafayate.html' style='color: darkred;'>Cafayate</option>
+<option value='./salta/campamento-vespucio.html' style='color: darkred;'>Campamento Vespucio</option>
+<option value='./salta/campichuelo.html' style='color: darkred;'>Campichuelo</option>
+<option value='./salta/campo-duran.html' style='color: darkred;'>Campo Durán</option>
+<option value='./salta/campo-la-cruz.html' style='color: darkred;'>Campo La Cruz</option>
+<option value='./salta/campo-quijano.html' style='color: darkred;'>Campo Quijano</option>
+<option value='./salta/campo-santo.html' style='color: darkred;'>Campo Santo</option>
+<option value='./salta/capiazuti.html' style='color: darkred;'>Capiazuti</option>
+<option value='./salta/capitan-juan-page.html' style='color: darkred;'>Capitán Juan Pagé</option>
+<option value='./salta/carboncito.html' style='color: darkred;'>Carboncito</option>
+<option value='./salta/ceibalito.html' style='color: darkred;'>Ceibalito</option>
+<option value='./salta/centro-25-de-junio.html' style='color: darkred;'>Centro 25 de Junio</option>
+<option value='./salta/cerrillos.html' style='color: darkred;'>Cerrillos</option>
+<option value='./salta/chicoana.html' style='color: darkred;'>Chicoana</option>
+<option value='./salta/cobos.html' style='color: darkred;'>Cobos</option>
+<option value='./salta/cobres.html' style='color: darkred;'>Cobres</option>
+<option value='./salta/colonia-santa-rosa.html' style='color: darkred;'>Colonia Santa Rosa</option>
+<option value='./salta/copo-quile.html' style='color: darkred;'>Copo Quile</option>
+<option value='./salta/coronel-cornejo.html' style='color: darkred;'>Coronel Cornejo</option>
+<option value='./salta/coronel-juan-sola.html' style='color: darkred;'>Coronel Juan Solá</option>
+<option value='./salta/coronel-moldes.html' style='color: darkred;'>Coronel Moldes</option>
+<option value='./salta/coronel-mollinedo.html' style='color: darkred;'>Coronel Mollinedo</option>
+<option value='./salta/coronel-olleros.html' style='color: darkred;'>Coronel Olleros</option>
+<option value='./salta/dragones.html' style='color: darkred;'>Dragones</option>
+<option value='./salta/el-barrial.html' style='color: darkred;'>El Barrial</option>
+<option value='./salta/el-bordo.html' style='color: darkred;'>El Bordo</option>
+<option value='./salta/el-carril.html' style='color: darkred;'>El Carril</option>
+<option value='./salta/el-galpon.html' style='color: darkred;'>El Galpón</option>
+<option value='./salta/el-jardin.html' style='color: darkred;'>El Jardín</option>
+<option value='./salta/el-naranjo.html' style='color: darkred;'>El Naranjo</option>
+<option value='./salta/el-potrero.html' style='color: darkred;'>El Potrero</option>
+<option value='./salta/el-quebrachal.html' style='color: darkred;'>El Quebrachal</option>
+<option value='./salta/el-tabacal.html' style='color: darkred;'>El Tabacal</option>
+<option value='./salta/el-tala.html' style='color: darkred;'>El Tala</option>
+<option value='./salta/el-tunal.html' style='color: darkred;'>El Tunal</option>
+<option value='./salta/embarcacion.html' style='color: darkred;'>Embarcación</option>
+<option value='./salta/gaona.html' style='color: darkred;'>Gaona</option>
+<option value='./salta/general-ballivian.html' style='color: darkred;'>General Ballivián</option>
+<option value='./salta/general-guemes.html' style='color: darkred;'>General Güemes</option>
+<option value='./salta/general-mosconi.html' style='color: darkred;'>General Mosconi</option>
+<option value='./salta/general-pizarro.html' style='color: darkred;'>General Pizarro</option>
+<option value='./salta/guachipas.html' style='color: darkred;'>Guachipas</option>
+<option value='./salta/hickman.html' style='color: darkred;'>Hickman</option>
+<option value='./salta/hipolito-yrigoyen.html' style='color: darkred;'>Hipólito Yrigoyen</option>
+<option value='./salta/hito-1.html' style='color: darkred;'>Hito 1</option>
+<option value='./salta/iruya.html' style='color: darkred;'>Iruya</option>
+<option value='./salta/isla-de-canas.html' style='color: darkred;'>Isla de Cañas</option>
+<option value='./salta/joaquin-v-gonzalez.html' style='color: darkred;'>Joaquín V. González</option>
+<option value='./salta/la-caldera.html' style='color: darkred;'>La Caldera</option>
+<option value='./salta/la-candelaria.html' style='color: darkred;'>La Candelaria</option>
+<option value='./salta/la-cienaga-y-barrio-san-rafael.html' style='color: darkred;'>La Ciénaga y Barrio San Rafael</option>
+<option value='./salta/la-merced.html' style='color: darkred;'>La Merced</option>
+<option value='./salta/la-merced-del-encon.html' style='color: darkred;'>La Merced del Encón</option>
+<option value='./salta/la-poma.html' style='color: darkred;'>La Poma</option>
+<option value='./salta/la-puerta.html' style='color: darkred;'>La Puerta</option>
+<option value='./salta/la-silleta.html' style='color: darkred;'>La Silleta</option>
+<option value='./salta/la-union.html' style='color: darkred;'>La Unión</option>
+<option value='./salta/la-vina.html' style='color: darkred;'>La Viña</option>
+<option value='./salta/las-costas.html' style='color: darkred;'>Las Costas</option>
+<option value='./salta/las-lajitas.html' style='color: darkred;'>Las Lajitas</option>
+<option value='./salta/los-blancos.html' style='color: darkred;'>Los Blancos</option>
+<option value='./salta/los-toldos.html' style='color: darkred;'>Los Toldos</option>
+<option value='./salta/luis-burela.html' style='color: darkred;'>Luis Burela</option>
+<option value='./salta/lumbreras.html' style='color: darkred;'>Lumbreras</option>
+<option value='./salta/macapillo.html' style='color: darkred;'>Macapillo</option>
+<option value='./salta/metan-viejo.html' style='color: darkred;'>Metán Viejo</option>
+<option value='./salta/mision-chaquena.html' style='color: darkred;'>Misión Chaqueña</option>
+<option value='./salta/mision-el-cruce-el-milagro-el-jardin-de-san-martin.html' style='color: darkred;'>Misión El Cruce - El Milagro - El Jardín de San Martín</option>
+<option value='./salta/mision-kilometro-6.html' style='color: darkred;'>Misión Kilómetro 6</option>
+<option value='./salta/molinos.html' style='color: darkred;'>Molinos</option>
+<option value='./salta/nazareno.html' style='color: darkred;'>Nazareno</option>
+<option value='./salta/nuestra-senora-de-talavera.html' style='color: darkred;'>Nuestra Señora de Talavera</option>
+<option value='./salta/olacapato.html' style='color: darkred;'>Olacapato</option>
+<option value='./salta/pacara.html' style='color: darkred;'>Pacará</option>
+<option value='./salta/padre-lozano.html' style='color: darkred;'>Padre Lozano</option>
+<option value='./salta/payogasta.html' style='color: darkred;'>Payogasta</option>
+<option value='./salta/pichanal.html' style='color: darkred;'>Pichanal</option>
+<option value='./salta/piquete-cabado.html' style='color: darkred;'>Piquete Cabado</option>
+<option value='./salta/piquirenda.html' style='color: darkred;'>Piquirenda</option>
+<option value='./salta/pluma-de-pato.html' style='color: darkred;'>Pluma de Pato</option>
+<option value='./salta/poscaya.html' style='color: darkred;'>Poscaya</option>
+<option value='./salta/profesor-salvador-mazza.html' style='color: darkred;'>Profesor Salvador Mazza</option>
+<option value='./salta/pueblo-viejo.html' style='color: darkred;'>Pueblo Viejo</option>
+<option value='./salta/rio-del-valle.html' style='color: darkred;'>Río del Valle</option>
+<option value='./salta/rio-piedras.html' style='color: darkred;'>Río Piedras</option>
+<option value='./salta/rivadavia.html' style='color: darkred;'>Rivadavia</option>
+<option value='./salta/rosario-de-la-frontera.html' style='color: darkred;'>Rosario de la Frontera</option>
+<option value='./salta/rosario-de-lerma.html' style='color: darkred;'>Rosario de Lerma</option>
+<option value='./salta/san-agustin.html' style='color: darkred;'>San Agustín</option>
+<option value='./salta/san-antonio-de-los-cobres.html' style='color: darkred;'>San Antonio de los Cobres</option>
+<option value='./salta/san-carlos.html' style='color: darkred;'>San Carlos</option>
+<option value='./salta/san-felipe.html' style='color: darkred;'>San Felipe</option>
+<option value='./salta/san-jose-de-metan-(est-metan).html' style='color: darkred;'>San José de Metán (Est. Metán)</option>
+<option value='./salta/san-jose-de-orquera.html' style='color: darkred;'>San José de Orquera</option>
+<option value='./salta/san-marcos.html' style='color: darkred;'>San Marcos</option>
+<option value='./salta/san-ramon-de-la-nueva-oran.html' style='color: darkred;'>San Ramón de la Nueva Orán</option>
+<option value='./salta/santa-maria.html' style='color: darkred;'>Santa María</option>
+<option value='./salta/santa-rosa.html' style='color: darkred;'>Santa Rosa</option>
+<option value='./salta/santa-rosa-de-los-pastos-grandes.html' style='color: darkred;'>Santa Rosa de los Pastos Grandes</option>
+<option value='./salta/santa-victoria.html' style='color: darkred;'>Santa Victoria</option>
+<option value='./salta/santa-victoria-este.html' style='color: darkred;'>Santa Victoria Este</option>
+<option value='./salta/seclantas.html' style='color: darkred;'>Seclantás</option>
+<option value='./salta/talapampa.html' style='color: darkred;'>Talapampa</option>
+<option value='./salta/tartagal.html' style='color: darkred;'>Tartagal</option>
+<option value='./salta/tobantirenda.html' style='color: darkred;'>Tobantirenda</option>
+<option value='./salta/tolar-grande.html' style='color: darkred;'>Tolar Grande</option>
+<option value='./salta/tolloche.html' style='color: darkred;'>Tolloche</option>
+<option value='./salta/tolombon.html' style='color: darkred;'>Tolombón</option>
+<option value='./salta/tranquitas.html' style='color: darkred;'>Tranquitas</option>
+<option value='./salta/urundel.html' style='color: darkred;'>Urundel</option>
+<option value='./salta/vaqueros.html' style='color: darkred;'>Vaqueros</option>
+<option value='./salta/villa-los-alamos-el-congreso-las-tunas-los-pinares-los-olmos.html' style='color: darkred;'>Villa Los Álamos - El Congreso - Las Tunas - Los Pinares - Los Olmos</option>
+<option value='./salta/villa-san-lorenzo.html' style='color: darkred;'>Villa San Lorenzo</option>
+<option value='./salta/yacuy.html' style='color: darkred;'>Yacuy</option> 
                     </select>
                     
-                    
-            <section class="scroll-section" id="acoyte" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/acoyte.html">Acoyte</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="aguaray" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/aguaray.html">Aguaray</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="aguas-blancas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/aguas-blancas.html">Aguas Blancas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="alto-de-la-sierra" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/alto-de-la-sierra.html">Alto de la Sierra</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="ampascachi" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/ampascachi.html">Ampascachi</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="angastaco" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/angastaco.html">Angastaco</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="animana" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/animana.html">Animaná</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="antilla" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/antilla.html">Antillá</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="apolinario-saravia" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/apolinario-saravia.html">Apolinario Saravia</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="atocha" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/atocha.html">Atocha</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="barrio-finca-la-maroma" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/barrio-finca-la-maroma.html">Barrio Finca La Maroma</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/barrio-finca-la-maroma/la-maroma.html'>LA MAROMA</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="barrio-la-rotonda" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/barrio-la-rotonda.html">Barrio La Rotonda</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="barrio-santa-teresita" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/barrio-santa-teresita.html">Barrio Santa Teresita</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="cabra-corral" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/cabra-corral.html">Cabra Corral</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="cachi" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/cachi.html">Cachi</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="cafayate" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/cafayate.html">Cafayate</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="campamento-vespucio" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/campamento-vespucio.html">Campamento Vespucio</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="campichuelo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/campichuelo.html">Campichuelo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="campo-duran" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/campo-duran.html">Campo Durán</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="campo-la-cruz" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/campo-la-cruz.html">Campo La Cruz</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="campo-quijano" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/campo-quijano.html">Campo Quijano</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="campo-santo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/campo-santo.html">Campo Santo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="capiazuti" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/capiazuti.html">Capiazuti</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="capitan-juan-page" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/capitan-juan-page.html">Capitán Juan Pagé</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="carboncito" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/carboncito.html">Carboncito</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="ceibalito" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/ceibalito.html">Ceibalito</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="centro-25-de-junio" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/centro-25-de-junio.html">Centro 25 de Junio</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="cerrillos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/cerrillos.html">Cerrillos</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="chicoana" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/chicoana.html">Chicoana</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="cobos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/cobos.html">Cobos</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="cobres" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/cobres.html">Cobres</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="colonia-santa-rosa" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/colonia-santa-rosa.html">Colonia Santa Rosa</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/colonia-santa-rosa/la-mision.html'>LA MISION</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="copo-quile" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/copo-quile.html">Copo Quile</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="coronel-cornejo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/coronel-cornejo.html">Coronel Cornejo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="coronel-juan-sola" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/coronel-juan-sola.html">Coronel Juan Solá</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="coronel-moldes" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/coronel-moldes.html">Coronel Moldes</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="coronel-mollinedo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/coronel-mollinedo.html">Coronel Mollinedo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="coronel-olleros" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/coronel-olleros.html">Coronel Olleros</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="dragones" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/dragones.html">Dragones</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-barrial" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/el-barrial.html">El Barrial</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-bordo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/el-bordo.html">El Bordo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-carril" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/el-carril.html">El Carril</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-galpon" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/el-galpon.html">El Galpón</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-jardin" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/el-jardin.html">El Jardín</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-naranjo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/el-naranjo.html">El Naranjo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-potrero" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/el-potrero.html">El Potrero</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-quebrachal" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/el-quebrachal.html">El Quebrachal</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-tabacal" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/el-tabacal.html">El Tabacal</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-tala" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/el-tala.html">El Tala</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-tunal" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/el-tunal.html">El Tunal</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="embarcacion" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/embarcacion.html">Embarcación</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/embarcacion/mision-tierras-fiscales.html'>MISION TIERRAS FISCALES</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="gaona" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/gaona.html">Gaona</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="general-ballivian" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/general-ballivian.html">General Ballivián</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="general-guemes" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/general-guemes.html">General Güemes</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="general-mosconi" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/general-mosconi.html">General Mosconi</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/general-mosconi/recaredo.html'>RECAREDO</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="general-pizarro" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/general-pizarro.html">General Pizarro</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="guachipas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/guachipas.html">Guachipas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="hickman" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/hickman.html">Hickman</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="hipolito-yrigoyen" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/hipolito-yrigoyen.html">Hipólito Yrigoyen</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="hito-1" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/hito-1.html">Hito 1</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="iruya" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/iruya.html">Iruya</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="isla-de-canas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/isla-de-canas.html">Isla de Cañas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="joaquin-v-gonzalez" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/joaquin-v-gonzalez.html">Joaquín V. González</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-caldera" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/la-caldera.html">La Caldera</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-candelaria" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/la-candelaria.html">La Candelaria</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-cienaga-y-barrio-san-rafael" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/la-cienaga-y-barrio-san-rafael.html">La Ciénaga y Barrio San Rafael</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/la-cienaga-y-barrio-san-rafael/barrio-san-rafael.html'>BARRIO SAN RAFAEL</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/la-cienaga-y-barrio-san-rafael/la-cienaga.html'>LA CIENAGA</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="la-merced" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/la-merced.html">La Merced</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-merced-del-encon" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/la-merced-del-encon.html">La Merced del Encón</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-poma" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/la-poma.html">La Poma</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-puerta" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/la-puerta.html">La Puerta</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-silleta" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/la-silleta.html">La Silleta</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-union" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/la-union.html">La Unión</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-vina" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/la-vina.html">La Viña</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="las-costas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/las-costas.html">Las Costas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="las-lajitas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/las-lajitas.html">Las Lajitas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="los-blancos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/los-blancos.html">Los Blancos</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="los-toldos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/los-toldos.html">Los Toldos</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="luis-burela" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/luis-burela.html">Luis Burela</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="lumbreras" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/lumbreras.html">Lumbreras</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="macapillo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/macapillo.html">Macapillo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="metan-viejo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/metan-viejo.html">Metán Viejo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="mision-chaquena" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/mision-chaquena.html">Misión Chaqueña</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="mision-el-cruce-el-milagro-el-jardin-de-san-martin" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/mision-el-cruce-el-milagro-el-jardin-de-san-martin.html">Misión El Cruce - El Milagro - El Jardín de San Martín</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/mision-el-cruce-el-milagro-el-jardin-de-san-martin/barrio-el-jardin-de-san-martin.html'>BARRIO EL JARDIN DE SAN MARTIN</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/mision-el-cruce-el-milagro-el-jardin-de-san-martin/barrio-el-milagro.html'>BARRIO EL MILAGRO</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/mision-el-cruce-el-milagro-el-jardin-de-san-martin/mision-el-cruce.html'>MISION EL CRUCE</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="mision-kilometro-6" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/mision-kilometro-6.html">Misión Kilómetro 6</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="molinos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/molinos.html">Molinos</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="nazareno" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/nazareno.html">Nazareno</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="nuestra-senora-de-talavera" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/nuestra-senora-de-talavera.html">Nuestra Señora de Talavera</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="olacapato" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/olacapato.html">Olacapato</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="pacara" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/pacara.html">Pacará</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="padre-lozano" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/padre-lozano.html">Padre Lozano</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="payogasta" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/payogasta.html">Payogasta</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="pichanal" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/pichanal.html">Pichanal</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="piquete-cabado" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/piquete-cabado.html">Piquete Cabado</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="piquirenda" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/piquirenda.html">Piquirenda</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="pluma-de-pato" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/pluma-de-pato.html">Pluma de Pato</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="poscaya" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/poscaya.html">Poscaya</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="profesor-salvador-mazza" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/profesor-salvador-mazza.html">Profesor Salvador Mazza</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="pueblo-viejo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/pueblo-viejo.html">Pueblo Viejo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="rio-del-valle" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/rio-del-valle.html">Río del Valle</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="rio-piedras" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/rio-piedras.html">Río Piedras</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="rivadavia" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/rivadavia.html">Rivadavia</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="rosario-de-la-frontera" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/rosario-de-la-frontera.html">Rosario de la Frontera</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="rosario-de-lerma" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/rosario-de-lerma.html">Rosario de Lerma</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-agustin" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/san-agustin.html">San Agustín</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-antonio-de-los-cobres" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/san-antonio-de-los-cobres.html">San Antonio de los Cobres</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-carlos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/san-carlos.html">San Carlos</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-felipe" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/san-felipe.html">San Felipe</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-jose-de-metan-(est-metan)" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/san-jose-de-metan-(est-metan).html">San José de Metán (Est. Metán)</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/san-jose-de-metan-(est-metan)/san-jose-de-metan.html'>SAN JOSE DE METAN</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="san-jose-de-orquera" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/san-jose-de-orquera.html">San José de Orquera</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-marcos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/san-marcos.html">San Marcos</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-ramon-de-la-nueva-oran" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/san-ramon-de-la-nueva-oran.html">San Ramón de la Nueva Orán</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="santa-maria" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/santa-maria.html">Santa María</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="santa-rosa" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/santa-rosa.html">Santa Rosa</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="santa-rosa-de-los-pastos-grandes" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/santa-rosa-de-los-pastos-grandes.html">Santa Rosa de los Pastos Grandes</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="santa-victoria" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/santa-victoria.html">Santa Victoria</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="santa-victoria-este" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/santa-victoria-este.html">Santa Victoria Este</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="seclantas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/seclantas.html">Seclantás</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="talapampa" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/talapampa.html">Talapampa</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="tartagal" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/tartagal.html">Tartagal</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="tobantirenda" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/tobantirenda.html">Tobantirenda</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="tolar-grande" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/tolar-grande.html">Tolar Grande</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="tolloche" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/tolloche.html">Tolloche</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="tolombon" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/tolombon.html">Tolombón</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/tolombon/tolombom.html'>TOLOMBOM</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="tranquitas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/tranquitas.html">Tranquitas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="urundel" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/urundel.html">Urundel</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="vaqueros" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/vaqueros.html">Vaqueros</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="villa-los-alamos-el-congreso-las-tunas-los-pinares-los-olmos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/villa-los-alamos-el-congreso-las-tunas-los-pinares-los-olmos.html">Villa Los Álamos - El Congreso - Las Tunas - Los Pinares - Los Olmos</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/villa-los-alamos-el-congreso-las-tunas-los-pinares-los-olmos/barrio-el-congreso.html'>BARRIO EL CONGRESO</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/villa-los-alamos-el-congreso-las-tunas-los-pinares-los-olmos/barrio-las-tunas.html'>BARRIO LAS TUNAS</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/villa-los-alamos-el-congreso-las-tunas-los-pinares-los-olmos/barrio-los-olmos.html'>BARRIO LOS OLMOS</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/villa-los-alamos-el-congreso-las-tunas-los-pinares-los-olmos/barrio-los-pinares.html'>BARRIO LOS PINARES</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='salta/villa-los-alamos-el-congreso-las-tunas-los-pinares-los-olmos/villa-los-alamos.html'>VILLA LOS ALAMOS</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="villa-san-lorenzo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/villa-san-lorenzo.html">Villa San Lorenzo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="yacuy" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="salta/yacuy.html">Yacuy</a></h2>
-            
-            </section>
-            
-
                     <script>
                         const select = document.getElementById('localidades');
                         select.addEventListener('change', function () {
@@ -1181,16 +417,51 @@
                         });
                     </script>
                 </div>
+
+                
+
+<div class="scroll-section" id="formulario-publicidad">
+<h3>Formulario para publicitar aquí</h3>
+<form id="whatsapp-form">
+
+
+<label for="section" style="font-size: 2rem;">Sección</label><br>
+<input id="section" name="section" value="https://www.plomero.net.ar/salta.html" readonly style="width: 80%; height: 2rem; background-color: #f0f0f0; color: #333; font-family: Bebas Neue;"><br>
+<br>
+<label for="name" style="font-size: 2rem; font-family: Bebas Neue;">Nombre del Negocio:</label><br>
+<input id="name" name="name" placeholder="Nombre de usted si es particular, de fantasía o razón social" required="" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="cellphone" style="font-size: 2rem;">Número de Celular (WhatsApp):</label><br>
+<input id="cellphone" name="cellphone" placeholder="Ejemplo: +54 911 1234 5678" required="" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="phone" style="font-size: 2rem;">Número de Teléfono Fijo:</label><br>
+<input id="phone" name="phone" placeholder="Opcional" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="address" style="font-size: 2rem;">Dirección:</label><br>
+<input id="address" name="address" placeholder="Opcional" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="mapLink" style="font-size: 2rem;">Link de Google Maps:</label><br>
+<input id="mapLink" name="mapLink" placeholder="Opcional" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="payment" style="font-size: 2rem;">Medios de Pago que aceptas:</label><br>
+<input id="payment" name="payment" placeholder="Ejemplo: Efectivo, Transferencia" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="details" style="font-size: 2rem;">Detalles adicionales:</label><br>
+<input id="details" name="details" placeholder="En la plantilla se incluyen varios servicios. ¿Hay alguno que falte o necesite ser removido? Por favor, cuéntanos cualquier otro detalle adicional." style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<br>
+<p>Al enviar este formulario, confirmo que he leído y acepto los <a href="terminos-y-condiciones.html">Términos y Condiciones</a>.</p>
+<button id="whatsapp-button" style="margin-top: 2em; width: 80%; height: 4rem; font-family: Bebas Neue" type="button" class="button button1">Enviar por
+                WhatsApp</button>
+<button id="messenger-button" style="margin-top: 2em; width: 80%; height: 4rem; font-family: Bebas Neue" type="button" class="button button1">Enviar por
+                Messenger</button>
+</form>
+</div>
+
+
             </div>
         </main>
         <!-- FIN MAIN -->
 
         
-    <footer id="footer">
+    <footer id="footer" style="margin-bottom: 3em;">
         <div class="contenedor">
             <div class="box_footer">
                 <div class="separador_box_footer">
-                    <img src="plomeria.png" alt="logotipo">
+                    <img src="plomeria.png" alt="logotipo" loading="lazy">
                     <a href="https://www.plomero.net.ar">plomero.net.ar</a>
                 </div>
                 <div class="separador_box_footer">
@@ -1205,6 +476,16 @@
     </footer>
     
     </body>
+
+        <script>
+            // Número de WhatsApp del negocio
+            var numeroWhatsApp = "+5491122413762";
+            var numeroWhatsAppAnunciante = null;
+
+            // URLs de Facebook Messenger
+            var urlMessengerNegocio = "https://www.messenger.com/t/https://www.plomero.net.ar";
+        </script>
+
         <!-- Script de Menú Interactivo -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {

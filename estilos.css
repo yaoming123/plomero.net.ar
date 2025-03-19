@@ -1,3 +1,5 @@
+/* # Son los de plomero.net.ar */
+
 :root {
     --rojo: #DC3545;
     --verde-intenso:#28A745;
@@ -9,10 +11,13 @@
 }
 
 .scroll-section {
-    margin-top: -4rem;
-    /* Ajusta según sea necesario para que el título sea visible */
-    padding-top: 4rem;
+    /* margin-top: -4rem; */
+    /* Ajusta segÃšn sea necesario para que el tÃ­tulo sea visible */
+    /* padding-top: 4rem; */
     /* Asegura que el contenido no quede oculto por el margen superior negativo */
+
+    margin-top: -6rem; /* Ajustar según sea necesario */
+    padding-top: 7rem; /* Asegura que el título sea visible */
 }
 
 .my-element {
@@ -283,8 +288,8 @@ h4 {
 #contacto,
 #opciones h2 {
     font-size: 3rem;
-    /* color: white; */
 }
+
 
 #contato p {
     font-size: 1.5rem;
@@ -454,7 +459,7 @@ a.ciudades_links:active {
 }
 
 
-/* Estilos para el botón "Subir" */
+/* Estilos para el botÃģn "Subir" */
 .scroll-to-top {
     display: none;
     /* Inicialmente oculto */
@@ -471,24 +476,39 @@ a.ciudades_links:active {
     text-align: center;
     cursor: pointer;
     z-index: 1000;
-    /* Asegura que esté encima de otros elementos */
+    /* Asegura que estÃĐ encima de otros elementos */
 }
 
-/* Estilos al pasar el mouse por encima del botón */
+/* Estilos al pasar el mouse por encima del botÃģn */
 .scroll-to-top:hover {
     background-color: #d6694b;
     /* Cambia el color de fondo al pasar el mouse por encima */
 }
 
-.button {
+/* .button {
     border: none;
-    /* color: white; */
+    /* color: white;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-variant: normal;
+} */
+
+.button {
+    border: none;
+    /* color: white; */
+    /* padding: 0.6rem 1rem; */
+    padding: 1rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1rem 1rem;
     transition-duration: 0.4s;
     cursor: pointer;
     font-variant: normal;
@@ -567,7 +587,7 @@ a.ciudades_links:active {
 }
 
 
-/* Mejora en Media Queries para Móviles */
+/* Mejora en Media Queries para MÃģviles */
 @media screen and (max-width: 480px) {
     nav ul {
         display: none;
@@ -673,4 +693,12 @@ table {
 
 .select-url-btn{
     font-size: 1rem;
+}
+
+#opciones{
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    min-height: 20rem;
+    background-color: var(--verde-intenso);
+    color: var(--gris-claro);
 }

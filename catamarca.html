@@ -11,10 +11,11 @@
         <meta name="robots" content="index, follow">
         <meta name="author" content="Directorio plomeros Catamarca">
 
-        <link rel="icon" type="image/x-icon" href=favicon.ico>
-        <title>Plomero Urgente en Catamarca | Servicio 24/7</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>🛠️ Plomero Urgente en Catamarca | Servicio 24/7</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
         <link rel="stylesheet" href="estilos.css">
@@ -23,7 +24,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+
         <link rel="canonical" href="https://www.plomero.net.ar/catamarca.html">
+
+        <script defer src="busqueda.js"></script>
+        <script defer src="form.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
         <meta property="og:title" content="Plomero Urgente en Catamarca | Servicio 24/7">
         <meta property="og:description" content="Plomero urgente en Catamarca. Atención rápida y confiable las 24 horas del día, todos los días.">
@@ -32,26 +40,18 @@
 
         <script type="application/ld+json">
             {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Directorio plomeros Catamarca",
             "url": "https://www.plomero.net.ar/catamarca.html",
             "logo": "https://www.plomero.net.ar/plomeria.png",
             "contactPoint": [{
                 "@type": "ContactPoint",
-                "telephone": "+541111111111",
+                "telephone": "null",
                 "contactType": "Directorio plomeros Catamarca"
             }]
             }
         </script>
-
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-W4NSZ7JP');</script>
-        <!-- End Google Tag Manager -->
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-18J0H89SVT"></script>
@@ -62,6 +62,14 @@
 
         gtag('config', 'G-18J0H89SVT');
         </script>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W4NSZ7JP');</script>
+        <!-- End Google Tag Manager -->
 
 
         <link rel="stylesheet" href="votacion.css">
@@ -81,14 +89,14 @@
          
 
         <p style="font-size: 1.5em;text-align: center;color:var(--rojo);">🔴 No hay un plomero disponible en esta sección.
-            <!-- Si no hay nadie en un barrio o localidad cercana -->
-            <a style="text-align: center;color: var(--verde-intenso); text-decoration: none;" href="publicidad.html" class="back-button">📣 Publicite Aquí</a>
+            <a href="#formulario-publicidad" class="back-button" aria-label="Ir a completar el formulario para anunciarse aquí" title="Ir a completar el formulario para anunciarse aquí" style="text-align: center;color: var(--verde-intenso); text-decoration: none;">📣 Publicite Aquí</a>
+
         </p>              
         
         <div class="box_logo">
-            <img src="plomeria.png" class="animation_back_in_rigth" alt="logotipo">
+            <img src="plomeria.png" class="animation_back_in_rigth" alt="logotipo" loading="lazy">
             <p>https://www.plomero.net.ar/catamarca.html</p>
-            <p>Anuncia tus servicios de plomería en este espacio durante 15 días por: No hemos podido estimar un precio. No se registraron impresiones o clicks.</p>
+            <p>Anuncia tus servicios de plomería en este espacio durante 1 mes por: ARS $10.000,00</p>
         </div>
         
     
@@ -139,8 +147,9 @@
         <h3>Contacto</h3>
         <h4>Llámenos o visítenos para agendar una consulta y recibir ayuda inmediata.</h4>
         <br>
-        <a class="button button1 my-element" href="tel:+541111111111">📞 ¡HAZ CLICK PARA LLAMAR! AL +541111111111</a>
-        <a class="button button1 my-element" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=Hola,%20vengo%20desde%20el%20sitio%20web:%20https://www.plomero.net.ar/catamarca.html%20Tengo%20una%20consulta" onclick="trackDynamicWhatsAppClick(this)"><i class="fa fa-whatsapp" style="font-size:16px;color:green;"></i> ¡Haz click para ENVIAR WHATSAPP!</a>
+        <a class="button button1" style="margin-top: 2em;width: 80%;height: 4rem; align-content: center;" href="tel:null" aria-label="Llamar por teléfono" title="Llamar por teléfono">📞 ¡Haz click para llamar!</a>
+        <a class="button button1" style="margin-top: 2em;width: 80%;height: 4rem; align-content: center;" href="https://api.whatsapp.com/send?phone=null&amp;text=Hola,%20vengo%20desde%20el%20sitio%20web:%20https://www.plomero.net.ar/catamarca.html%20Tengo%20una%20consulta" onclick="trackDynamicWhatsAppClick(this)" aria-label="Enviar un whatsapp" title="Enviar un whatsapp"><i class="fa fa-whatsapp" style="font-size:16px;color:green;"></i> ¡Haz click para enviar whatsapp!</a>
+        <p>Al llamar o mandar un mensaje, confirmo que he leído y acepto los <a href="terminos-y-condiciones.html">Términos y Condiciones</a>.</p>
 
         <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25596424.265591845!2d-63.598995699999996!3d-38.451550000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses-419!2sar!4v1699647692265!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <!-- Fin seccion Contacto -->
@@ -179,10 +188,10 @@
     <h4></h4>
     <p>Reparaciones de cañerías o tuberías, inodoros, sistemas de calefacción, pérdidas de gas y filtraciones en techos.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20detección%20y%20arreglo%20de%20fugas%20de%20cañerías%20de%20gas,%20agua%20corriente%20o%20cloacales/pluviales" data-servicio="Consultar por detección y arreglo de fugas en cañerías de gas, agua corriente o cloacales/pluviales" onclick="trackDynamicWhatsAppClick(this)">Consultar por detección y arreglo de fugas en cañerías de gas, agua corriente o cloacales/pluviales</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20reemplazo%20de%20tuberías%20dañadas" data-servicio="Consultar por reemplazo de tuberías" onclick="trackDynamicWhatsAppClick(this)">Consultar por reemplazo de tuberías</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20arreglo%20de%20fugas%20en%20inodoros/artefactos%20de%20baño" data-servicio="Consultar por arreglo de fugas en inodoros/artefactos de baños" onclick="trackDynamicWhatsAppClick(this)">Consultar por arreglo de fugas en inodoros/artefactos de baños</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20reparación%20de%20mecanismos%20de%20carga%20y%20descarga%20de%20inodoros" data-servicio="Consultar por reparación de mecanismos de carga y descarga de baños" onclick="trackDynamicWhatsAppClick(this)">Consultar por reparación de mecanismos de carga y descarga de baños</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20detección%20y%20arreglo%20de%20fugas%20de%20cañerías%20de%20gas,%20agua%20corriente%20o%20cloacales/pluviales" data-servicio="Consultar por detección y arreglo de fugas en cañerías de gas, agua corriente o cloacales/pluviales" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por detección y arreglo de fugas en cañerías de gas, agua corriente o cloacales/pluviales</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20reemplazo%20de%20tuberías%20dañadas" data-servicio="Consultar por reemplazo de tuberías" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por reemplazo de tuberías</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20arreglo%20de%20fugas%20en%20inodoros/artefactos%20de%20baño" data-servicio="Consultar por arreglo de fugas en inodoros/artefactos de baños" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por arreglo de fugas en inodoros/artefactos de baños</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20reparación%20de%20mecanismos%20de%20carga%20y%20descarga%20de%20inodoros" data-servicio="Consultar por reparación de mecanismos de carga y descarga de baños" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por reparación de mecanismos de carga y descarga de baños</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
@@ -193,11 +202,11 @@
     <h4></h4>
     <p>Instalación de grifería, sanitarios, termotanques, sistemas de agua caliente, sistemas de riego y líneas de gas.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20grifería%20(grifos,%20duchas%20y%20mezcladores)" data-servicio="Consultar por instalación de grifería" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalación de grifería</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20sanitarios%20(inodoros,%20bidés,%20lavabos%20y%20bañeras)" data-servicio="Consultar por instalación de sanitarios" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalación de sanitarios</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20termotanques%20o%20sistemas%20de%20agua%20caliente" data-servicio="Consultar por instalación de termotanques o sistemas de agua caliente" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalación de termotanques o sistemas de agua caliente</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20sistemas%20de%20riego%20(manuales%20o%20automáticos)" data-servicio="Consultar por instalación de sistemas de riego" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalación de sistemas de riego</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20líneas%20de%20gas" data-servicio="Consultar por instalación de líneas de gas" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalación de líneas de gas</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20grifería%20(grifos,%20duchas%20y%20mezcladores)" data-servicio="Consultar por instalación de grifería" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalación de grifería</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20sanitarios%20(inodoros,%20bidés,%20lavabos%20y%20bañeras)" data-servicio="Consultar por instalación de sanitarios" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalación de sanitarios</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20termotanques%20o%20sistemas%20de%20agua%20caliente" data-servicio="Consultar por instalación de termotanques o sistemas de agua caliente" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalación de termotanques o sistemas de agua caliente</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20sistemas%20de%20riego%20(manuales%20o%20automáticos)" data-servicio="Consultar por instalación de sistemas de riego" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalación de sistemas de riego</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20de%20líneas%20de%20gas" data-servicio="Consultar por instalación de líneas de gas" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalación de líneas de gas</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
@@ -208,9 +217,9 @@
     <h4></h4>
     <p>Destape de cañerías y desagües, sistemas de drenaje y cloacas, y resolución de inundaciones.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20destape%20de%20cañerías%20o%20desagües" data-servicio="Consultar por destape de cañerías o desagües" onclick="trackDynamicWhatsAppClick(this)">Consultar por destape de cañerías o desagües</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20o%20reparación%20de%20sistemas%20de%20drenaje%20y%20cloacas" data-servicio="Consultar por sistemas de drenaje y cloacas" onclick="trackDynamicWhatsAppClick(this)">Consultar por sistemas de drenaje y cloacas</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20resolución%20de%20inundaciones" data-servicio="Consultar por resolución de inundaciones" onclick="trackDynamicWhatsAppClick(this)">Consultar por resolución de inundaciones</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20destape%20de%20cañerías%20o%20desagües" data-servicio="Consultar por destape de cañerías o desagües" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por destape de cañerías o desagües</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20instalación%20o%20reparación%20de%20sistemas%20de%20drenaje%20y%20cloacas" data-servicio="Consultar por sistemas de drenaje y cloacas" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por sistemas de drenaje y cloacas</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20resolución%20de%20inundaciones" data-servicio="Consultar por resolución de inundaciones" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por resolución de inundaciones</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
@@ -221,9 +230,9 @@
     <h4></h4>
     <p>Mantenimiento preventivo, rehabilitación de baños antiguos y mantenimiento de sistemas de bombeo.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20mantenimiento%20preventivo%20de%20tuberías%20y%20sistemas%20hidráulicos" data-servicio="Consultar por mantenimiento preventivo" onclick="trackDynamicWhatsAppClick(this)">Consultar por mantenimiento preventivo</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20rehabilitación%20de%20baños%20antiguos" data-servicio="Consultar por rehabilitación de baños antiguos" onclick="trackDynamicWhatsAppClick(this)">Consultar por rehabilitación de baños antiguos</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20mantenimiento%20de%20sistemas%20de%20bombeo" data-servicio="Consultar por mantenimiento de sistemas de bombeo" onclick="trackDynamicWhatsAppClick(this)">Consultar por mantenimiento de sistemas de bombeo</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20mantenimiento%20preventivo%20de%20tuberías%20y%20sistemas%20hidráulicos" data-servicio="Consultar por mantenimiento preventivo" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por mantenimiento preventivo</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20rehabilitación%20de%20baños%20antiguos" data-servicio="Consultar por rehabilitación de baños antiguos" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por rehabilitación de baños antiguos</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20mantenimiento%20de%20sistemas%20de%20bombeo" data-servicio="Consultar por mantenimiento de sistemas de bombeo" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por mantenimiento de sistemas de bombeo</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
@@ -234,8 +243,8 @@
     <h4></h4>
     <p>Atención 24/7 para reparaciones urgentes, obstrucciones graves y problemas hidráulicos críticos.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20atención%20de%20emergencias%2024/7" data-servicio="Consultar por emergencias 24/7" onclick="trackDynamicWhatsAppClick(this)">Consultar por emergencias 24/7</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20urgente%20de%20desbloqueo%20y%20evacuación%20de%20agua%20por%20inundaciones" data-servicio="Consultar por servicio urgente de desbloqueo y evacuación de agua" onclick="trackDynamicWhatsAppClick(this)">Consultar por servicio urgente de desbloqueo y evacuación de agua</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20de%20atención%20de%20emergencias%2024/7" data-servicio="Consultar por emergencias 24/7" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por emergencias 24/7</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20el%20servicio%20urgente%20de%20desbloqueo%20y%20evacuación%20de%20agua%20por%20inundaciones" data-servicio="Consultar por servicio urgente de desbloqueo y evacuación de agua" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por servicio urgente de desbloqueo y evacuación de agua</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
@@ -246,1033 +255,170 @@
     <h4></h4>
     <p>Instalaciones completas para viviendas, edificios, piscinas, restaurantes, hoteles y oficinas.</p>
     <div class="servicio">
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20instalaciones%20completas%20para%20obras%20nuevas%20(viviendas%20y%20edificios)" data-servicio="Consultar por instalaciones completas para obras nuevas" onclick="trackDynamicWhatsAppClick(this)">Consultar por instalaciones completas para obras nuevas</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20servicios%20de%20plomería%20para%20piscinas" data-servicio="Consultar por plomería para piscinas" onclick="trackDynamicWhatsAppClick(this)">Consultar por plomería para piscinas</a>
-        <a class="button button1" href="https://api.whatsapp.com/send?phone=+541111111111&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20servicios%20para%20proyectos%20comerciales%20(restaurantes,%20hoteles,%20oficinas)" data-servicio="Consultar por servicios para proyectos comerciales" onclick="trackDynamicWhatsAppClick(this)">Consultar por servicios para proyectos comerciales</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20instalaciones%20completas%20para%20obras%20nuevas%20(viviendas%20y%20edificios)" data-servicio="Consultar por instalaciones completas para obras nuevas" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por instalaciones completas para obras nuevas</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20servicios%20de%20plomería%20para%20piscinas" data-servicio="Consultar por plomería para piscinas" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por plomería para piscinas</a>
+        <a class="button button1" href="https://api.whatsapp.com/send?phone=null&amp;text=¡Hola!%20Vengo%20desde:%20https://www.plomero.net.ar/catamarca.html%20%7C%20 Quería%20consultar%20por%20servicios%20para%20proyectos%20comerciales%20(restaurantes,%20hoteles,%20oficinas)" data-servicio="Consultar por servicios para proyectos comerciales" onclick="trackDynamicWhatsAppClick(this)" aria-label="Consultar sobre el servicio por whatsapp" title="Consultar sobre el servicio por whatsapp">Consultar por servicios para proyectos comerciales</a>
 </div>
 </div>
 <!-- Fin sección del listado de servicios -->
 <!-- Fin servicios -->
 </div>
-                <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Fin del Espacio Publicitario</p>
 
+                <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Fin del Espacio Publicitario</p>
+                <!-- Seccion localidades -->
                 <div id="opciones" style="padding-top: 2em;">
                     <h2 class="scroll-section" id="localidades_provincia">Elija una localidad</h2>
-                    <p>Los botones de color <a href="#" style="color: var(--rojo);font-size: 2em;">Rojo</a> indica que no hay un plomero disponible en esa seccion</p>
-                    <p>Los botones de color <a href="#" style="color: var(--verde-intenso);font-size: 2em;">Verde</a> indica que si hay un plomero disponible en esa seccion</p>
-                    <select id="localidades" class="button button2" style="width:100%;color: var(--gris-claro);font-weight: bold;font-family: 'Bebas Neue';"> 
+                    <p>Los botones de color <a href="#" style="color: darkred;font-size: 2em;">Rojo</a> indica que no hay un plomero disponible en esa seccion</p>
+                    <p>Los botones de color <a href="#" style="color: darkgreen;font-size: 2em;">Verde</a> indica que si hay un plomero disponible en esa seccion</p>
+                    
+                    <select id="localidades" onchange="window.location.href=this.value;" class="button button2" style="width:80%;"> 
                     <option value="">Selecciona una localidad</option>
-                    <option value='adolfo-e-carranza' style='color: var(--rojo);'>Adolfo E. Carranza</option>
-<option value='alijilan' style='color: var(--rojo);'>Alijilán</option>
-<option value='amadores' style='color: var(--rojo);'>Amadores</option>
-<option value='amanao' style='color: var(--rojo);'>Amanao</option>
-<option value='ancasti' style='color: var(--rojo);'>Ancasti</option>
-<option value='andalgala' style='color: var(--rojo);'>Andalgalá</option>
-<option value='andalhuala' style='color: var(--rojo);'>Andalhualá</option>
-<option value='anillaco' style='color: var(--rojo);'>Anillaco</option>
-<option value='anquincila' style='color: var(--rojo);'>Anquincila</option>
-<option value='antinaco' style='color: var(--rojo);'>Antinaco</option>
-<option value='antofagasta-de-la-sierra' style='color: var(--rojo);'>Antofagasta de la Sierra</option>
-<option value='antofalla' style='color: var(--rojo);'>Antofalla</option>
-<option value='apoyaco' style='color: var(--rojo);'>Apoyaco</option>
-<option value='balde-de-la-punta' style='color: var(--rojo);'>Balde de la Punta</option>
-<option value='banado-de-ovanta' style='color: var(--rojo);'>Bañado de Ovanta</option>
-<option value='banda-de-lucero' style='color: var(--rojo);'>Banda de Lucero</option>
-<option value='barranca-larga' style='color: var(--rojo);'>Barranca Larga</option>
-<option value='belen' style='color: var(--rojo);'>Belén</option>
-<option value='capayan' style='color: var(--rojo);'>Capayán</option>
-<option value='casa-de-piedra' style='color: var(--rojo);'>Casa de Piedra</option>
-<option value='caspichango' style='color: var(--rojo);'>Caspichango</option>
-<option value='cerro-negro' style='color: var(--rojo);'>Cerro Negro</option>
-<option value='chanar-punco' style='color: var(--rojo);'>Chañar Punco</option>
-<option value='chaquiago' style='color: var(--rojo);'>Chaquiago</option>
-<option value='choya' style='color: var(--rojo);'>Choya</option>
-<option value='chuchucaruana' style='color: var(--rojo);'>Chuchucaruana</option>
-<option value='chumbicha' style='color: var(--rojo);'>Chumbicha</option>
-<option value='colana' style='color: var(--rojo);'>Colana</option>
-<option value='collagasta' style='color: var(--rojo);'>Collagasta</option>
-<option value='colonia-del-valle' style='color: var(--rojo);'>Colonia del Valle</option>
-<option value='colonia-nueva-coneta' style='color: var(--rojo);'>Colonia Nueva Coneta</option>
-<option value='colpes' style='color: var(--rojo);'>Colpes</option>
-<option value='concepcion' style='color: var(--rojo);'>Concepción</option>
-<option value='condor-huasi' style='color: var(--rojo);'>Cóndor Huasi</option>
-<option value='coneta' style='color: var(--rojo);'>Coneta</option>
-<option value='copacabana' style='color: var(--rojo);'>Copacabana</option>
-<option value='cordobita' style='color: var(--rojo);'>Cordobita</option>
-<option value='corral-quemado' style='color: var(--rojo);'>Corral Quemado</option>
-<option value='costa-de-reyes' style='color: var(--rojo);'>Costa de Reyes</option>
-<option value='el-alamito' style='color: var(--rojo);'>El Alamito</option>
-<option value='el-alto' style='color: var(--rojo);'>El Alto</option>
-<option value='el-aybal' style='color: var(--rojo);'>El Aybal</option>
-<option value='el-banado' style='color: var(--rojo);'>El Bañado</option>
-<option value='el-bolson' style='color: var(--rojo);'>El Bolsón</option>
-<option value='el-cajon' style='color: var(--rojo);'>El Cajón</option>
-<option value='el-desmonte' style='color: var(--rojo);'>El Desmonte</option>
-<option value='el-divisadero' style='color: var(--rojo);'>El Divisadero</option>
-<option value='el-durazno' style='color: var(--rojo);'>El Durazno</option>
-<option value='el-lindero' style='color: var(--rojo);'>El Lindero</option>
-<option value='el-pajonal' style='color: var(--rojo);'>El Pajonal</option>
-<option value='el-pantanillo' style='color: var(--rojo);'>El Pantanillo</option>
-<option value='el-penon' style='color: var(--rojo);'>El Peñón</option>
-<option value='el-portezuelo' style='color: var(--rojo);'>El Portezuelo</option>
-<option value='el-potrero' style='color: var(--rojo);'>El Potrero</option>
-<option value='el-pueblito' style='color: var(--rojo);'>El Pueblito</option>
-<option value='el-puesto' style='color: var(--rojo);'>El Puesto</option>
-<option value='el-quimilo' style='color: var(--rojo);'>El Quimilo</option>
-<option value='el-rodeo' style='color: var(--rojo);'>El Rodeo</option>
-<option value='el-rosario' style='color: var(--rojo);'>El Rosario</option>
-<option value='el-salado' style='color: var(--rojo);'>El Salado</option>
-<option value='esquiu' style='color: var(--rojo);'>Esquiú</option>
-<option value='famatanca' style='color: var(--rojo);'>Famatanca</option>
-<option value='farallon-negro' style='color: var(--rojo);'>Farallón Negro</option>
-<option value='fiambala' style='color: var(--rojo);'>Fiambalá</option>
-<option value='fuerte-quemado' style='color: var(--rojo);'>Fuerte Quemado</option>
-<option value='guayamba' style='color: var(--rojo);'>Guayamba</option>
-<option value='hualfin' style='color: var(--rojo);'>Hualfín</option>
-<option value='huaycama' style='color: var(--rojo);'>Huaycama</option>
-<option value='huillapima' style='color: var(--rojo);'>Huillapima</option>
-<option value='icano' style='color: var(--rojo);'>Icaño</option>
-<option value='infanzon' style='color: var(--rojo);'>Infanzón</option>
-<option value='jacipunco' style='color: var(--rojo);'>Jacipunco</option>
-<option value='joyango' style='color: var(--rojo);'>Joyango</option>
-<option value='la-aguada' style='color: var(--rojo);'>La Aguada</option>
-<option value='la-bajada' style='color: var(--rojo);'>La Bajada</option>
-<option value='la-candelaria' style='color: var(--rojo);'>La Candelaria</option>
-<option value='la-dorada' style='color: var(--rojo);'>La Dorada</option>
-<option value='la-guardia' style='color: var(--rojo);'>La Guardia</option>
-<option value='la-higuera' style='color: var(--rojo);'>La Higuera</option>
-<option value='la-hoyada' style='color: var(--rojo);'>La Hoyada</option>
-<option value='la-loma' style='color: var(--rojo);'>La Loma</option>
-<option value='la-majada' style='color: var(--rojo);'>La Majada</option>
-<option value='la-merced' style='color: var(--rojo);'>La Merced</option>
-<option value='la-puerta' style='color: var(--rojo);'>La Puerta</option>
-<option value='la-puntilla' style='color: var(--rojo);'>La Puntilla</option>
-<option value='la-vina' style='color: var(--rojo);'>La Viña</option>
-<option value='las-canas' style='color: var(--rojo);'>Las Cañas</option>
-<option value='las-chacritas' style='color: var(--rojo);'>Las Chacritas</option>
-<option value='las-esquinas' style='color: var(--rojo);'>Las Esquinas</option>
-<option value='las-juntas' style='color: var(--rojo);'>Las Juntas</option>
-<option value='las-lajas' style='color: var(--rojo);'>Las Lajas</option>
-<option value='las-mojarras' style='color: var(--rojo);'>Las Mojarras</option>
-<option value='las-palmitas' style='color: var(--rojo);'>Las Palmitas</option>
-<option value='las-tejas' style='color: var(--rojo);'>Las Tejas</option>
-<option value='lavalle' style='color: var(--rojo);'>Lavalle</option>
-<option value='londres' style='color: var(--rojo);'>Londres</option>
-<option value='loro-huasi' style='color: var(--rojo);'>Loro Huasi</option>
-<option value='los-altos' style='color: var(--rojo);'>Los Altos</option>
-<option value='los-angeles' style='color: var(--rojo);'>Los Angeles</option>
-<option value='los-balverdis' style='color: var(--rojo);'>Los Balverdis</option>
-<option value='los-castillos' style='color: var(--rojo);'>Los Castillos</option>
-<option value='los-corrales' style='color: var(--rojo);'>Los Corrales</option>
-<option value='los-nacimientos' style='color: var(--rojo);'>Los Nacimientos</option>
-<option value='los-talas' style='color: var(--rojo);'>Los Talas</option>
-<option value='los-varela' style='color: var(--rojo);'>Los Varela</option>
-<option value='manantiales' style='color: var(--rojo);'>Manantiales</option>
-<option value='medanitos' style='color: var(--rojo);'>Medanitos</option>
-<option value='miraflores' style='color: var(--rojo);'>Miraflores</option>
-<option value='monte-potrero' style='color: var(--rojo);'>Monte Potrero</option>
-<option value='mutquin' style='color: var(--rojo);'>Mutquin</option>
-<option value='palo-blanco' style='color: var(--rojo);'>Palo Blanco</option>
-<option value='palo-labrado' style='color: var(--rojo);'>Palo Labrado</option>
-<option value='poman' style='color: var(--rojo);'>Pomán</option>
-<option value='pomancillo-este' style='color: var(--rojo);'>Pomancillo Este</option>
-<option value='pomancillo-oeste' style='color: var(--rojo);'>Pomancillo Oeste</option>
-<option value='puerta-de-corral-quemado' style='color: var(--rojo);'>Puerta de Corral Quemado</option>
-<option value='puerta-de-san-jose' style='color: var(--rojo);'>Puerta de San José</option>
-<option value='punta-de-balasto' style='color: var(--rojo);'>Punta de Balasto</option>
-<option value='punta-del-agua' style='color: var(--rojo);'>Punta del Agua</option>
-<option value='quiros' style='color: var(--rojo);'>Quirós</option>
-<option value='ramblones' style='color: var(--rojo);'>Ramblones</option>
-<option value='recreo' style='color: var(--rojo);'>Recreo</option>
-<option value='rincon' style='color: var(--rojo);'>Rincón</option>
-<option value='san-antonio' style='color: var(--rojo);'>San Antonio</option>
-<option value='san-fernando-del-valle-de-catamarca' style='color: var(--rojo);'>San Fernando del Valle de Catamarca</option>
-<option value='san-isidro' style='color: var(--rojo);'>San Isidro</option>
-<option value='san-jose' style='color: var(--rojo);'>San José</option>
-<option value='san-martin' style='color: var(--rojo);'>San Martín</option>
-<option value='san-miguel' style='color: var(--rojo);'>San Miguel</option>
-<option value='san-pablo' style='color: var(--rojo);'>San Pablo</option>
-<option value='san-pedro' style='color: var(--rojo);'>San Pedro</option>
-<option value='santa-cruz' style='color: var(--rojo);'>Santa Cruz</option>
-<option value='santa-maria' style='color: var(--rojo);'>Santa María</option>
-<option value='saujil' style='color: var(--rojo);'>Saujil</option>
-<option value='sijan' style='color: var(--rojo);'>Siján</option>
-<option value='singuil' style='color: var(--rojo);'>Singuil</option>
-<option value='tapso' style='color: var(--rojo);'>Tapso</option>
-<option value='taton' style='color: var(--rojo);'>Tatón</option>
-<option value='tinogasta' style='color: var(--rojo);'>Tinogasta</option>
-<option value='vilisman' style='color: var(--rojo);'>Vilismán</option>
-<option value='villa-de-balcozna' style='color: var(--rojo);'>Villa de Balcozna</option>
-<option value='villa-las-pirquitas' style='color: var(--rojo);'>Villa Las Pirquitas</option>
-<option value='villa-vil' style='color: var(--rojo);'>Villa Vil</option>
-<option value='yapes' style='color: var(--rojo);'>Yapes</option> 
+                    <option value='./catamarca/adolfo-e-carranza.html' style='color: darkred;'>Adolfo E. Carranza</option>
+<option value='./catamarca/alijilan.html' style='color: darkred;'>Alijilán</option>
+<option value='./catamarca/amadores.html' style='color: darkred;'>Amadores</option>
+<option value='./catamarca/amanao.html' style='color: darkred;'>Amanao</option>
+<option value='./catamarca/ancasti.html' style='color: darkred;'>Ancasti</option>
+<option value='./catamarca/andalgala.html' style='color: darkred;'>Andalgalá</option>
+<option value='./catamarca/andalhuala.html' style='color: darkred;'>Andalhualá</option>
+<option value='./catamarca/anillaco.html' style='color: darkred;'>Anillaco</option>
+<option value='./catamarca/anquincila.html' style='color: darkred;'>Anquincila</option>
+<option value='./catamarca/antinaco.html' style='color: darkred;'>Antinaco</option>
+<option value='./catamarca/antofagasta-de-la-sierra.html' style='color: darkred;'>Antofagasta de la Sierra</option>
+<option value='./catamarca/antofalla.html' style='color: darkred;'>Antofalla</option>
+<option value='./catamarca/apoyaco.html' style='color: darkred;'>Apoyaco</option>
+<option value='./catamarca/balde-de-la-punta.html' style='color: darkred;'>Balde de la Punta</option>
+<option value='./catamarca/banado-de-ovanta.html' style='color: darkred;'>Bañado de Ovanta</option>
+<option value='./catamarca/banda-de-lucero.html' style='color: darkred;'>Banda de Lucero</option>
+<option value='./catamarca/barranca-larga.html' style='color: darkred;'>Barranca Larga</option>
+<option value='./catamarca/belen.html' style='color: darkred;'>Belén</option>
+<option value='./catamarca/capayan.html' style='color: darkred;'>Capayán</option>
+<option value='./catamarca/casa-de-piedra.html' style='color: darkred;'>Casa de Piedra</option>
+<option value='./catamarca/caspichango.html' style='color: darkred;'>Caspichango</option>
+<option value='./catamarca/cerro-negro.html' style='color: darkred;'>Cerro Negro</option>
+<option value='./catamarca/chanar-punco.html' style='color: darkred;'>Chañar Punco</option>
+<option value='./catamarca/chaquiago.html' style='color: darkred;'>Chaquiago</option>
+<option value='./catamarca/choya.html' style='color: darkred;'>Choya</option>
+<option value='./catamarca/chuchucaruana.html' style='color: darkred;'>Chuchucaruana</option>
+<option value='./catamarca/chumbicha.html' style='color: darkred;'>Chumbicha</option>
+<option value='./catamarca/colana.html' style='color: darkred;'>Colana</option>
+<option value='./catamarca/collagasta.html' style='color: darkred;'>Collagasta</option>
+<option value='./catamarca/colonia-del-valle.html' style='color: darkred;'>Colonia del Valle</option>
+<option value='./catamarca/colonia-nueva-coneta.html' style='color: darkred;'>Colonia Nueva Coneta</option>
+<option value='./catamarca/colpes.html' style='color: darkred;'>Colpes</option>
+<option value='./catamarca/concepcion.html' style='color: darkred;'>Concepción</option>
+<option value='./catamarca/condor-huasi.html' style='color: darkred;'>Cóndor Huasi</option>
+<option value='./catamarca/coneta.html' style='color: darkred;'>Coneta</option>
+<option value='./catamarca/copacabana.html' style='color: darkred;'>Copacabana</option>
+<option value='./catamarca/cordobita.html' style='color: darkred;'>Cordobita</option>
+<option value='./catamarca/corral-quemado.html' style='color: darkred;'>Corral Quemado</option>
+<option value='./catamarca/costa-de-reyes.html' style='color: darkred;'>Costa de Reyes</option>
+<option value='./catamarca/el-alamito.html' style='color: darkred;'>El Alamito</option>
+<option value='./catamarca/el-alto.html' style='color: darkred;'>El Alto</option>
+<option value='./catamarca/el-aybal.html' style='color: darkred;'>El Aybal</option>
+<option value='./catamarca/el-banado.html' style='color: darkred;'>El Bañado</option>
+<option value='./catamarca/el-bolson.html' style='color: darkred;'>El Bolsón</option>
+<option value='./catamarca/el-cajon.html' style='color: darkred;'>El Cajón</option>
+<option value='./catamarca/el-desmonte.html' style='color: darkred;'>El Desmonte</option>
+<option value='./catamarca/el-divisadero.html' style='color: darkred;'>El Divisadero</option>
+<option value='./catamarca/el-durazno.html' style='color: darkred;'>El Durazno</option>
+<option value='./catamarca/el-lindero.html' style='color: darkred;'>El Lindero</option>
+<option value='./catamarca/el-pajonal.html' style='color: darkred;'>El Pajonal</option>
+<option value='./catamarca/el-pantanillo.html' style='color: darkred;'>El Pantanillo</option>
+<option value='./catamarca/el-penon.html' style='color: darkred;'>El Peñón</option>
+<option value='./catamarca/el-portezuelo.html' style='color: darkred;'>El Portezuelo</option>
+<option value='./catamarca/el-potrero.html' style='color: darkred;'>El Potrero</option>
+<option value='./catamarca/el-pueblito.html' style='color: darkred;'>El Pueblito</option>
+<option value='./catamarca/el-puesto.html' style='color: darkred;'>El Puesto</option>
+<option value='./catamarca/el-quimilo.html' style='color: darkred;'>El Quimilo</option>
+<option value='./catamarca/el-rodeo.html' style='color: darkred;'>El Rodeo</option>
+<option value='./catamarca/el-rosario.html' style='color: darkred;'>El Rosario</option>
+<option value='./catamarca/el-salado.html' style='color: darkred;'>El Salado</option>
+<option value='./catamarca/esquiu.html' style='color: darkred;'>Esquiú</option>
+<option value='./catamarca/famatanca.html' style='color: darkred;'>Famatanca</option>
+<option value='./catamarca/farallon-negro.html' style='color: darkred;'>Farallón Negro</option>
+<option value='./catamarca/fiambala.html' style='color: darkred;'>Fiambalá</option>
+<option value='./catamarca/fuerte-quemado.html' style='color: darkred;'>Fuerte Quemado</option>
+<option value='./catamarca/guayamba.html' style='color: darkred;'>Guayamba</option>
+<option value='./catamarca/hualfin.html' style='color: darkred;'>Hualfín</option>
+<option value='./catamarca/huaycama.html' style='color: darkred;'>Huaycama</option>
+<option value='./catamarca/huillapima.html' style='color: darkred;'>Huillapima</option>
+<option value='./catamarca/icano.html' style='color: darkred;'>Icaño</option>
+<option value='./catamarca/infanzon.html' style='color: darkred;'>Infanzón</option>
+<option value='./catamarca/jacipunco.html' style='color: darkred;'>Jacipunco</option>
+<option value='./catamarca/joyango.html' style='color: darkred;'>Joyango</option>
+<option value='./catamarca/la-aguada.html' style='color: darkred;'>La Aguada</option>
+<option value='./catamarca/la-bajada.html' style='color: darkred;'>La Bajada</option>
+<option value='./catamarca/la-candelaria.html' style='color: darkred;'>La Candelaria</option>
+<option value='./catamarca/la-dorada.html' style='color: darkred;'>La Dorada</option>
+<option value='./catamarca/la-guardia.html' style='color: darkred;'>La Guardia</option>
+<option value='./catamarca/la-higuera.html' style='color: darkred;'>La Higuera</option>
+<option value='./catamarca/la-hoyada.html' style='color: darkred;'>La Hoyada</option>
+<option value='./catamarca/la-loma.html' style='color: darkred;'>La Loma</option>
+<option value='./catamarca/la-majada.html' style='color: darkred;'>La Majada</option>
+<option value='./catamarca/la-merced.html' style='color: darkred;'>La Merced</option>
+<option value='./catamarca/la-puerta.html' style='color: darkred;'>La Puerta</option>
+<option value='./catamarca/la-puntilla.html' style='color: darkred;'>La Puntilla</option>
+<option value='./catamarca/la-vina.html' style='color: darkred;'>La Viña</option>
+<option value='./catamarca/las-canas.html' style='color: darkred;'>Las Cañas</option>
+<option value='./catamarca/las-chacritas.html' style='color: darkred;'>Las Chacritas</option>
+<option value='./catamarca/las-esquinas.html' style='color: darkred;'>Las Esquinas</option>
+<option value='./catamarca/las-juntas.html' style='color: darkred;'>Las Juntas</option>
+<option value='./catamarca/las-lajas.html' style='color: darkred;'>Las Lajas</option>
+<option value='./catamarca/las-mojarras.html' style='color: darkred;'>Las Mojarras</option>
+<option value='./catamarca/las-palmitas.html' style='color: darkred;'>Las Palmitas</option>
+<option value='./catamarca/las-tejas.html' style='color: darkred;'>Las Tejas</option>
+<option value='./catamarca/lavalle.html' style='color: darkred;'>Lavalle</option>
+<option value='./catamarca/londres.html' style='color: darkred;'>Londres</option>
+<option value='./catamarca/loro-huasi.html' style='color: darkred;'>Loro Huasi</option>
+<option value='./catamarca/los-altos.html' style='color: darkred;'>Los Altos</option>
+<option value='./catamarca/los-angeles.html' style='color: darkred;'>Los Angeles</option>
+<option value='./catamarca/los-balverdis.html' style='color: darkred;'>Los Balverdis</option>
+<option value='./catamarca/los-castillos.html' style='color: darkred;'>Los Castillos</option>
+<option value='./catamarca/los-corrales.html' style='color: darkred;'>Los Corrales</option>
+<option value='./catamarca/los-nacimientos.html' style='color: darkred;'>Los Nacimientos</option>
+<option value='./catamarca/los-talas.html' style='color: darkred;'>Los Talas</option>
+<option value='./catamarca/los-varela.html' style='color: darkred;'>Los Varela</option>
+<option value='./catamarca/manantiales.html' style='color: darkred;'>Manantiales</option>
+<option value='./catamarca/medanitos.html' style='color: darkred;'>Medanitos</option>
+<option value='./catamarca/miraflores.html' style='color: darkred;'>Miraflores</option>
+<option value='./catamarca/monte-potrero.html' style='color: darkred;'>Monte Potrero</option>
+<option value='./catamarca/mutquin.html' style='color: darkred;'>Mutquin</option>
+<option value='./catamarca/palo-blanco.html' style='color: darkred;'>Palo Blanco</option>
+<option value='./catamarca/palo-labrado.html' style='color: darkred;'>Palo Labrado</option>
+<option value='./catamarca/poman.html' style='color: darkred;'>Pomán</option>
+<option value='./catamarca/pomancillo-este.html' style='color: darkred;'>Pomancillo Este</option>
+<option value='./catamarca/pomancillo-oeste.html' style='color: darkred;'>Pomancillo Oeste</option>
+<option value='./catamarca/puerta-de-corral-quemado.html' style='color: darkred;'>Puerta de Corral Quemado</option>
+<option value='./catamarca/puerta-de-san-jose.html' style='color: darkred;'>Puerta de San José</option>
+<option value='./catamarca/punta-de-balasto.html' style='color: darkred;'>Punta de Balasto</option>
+<option value='./catamarca/punta-del-agua.html' style='color: darkred;'>Punta del Agua</option>
+<option value='./catamarca/quiros.html' style='color: darkred;'>Quirós</option>
+<option value='./catamarca/ramblones.html' style='color: darkred;'>Ramblones</option>
+<option value='./catamarca/recreo.html' style='color: darkred;'>Recreo</option>
+<option value='./catamarca/rincon.html' style='color: darkred;'>Rincón</option>
+<option value='./catamarca/san-antonio.html' style='color: darkred;'>San Antonio</option>
+<option value='./catamarca/san-fernando-del-valle-de-catamarca.html' style='color: darkred;'>San Fernando del Valle de Catamarca</option>
+<option value='./catamarca/san-isidro.html' style='color: darkred;'>San Isidro</option>
+<option value='./catamarca/san-jose.html' style='color: darkred;'>San José</option>
+<option value='./catamarca/san-martin.html' style='color: darkred;'>San Martín</option>
+<option value='./catamarca/san-miguel.html' style='color: darkred;'>San Miguel</option>
+<option value='./catamarca/san-pablo.html' style='color: darkred;'>San Pablo</option>
+<option value='./catamarca/san-pedro.html' style='color: darkred;'>San Pedro</option>
+<option value='./catamarca/santa-cruz.html' style='color: darkred;'>Santa Cruz</option>
+<option value='./catamarca/santa-maria.html' style='color: darkred;'>Santa María</option>
+<option value='./catamarca/saujil.html' style='color: darkred;'>Saujil</option>
+<option value='./catamarca/sijan.html' style='color: darkred;'>Siján</option>
+<option value='./catamarca/singuil.html' style='color: darkred;'>Singuil</option>
+<option value='./catamarca/tapso.html' style='color: darkred;'>Tapso</option>
+<option value='./catamarca/taton.html' style='color: darkred;'>Tatón</option>
+<option value='./catamarca/tinogasta.html' style='color: darkred;'>Tinogasta</option>
+<option value='./catamarca/vilisman.html' style='color: darkred;'>Vilismán</option>
+<option value='./catamarca/villa-de-balcozna.html' style='color: darkred;'>Villa de Balcozna</option>
+<option value='./catamarca/villa-las-pirquitas.html' style='color: darkred;'>Villa Las Pirquitas</option>
+<option value='./catamarca/villa-vil.html' style='color: darkred;'>Villa Vil</option>
+<option value='./catamarca/yapes.html' style='color: darkred;'>Yapes</option> 
                     </select>
                     
-                    
-            <section class="scroll-section" id="adolfo-e-carranza" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/adolfo-e-carranza.html">Adolfo E. Carranza</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="alijilan" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/alijilan.html">Alijilán</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="amadores" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/amadores.html">Amadores</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="amanao" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/amanao.html">Amanao</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="ancasti" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/ancasti.html">Ancasti</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="andalgala" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/andalgala.html">Andalgalá</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="andalhuala" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/andalhuala.html">Andalhualá</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="anillaco" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/anillaco.html">Anillaco</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="anquincila" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/anquincila.html">Anquincila</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="antinaco" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/antinaco.html">Antinaco</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="antofagasta-de-la-sierra" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/antofagasta-de-la-sierra.html">Antofagasta de la Sierra</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="antofalla" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/antofalla.html">Antofalla</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="apoyaco" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/apoyaco.html">Apoyaco</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="balde-de-la-punta" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/balde-de-la-punta.html">Balde de la Punta</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="banado-de-ovanta" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/banado-de-ovanta.html">Bañado de Ovanta</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="banda-de-lucero" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/banda-de-lucero.html">Banda de Lucero</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="barranca-larga" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/barranca-larga.html">Barranca Larga</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="belen" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/belen.html">Belén</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="capayan" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/capayan.html">Capayán</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="casa-de-piedra" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/casa-de-piedra.html">Casa de Piedra</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="caspichango" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/caspichango.html">Caspichango</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="cerro-negro" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/cerro-negro.html">Cerro Negro</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="chanar-punco" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/chanar-punco.html">Chañar Punco</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/chanar-punco/lampacito.html'>LAMPACITO</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/chanar-punco/medanitos.html'>MEDANITOS</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="chaquiago" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/chaquiago.html">Chaquiago</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="choya" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/choya.html">Choya</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="chuchucaruana" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/chuchucaruana.html">Chuchucaruana</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="chumbicha" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/chumbicha.html">Chumbicha</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="colana" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/colana.html">Colana</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="collagasta" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/collagasta.html">Collagasta</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="colonia-del-valle" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/colonia-del-valle.html">Colonia del Valle</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="colonia-nueva-coneta" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/colonia-nueva-coneta.html">Colonia Nueva Coneta</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="colpes" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/colpes.html">Colpes</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="concepcion" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/concepcion.html">Concepción</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="condor-huasi" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/condor-huasi.html">Cóndor Huasi</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="coneta" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/coneta.html">Coneta</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="copacabana" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/copacabana.html">Copacabana</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/copacabana/la-puntilla.html'>LA PUNTILLA</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="cordobita" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/cordobita.html">Cordobita</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="corral-quemado" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/corral-quemado.html">Corral Quemado</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="costa-de-reyes" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/costa-de-reyes.html">Costa de Reyes</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-alamito" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-alamito.html">El Alamito</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/el-alamito/buena-vista.html'>BUENA VISTA</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="el-alto" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-alto.html">El Alto</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-aybal" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-aybal.html">El Aybal</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-banado" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-banado.html">El Bañado</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-bolson" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-bolson.html">El Bolsón</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-cajon" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-cajon.html">El Cajón</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-desmonte" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-desmonte.html">El Desmonte</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-divisadero" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-divisadero.html">El Divisadero</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-durazno" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-durazno.html">El Durazno</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-lindero" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-lindero.html">El Lindero</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/el-lindero/aconquija.html'>ACONQUIJA</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/el-lindero/alto-de-las-juntas.html'>ALTO DE LAS JUNTAS</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/el-lindero/la-mesada.html'>LA MESADA</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="el-pajonal" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-pajonal.html">El Pajonal</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-pantanillo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-pantanillo.html">El Pantanillo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-penon" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-penon.html">El Peñón</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-portezuelo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-portezuelo.html">El Portezuelo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-potrero" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-potrero.html">El Potrero</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-pueblito" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-pueblito.html">El Pueblito</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-puesto" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-puesto.html">El Puesto</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-quimilo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-quimilo.html">El Quimilo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-rodeo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-rodeo.html">El Rodeo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-rosario" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-rosario.html">El Rosario</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="el-salado" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/el-salado.html">El Salado</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="esquiu" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/esquiu.html">Esquiú</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="famatanca" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/famatanca.html">Famatanca</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/famatanca/san-jose-banda.html'>SAN JOSE BANDA</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="farallon-negro" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/farallon-negro.html">Farallón Negro</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="fiambala" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/fiambala.html">Fiambalá</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/fiambala/la-ramadita.html'>LA RAMADITA</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/fiambala/pampa-blanca.html'>PAMPA BLANCA</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="fuerte-quemado" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/fuerte-quemado.html">Fuerte Quemado</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="guayamba" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/guayamba.html">Guayamba</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="hualfin" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/hualfin.html">Hualfín</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="huaycama" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/huaycama.html">Huaycama</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="huillapima" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/huillapima.html">Huillapima</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="icano" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/icano.html">Icaño</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="infanzon" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/infanzon.html">Infanzón</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="jacipunco" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/jacipunco.html">Jacipunco</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="joyango" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/joyango.html">Joyango</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-aguada" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-aguada.html">La Aguada</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-bajada" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-bajada.html">La Bajada</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-candelaria" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-candelaria.html">La Candelaria</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-dorada" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-dorada.html">La Dorada</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-guardia" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-guardia.html">La Guardia</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-higuera" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-higuera.html">La Higuera</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-hoyada" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-hoyada.html">La Hoyada</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-loma" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-loma.html">La Loma</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-majada" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-majada.html">La Majada</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-merced" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-merced.html">La Merced</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-puerta" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-puerta.html">La Puerta</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-puntilla" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-puntilla.html">La Puntilla</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="la-vina" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/la-vina.html">La Viña</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="las-canas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/las-canas.html">Las Cañas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="las-chacritas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/las-chacritas.html">Las Chacritas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="las-esquinas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/las-esquinas.html">Las Esquinas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="las-juntas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/las-juntas.html">Las Juntas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="las-lajas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/las-lajas.html">Las Lajas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="las-mojarras" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/las-mojarras.html">Las Mojarras</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/las-mojarras/el-cerrito.html'>EL CERRITO</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="las-palmitas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/las-palmitas.html">Las Palmitas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="las-tejas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/las-tejas.html">Las Tejas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="lavalle" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/lavalle.html">Lavalle</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="londres" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/londres.html">Londres</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="loro-huasi" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/loro-huasi.html">Loro Huasi</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="los-altos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/los-altos.html">Los Altos</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="los-angeles" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/los-angeles.html">Los Angeles</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/los-angeles/los-angeles-norte.html'>LOS ANGELES NORTE</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/los-angeles/los-angeles-sur.html'>LOS ANGELES SUR</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="los-balverdis" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/los-balverdis.html">Los Balverdis</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="los-castillos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/los-castillos.html">Los Castillos</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="los-corrales" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/los-corrales.html">Los Corrales</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="los-nacimientos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/los-nacimientos.html">Los Nacimientos</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="los-talas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/los-talas.html">Los Talas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="los-varela" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/los-varela.html">Los Varela</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="manantiales" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/manantiales.html">Manantiales</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="medanitos" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/medanitos.html">Medanitos</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="miraflores" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/miraflores.html">Miraflores</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="monte-potrero" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/monte-potrero.html">Monte Potrero</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="mutquin" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/mutquin.html">Mutquin</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="palo-blanco" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/palo-blanco.html">Palo Blanco</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="palo-labrado" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/palo-labrado.html">Palo Labrado</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="poman" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/poman.html">Pomán</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="pomancillo-este" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/pomancillo-este.html">Pomancillo Este</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="pomancillo-oeste" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/pomancillo-oeste.html">Pomancillo Oeste</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="puerta-de-corral-quemado" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/puerta-de-corral-quemado.html">Puerta de Corral Quemado</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="puerta-de-san-jose" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/puerta-de-san-jose.html">Puerta de San José</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="punta-de-balasto" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/punta-de-balasto.html">Punta de Balasto</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="punta-del-agua" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/punta-del-agua.html">Punta del Agua</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="quiros" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/quiros.html">Quirós</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="ramblones" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/ramblones.html">Ramblones</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="recreo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/recreo.html">Recreo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="rincon" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/rincon.html">Rincón</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-antonio" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/san-antonio.html">San Antonio</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-fernando-del-valle-de-catamarca" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/san-fernando-del-valle-de-catamarca.html">San Fernando del Valle de Catamarca</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-isidro" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/san-isidro.html">San Isidro</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-isidro/el-banado.html'>EL BAÑADO</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-isidro/polcos.html'>POLCOS</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-isidro/pozo-del-mistol.html'>POZO DEL MISTOL</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-isidro/santa-rosa.html'>SANTA ROSA</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-isidro/sumalao.html'>SUMALAO</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-isidro/villa-dolores.html'>VILLA DOLORES</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="san-jose" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/san-jose.html">San José</a></h2>
-            <a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-jose/casa-de-piedra.html'>CASA DE PIEDRA</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-jose/el-hueco.html'>EL HUECO</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-jose/la-carrera.html'>LA CARRERA</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-jose/la-falda-de-san-antonio.html'>LA FALDA DE SAN ANTONIO</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-jose/la-puntilla.html'>LA PUNTILLA</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-jose/la-tercena.html'>LA TERCENA</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-jose/palo-seco.html'>PALO SECO</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-jose/san-antonio.html'>SAN ANTONIO</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-jose/san-jose-norte.html'>SAN JOSE NORTE</a><br><a class='button button1' style='width: 40%; background-color: darkred; color: white;' href='catamarca/san-jose/san-jose-villa.html'>SAN JOSE VILLA</a><br>
-            </section>
-            
-
-            <section class="scroll-section" id="san-martin" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/san-martin.html">San Martín</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-miguel" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/san-miguel.html">San Miguel</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-pablo" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/san-pablo.html">San Pablo</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="san-pedro" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/san-pedro.html">San Pedro</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="santa-cruz" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/santa-cruz.html">Santa Cruz</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="santa-maria" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/santa-maria.html">Santa María</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="saujil" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/saujil.html">Saujil</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="sijan" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/sijan.html">Siján</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="singuil" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/singuil.html">Singuil</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="tapso" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/tapso.html">Tapso</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="taton" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/taton.html">Tatón</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="tinogasta" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/tinogasta.html">Tinogasta</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="vilisman" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/vilisman.html">Vilismán</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="villa-de-balcozna" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/villa-de-balcozna.html">Villa de Balcozna</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="villa-las-pirquitas" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/villa-las-pirquitas.html">Villa Las Pirquitas</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="villa-vil" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/villa-vil.html">Villa Vil</a></h2>
-            
-            </section>
-            
-
-            <section class="scroll-section" id="yapes" style="scroll-margin-top: 50px; height: auto;">
-            <h2><a class="button button1" style="width: 50%; background-color: var(--rojo); color: var(--gris-claro);" href="catamarca/yapes.html">Yapes</a></h2>
-            
-            </section>
-            
-
                     <script>
                         const select = document.getElementById('localidades');
                         select.addEventListener('change', function () {
@@ -1286,16 +432,51 @@
                         });
                     </script>
                 </div>
+
+                
+
+<div class="scroll-section" id="formulario-publicidad">
+<h3>Formulario para publicitar aquí</h3>
+<form id="whatsapp-form">
+
+
+<label for="section" style="font-size: 2rem;">Sección</label><br>
+<input id="section" name="section" value="https://www.plomero.net.ar/catamarca.html" readonly style="width: 80%; height: 2rem; background-color: #f0f0f0; color: #333; font-family: Bebas Neue;"><br>
+<br>
+<label for="name" style="font-size: 2rem; font-family: Bebas Neue;">Nombre del Negocio:</label><br>
+<input id="name" name="name" placeholder="Nombre de usted si es particular, de fantasía o razón social" required="" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="cellphone" style="font-size: 2rem;">Número de Celular (WhatsApp):</label><br>
+<input id="cellphone" name="cellphone" placeholder="Ejemplo: +54 911 1234 5678" required="" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="phone" style="font-size: 2rem;">Número de Teléfono Fijo:</label><br>
+<input id="phone" name="phone" placeholder="Opcional" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="address" style="font-size: 2rem;">Dirección:</label><br>
+<input id="address" name="address" placeholder="Opcional" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="mapLink" style="font-size: 2rem;">Link de Google Maps:</label><br>
+<input id="mapLink" name="mapLink" placeholder="Opcional" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="payment" style="font-size: 2rem;">Medios de Pago que aceptas:</label><br>
+<input id="payment" name="payment" placeholder="Ejemplo: Efectivo, Transferencia" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<label for="details" style="font-size: 2rem;">Detalles adicionales:</label><br>
+<input id="details" name="details" placeholder="En la plantilla se incluyen varios servicios. ¿Hay alguno que falte o necesite ser removido? Por favor, cuéntanos cualquier otro detalle adicional." style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text"><br>
+<br>
+<p>Al enviar este formulario, confirmo que he leído y acepto los <a href="terminos-y-condiciones.html">Términos y Condiciones</a>.</p>
+<button id="whatsapp-button" style="margin-top: 2em; width: 80%; height: 4rem; font-family: Bebas Neue" type="button" class="button button1">Enviar por
+                WhatsApp</button>
+<button id="messenger-button" style="margin-top: 2em; width: 80%; height: 4rem; font-family: Bebas Neue" type="button" class="button button1">Enviar por
+                Messenger</button>
+</form>
+</div>
+
+
             </div>
         </main>
         <!-- FIN MAIN -->
 
         
-    <footer id="footer">
+    <footer id="footer" style="margin-bottom: 3em;">
         <div class="contenedor">
             <div class="box_footer">
                 <div class="separador_box_footer">
-                    <img src="plomeria.png" alt="logotipo">
+                    <img src="plomeria.png" alt="logotipo" loading="lazy">
                     <a href="https://www.plomero.net.ar">plomero.net.ar</a>
                 </div>
                 <div class="separador_box_footer">
@@ -1310,6 +491,16 @@
     </footer>
     
     </body>
+
+        <script>
+            // Número de WhatsApp del negocio
+            var numeroWhatsApp = "+5491122413762";
+            var numeroWhatsAppAnunciante = null;
+
+            // URLs de Facebook Messenger
+            var urlMessengerNegocio = "https://www.messenger.com/t/https://www.plomero.net.ar";
+        </script>
+
         <!-- Script de Menú Interactivo -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
