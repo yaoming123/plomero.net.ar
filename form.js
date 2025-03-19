@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
             // Mensaje para publicidad
             mensaje = `
-            Hola, he leído y aceptado los términos y condiciones. Me interesa publicitar en cerrajero.net.ar:
+            Hola, he leído y aceptado los términos y condiciones. Me interesa publicitar en plomero.net.ar:
             
             - Enlace de la sección: ${section}
             - Nombre del negocio: ${name}
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
         messengerButton.addEventListener('click', function () {
             const message = generateMessage();
             if (message) {
-                const messengerLink = `https://www.messenger.com/t/cerrajero.net.ar?text=${encodeURIComponent(message)}`;
+                const messengerLink = `https://www.messenger.com/t/plomero.net.ar?text=${encodeURIComponent(message)}`;
                 trackClick(messengerButton, 'Messenger');
                 window.open(messengerLink, '_blank');
             }
