@@ -66,7 +66,6 @@
   }
 }
 </script>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-18J0H89SVT"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -75,11 +74,9 @@
         gtag('config', "G-18J0H89SVT");
     </script>
 
-    <!-- Google Tag Manager -->
     <script>(function (w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
         var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
         f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W4NSZ7JP');</script>
-    <!-- End Google Tag Manager -->
 
     <link rel="stylesheet" href="../votacion.css">
     <script defer src="../votacion.js"></script>
@@ -97,7 +94,8 @@
     <a href="#formulario-publicidad" class="button button1"
         aria-label="Ir a completar el formulario para anunciarse aquí"
         title="Ir a completar el formulario para anunciarse aquí"
-        style="text-align: center;color: var(--gris-claro); text-decoration: none;">
+        style="text-align: center;color: var(--gris-claro); text-decoration: none;"
+        onclick="trackEvent(this, 'click_anunciar_aqui', 'anunciantes', 'click', 'Botón Anunciar Aquí')">
         📣 ¿Ofrecés servicios de plomería?<br>
         ¡Anunciá aquí 1 mes por: ars $10.000,00!
     </a>
@@ -110,36 +108,35 @@
 </div>
 
 
-<!-- Menú navegación -->
 <nav>
     <ul style="font-variant: all-petite-caps;">
 
         <li>
-            <a href="./../mendoza.html">Plomeros en mendoza</a>
+            <a href="./../mendoza.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'provincia')">Plomeros en mendoza</a>
         </li>
         <li>
-            <a href="#encontrar_proveedor">Encontrar Plomeros</a>
+            <a href="#encontrar_proveedor" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Encontrar proveedor')">Encontrar Plomeros</a>
         </li>
         <li>
-            <a href="../terminos-y-condiciones.html">Términos y Condiciones</a>
+            <a href="../terminos-y-condiciones.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Términos y Condiciones')">Términos y Condiciones</a>
         </li>
 
-        <li><a href="#stats-widget">Estadísticas</a></li>
+        <li><a href="#stats-widget" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Estadísticas')">Estadísticas</a></li>
     </ul>
     
     <ul style="font-variant: all-petite-caps; background-color: var(--verde-intenso);">
         <li>
-            <a href="#" style="color: var(--gris-claro);">Top</a>
+            <a href="#" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Top')">Top</a>
         </li>
         <li>
-            <a href="#contacto" style="color: var(--gris-claro);">Contacto</a>
+            <a href="#contacto" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Contacto')">Contacto</a>
         </li>
         <li>
-            <a href="#servicios" style="color: var(--gris-claro);">Servicios</a>
+            <a href="#servicios" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Servicios')">Servicios</a>
         </li>
     </ul>
 </nav>
-<!-- Fin Menú navegación -->
+
     <header>
         <div class="contenedor">
             <div id="contenido-principal">
@@ -155,7 +152,6 @@
 <section id="galeria-contenedor" class="scroll-section">
   <div class="galeria-grid">
 
-    <!-- Caso sin anunciante o anunciante no disponible: mostrar demo -->
     <div class="galeria-carrusel">
       <div class="slide">
         <img
@@ -181,13 +177,11 @@
     </div>
 
 
-    <!-- Botones de navegación (solo móviles) -->
     <button class="prev" aria-label="Anterior">&#10094;</button>
     <button class="next" aria-label="Siguiente">&#10095;</button>
   </div>
 </section>
 
-<!-- Modal con flechas -->
 <div id="modalFoto" class="modal-foto">
   <span class="cerrar" onclick="cerrarModalFoto()">&times;</span>
   <button class="modal-prev" onclick="cambiarModal(-1)">&#10094;</button>
@@ -423,8 +417,7 @@
     if (e.key === "ArrowRight") cambiarModal(1);
     if (e.key === "ArrowLeft") cambiarModal(-1);
   });
-</script><!-- Sección Contacto -->
-<div class="scroll-section" id="contacto">
+</script><div class="scroll-section" id="contacto">
 
 
         <h3>Contacto</h3>
@@ -456,7 +449,7 @@
         </iframe>
 
 </div>
-<!-- Fin Sección Contacto -->        </div>
+        </div>
     </header>
 
     <main>
@@ -468,7 +461,6 @@
 
 <p style="font-size: 1.25em;text-align: center;text-align: left;padding: 1em;">* Los servicios son una demo, no hay un proveedor de servicios en este espacio publicitario.</p>
 
-<!-- Listado de servicios demo -->
 <div class="scroll-section" id="servicios-listado">
     <ul>
         <li>
@@ -542,14 +534,12 @@
         </li>
     </ul>
 </div>
-<!-- Fin listado de servicios demo -->
 
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; padding: 1.25rem;">
 
     
     
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Reparaci%C3%B3n%20de%20ca%C3%B1er%C3%ADas%20rotas%20o%20con%20fugas" class="scroll-section">
@@ -577,7 +567,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Reparaci%C3%B3n%20de%20inodoros%20y%20mecanismos%20de%20descarga" class="scroll-section">
@@ -605,7 +594,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Arreglo%20de%20filtraciones%20en%20techos%20y%20paredes" class="scroll-section">
@@ -633,7 +621,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Reparaci%C3%B3n%20de%20calefones%2C%20termotanques%20y%20calderas" class="scroll-section">
@@ -661,7 +648,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20de%20grifer%C3%ADas%20y%20artefactos%20sanitarios" class="scroll-section">
@@ -689,7 +675,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20de%20termotanques%20y%20calefones" class="scroll-section">
@@ -717,7 +702,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20de%20sistemas%20de%20riego%20autom%C3%A1tico" class="scroll-section">
@@ -745,7 +729,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20de%20ca%C3%B1er%C3%ADas%20de%20gas%20seg%C3%BAn%20normativa" class="scroll-section">
@@ -773,7 +756,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Destape%20de%20ca%C3%B1er%C3%ADas%20de%20cocina%2C%20ba%C3%B1o%20y%20lavadero" class="scroll-section">
@@ -801,7 +783,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Desobstrucci%C3%B3n%20de%20cloacas%20y%20c%C3%A1maras%20s%C3%A9pticas" class="scroll-section">
@@ -829,7 +810,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Limpieza%20de%20drenajes%20pluviales%20y%20rejillas%20tapadas" class="scroll-section">
@@ -857,7 +837,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Resoluci%C3%B3n%20de%20inundaciones%20por%20taponamientos" class="scroll-section">
@@ -885,7 +864,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Mantenimiento%20preventivo%20de%20instalaciones%20sanitarias" class="scroll-section">
@@ -913,7 +891,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Mantenimiento%20de%20bombas%20de%20agua%20y%20presurizadores" class="scroll-section">
@@ -941,7 +918,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Limpieza%20de%20tanques%20de%20agua%20potable" class="scroll-section">
@@ -969,7 +945,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Mantenimiento%20de%20sistemas%20cloacales%20y%20pluviales" class="scroll-section">
@@ -997,7 +972,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Emergencias%20de%20plomer%C3%ADa%2024/7" class="scroll-section">
@@ -1025,7 +999,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Intervenci%C3%B3n%20por%20fugas%20de%20agua%20o%20gas" class="scroll-section">
@@ -1053,7 +1026,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Desagote%20por%20rebalses%20o%20taponamientos%20graves" class="scroll-section">
@@ -1081,7 +1053,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20completa%20de%20redes%20sanitarias%20para%20obras%20nuevas" class="scroll-section">
@@ -1109,7 +1080,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Plomer%C3%ADa%20para%20hoteles%2C%20restaurantes%20y%20cocinas%20industriales" class="scroll-section">
@@ -1137,7 +1107,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20de%20sistemas%20de%20bombeo%20y%20presurizaci%C3%B3n%20para%20edificios" class="scroll-section">
@@ -1165,7 +1134,6 @@
             </div>
         </div>
     </div>
-    <!-- Sección del listado de servicios -->
 
     <div class="service-box">
         <div id="Plomer%C3%ADa%20para%20piscinas%20y%20espacios%20recreativos" class="scroll-section">
@@ -1194,7 +1162,6 @@
         </div>
     </div>
     
-    <!-- Fin sección del listado de servicios -->
 
     
 </div>            </div>
@@ -1213,7 +1180,8 @@
     <input type="number" id="umbral-km" value="50" step="0.1" min="0" style="width: 100%; text-align: center;">
   </label>
   <br><br>
-  <button onclick="buscarPorUbicacion()" class="button button1">Buscar proveedor de servicios</button>
+  <button onclick="buscarPorUbicacion(); trackEvent(this, 'click_buscar_proveedor_geolocalizacion', 'buscar proveedor geolocalización', 'click', 'buscar proveedor de servicios')" class="button button1">Buscar
+    proveedor de servicios</button>
   <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Al usar el buscador confirmas que has
     leído y aceptas <a href="                    ../terminos-y-condiciones.html
 ">
@@ -1221,7 +1189,7 @@
     </a>.</p>
 
   <div id="modal"
-    style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.7); z-index: 9999; padding: 2em;">
+    style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.7); z-index: 9999; padding: 0.5em;">
     <div id="modal-contenido"
       style="background: #fff; max-width: 600px; margin: 5% auto; padding: 2em; border-radius: 8px;"></div>
   </div>
@@ -1276,7 +1244,6 @@ style="width:80%;">
 
             </div>
 
-<!-- Formulario de publicidad -->
 <div class="scroll-section" id="formulario-publicidad">
     <h3>Formulario para publicitar aquí</h3>
     <form id="whatsapp-form">
@@ -1311,14 +1278,13 @@ style="width:80%;">
 
         <p>Al enviar este formulario, confirmas que has leído y aceptas los <a href="../terminos-y-condiciones.html">Términos y Condiciones</a>.</p>
         <button id="whatsapp-button" style="margin-top: 2em; width: 80%; height: 4rem; font-family: Bebas Neue"
-            type="button" class="button button1">Enviar por
+            type="button" class="button button1" onclick="trackEvent(this, 'click_enviar_formulario_whatsapp', 'anunciantes', 'click_enviar_formulario_whatsapp', 'botón enviar formulario whatsapp')">Enviar por
             WhatsApp</button>
         <button id="messenger-button" style="margin-top: 2em; width: 80%; height: 4rem; font-family: Bebas Neue"
-            type="button" class="button button1">Enviar por
+            type="button" class="button button1" onclick="trackEvent(this, 'click_enviar_formulario_messenger', 'anunciantes', 'click_enviar_formulario_messenger', 'botón enviar formulario messenger')">Enviar por
             Messenger</button>
     </form>
 </div>
-<!-- Fin Formulario de publicidad -->
         </div>
     </main>
 
@@ -1345,22 +1311,25 @@ style="width:80%;">
 
     </div>
 </footer>
-    <!-- Modal -->
-    <div id="modal-aviso" style="display: none;" class="modal-overlay">
-        <div class="modal-contenido">
-            <p id="modal-texto"></p>
-            <div class="modal-botones">
-                <button id="modal-cancelar" class="button button1">Cancelar</button>
-                <button id="modal-continuar" class="button button1">Continuar</button>
-                <a href="#encontrar_proveedor" class="button button1">Buscar otro proveedor en el sitio</a>
-            </div>
-            <p style="margin-bottom: 1em;">Al llamar, mandar un mensaje o buscar un proveedor de servicios en otras secciones del sitio web, confirmas que has leído y aceptas los 
-        <a href="                    ../terminos-y-condiciones.html
-">
-            Términos y Condiciones
-        </a>.</p>
+<div id="modal-aviso" style="display: none;" class="modal-overlay">
+    <div class="modal-contenido">
+        <p id="modal-texto"></p>
+        <div class="modal-botones">
+            <button id="modal-cancelar" class="button button1" onclick="trackEvent(this, 'click_cancelar', 'Cancelar', 'click', 'Salir del modal demo')">Cancelar</button>
+            <button id="modal-continuar" class="button button1" onclick="trackEvent(this, 'click_whatsapp', 'Enviar mensaje', 'click', 'Enviar mensaje por whatsapp a serviciosweb.net.ar desde modal demo')">Continuar</button>
+            <a href="#encontrar_proveedor" class="button button1"
+                onclick="trackEvent(this, 'click_buscar_proveedor_geolocalizacion_modal_demo', 'buscar proveedor geolocalización modal demo', 'click', 'buscar proveedor de servicios desde modal demo')">Buscar otro proveedor en el
+                sitio</a>
         </div>
+        <p style="margin-bottom: 1em;">Al llamar, mandar un mensaje o buscar un proveedor de servicios en otras
+            secciones del sitio web, confirmas que has leído y aceptas los
+            <a href="                    ../terminos-y-condiciones.html
+">
+                Términos y Condiciones
+            </a>.
+        </p>
     </div>
+</div>
 </body>
 
 <script>
@@ -1369,7 +1338,6 @@ style="width:80%;">
     var urlMessengerNegocio = "https://www.messenger.com/t/plomero.net.ar";
 </script>
 
-<!-- Script de Menú Interactivo -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const nav = document.querySelector('nav');
@@ -1467,7 +1435,27 @@ style="width:80%;">
 
 </script>
 
+
+
+
 <script>
+  function compartirSeccion() {
+    const urlBase = window.location.href;
+    const urlTag = `${urlBase}?referido=plomero_amigo`;
+  
+
+    // Compartir vía navegador
+    if (navigator.share) {
+      navigator.share({
+        title: 'Servicios de plomería',
+        text: 'Mirá esta sección, quizás te interese anunciarte como plomero.',
+        url: urlTag
+      }).catch(console.error);
+    } else {
+      alert("Copiá este link y compartilo: " + urlTag);
+    }
+  }
+
   function cerrarModal() {
     document.getElementById("modal").style.display = "none";
 
@@ -1536,17 +1524,16 @@ style="width:80%;">
         const modal = document.getElementById("modal");
         modal.style.display = "block";
         cont.innerHTML = `
+        <p style="color: var(--texto);text-decoration: underline;text-align: left;font-size: 1.2rem;">Cantidad de plomeros registrados: 0 de 4223 secciones</p>
 <h2 style="color: red;">⚠️ No hay proveedor de servicios disponibles en tu zona aún.</h2>
 
-<p>¿Ofrecés servicios de plomería en esta zona?</p>
+<p style="font-size: 1.2rem;">¿Ofrecés servicios de plomería en esta zona?</p>
 
-<a href="#formulario-publicidad" class="button button1">📣 ¡Anunciate aquí!</a>
+<a href="#formulario-publicidad" class="button button1" onclick="trackEvent(this, 'click_anunciar_aqui', 'buscar proveedor geolocalización', 'click', 'Botón Anunciar Aquí')">📣 ¡Anunciate aquí!</a>
+<a onclick="compartirSeccion();" class="button button1">Compartir a un plomero conocido</a>
+<p style="font-size: 1.2rem;">O probá con una distancia máxima más alta.</p>
 
-<br><br>
-
-<p>O probá con una distancia máxima más alta.</p>
-
-<button onclick="cerrarModal()" class="button button1">Cerrar</button>
+<button onclick="cerrarModal(); trackEvent(this, 'click_cerrar_modal_buscador_geolocalizacion', 'buscar proveedor geolocalización', 'click', 'boton cerrar modal buscador geolocalización')" class="button button1">Cerrar</button>
 
 <p style="font-size: 1.25em; text-align: right; padding: 1em;">
   Al usar el buscador confirmás que leíste y aceptás 
@@ -1646,8 +1633,7 @@ style="width:80%;">
 
     modal.style.display = "block";
   }
-</script><!-- WIDGET ESTADÍSTICAS -->
-<section id="stats-widget" data-price="10000" aria-live="polite">
+</script><section id="stats-widget" data-price="10000" aria-live="polite">
   <div class="stats-card">
     <header class="stats-head">
       <strong>Estadísticas de este espacio (últimos 30 días)</strong>
@@ -1657,21 +1643,21 @@ style="width:80%;">
     <div class="stats-grid">
       <div class="stat">
         <div class="stat-label">Vistas a esta página</div>
-        <div class="stat-value">22</div>
+        <div class="stat-value">10</div>
       </div>
       <div class="stat">
         <div class="stat-label">Clics a WhatsApp</div>
-        <div class="stat-value">3</div>
+        <div class="stat-value">0</div>
       </div>
       <div class="stat">
         <div class="stat-label">Tasa de clic (CTR)</div>
         <div class="stat-value">
-            13.6%
+            0.0%
         </div>
       </div>
       <div class="stat">
         <div class="stat-label">Clics a Teléfono</div>
-        <div class="stat-value">2</div>
+        <div class="stat-value">1</div>
       </div>
     </div>
 
