@@ -84,10 +84,11 @@
 
 <body>
     <a class="button-flotante" href="#footer" aria-label="Ir a la sección del pie de pagina"
-        title="Ir a la sección del pie de pagina">Pie de Página</a>
+        title="Ir a la sección del pie de pagina">⬇️ Pie de Página</a>
 
 
-<p style="font-size: 1.5em;text-align: center;color:var(--rojo); font-weight: bold;">
+
+<p style="text-align: center;color:var(--rojo); font-weight: bold;">
     ⚠️ Esta sección del sitio es un espacio publicitario de <u><a>serviciosweb.net.ar</a></u>. <br>
     🔴 No hay plomero disponible en esta zona. <br>
 
@@ -97,7 +98,7 @@
         style="text-align: center;color: var(--gris-claro); text-decoration: none;"
         onclick="trackEvent(this, 'click_anunciar_aqui', 'anunciantes', 'click', 'Botón Anunciar Aquí')">
         📣 ¿Ofrecés servicios de plomería?<br>
-        ¡Anunciá aquí 1 mes por: ars $10.000,00!
+        ¡Anunciá aquí!<br> 
     </a>
 </p>
 
@@ -109,30 +110,30 @@
 
 
 <nav>
-    <ul style="font-variant: all-petite-caps;">
+    <ul>
 
         <li>
-            <a href="./../neuquen.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'provincia')">Plomeros en neuquén</a>
+            <a href="./../neuquen.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'provincia')">🗺️ Plomeros en neuquén</a>
         </li>
         <li>
-            <a href="#encontrar_proveedor" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Encontrar proveedor')">Encontrar Plomeros</a>
+            <a href="#encontrar_proveedor" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Encontrar proveedor')">🔍 Encontrar Plomeros</a>
         </li>
         <li>
-            <a href="../terminos-y-condiciones.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Términos y Condiciones')">Términos y Condiciones</a>
+            <a href="../terminos-y-condiciones.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Términos y Condiciones')">📋 Términos y Condiciones</a>
         </li>
 
-        <li><a href="#stats-widget" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Estadísticas')">Estadísticas</a></li>
+        <li><a href="#stats-widget" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Estadísticas')">📊 Estadísticas</a></li>
     </ul>
     
-    <ul style="font-variant: all-petite-caps; background-color: var(--verde-intenso);">
+    <ul style="background-color: var(--verde-intenso);">
         <li>
-            <a href="#" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Top')">Top</a>
+            <a href="#" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Top')">⬆️ Top</a>
         </li>
         <li>
-            <a href="#contacto" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Contacto')">Contacto</a>
+            <a href="#contacto" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Contacto')">📞 Contacto</a>
         </li>
         <li>
-            <a href="#servicios" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Servicios')">Servicios</a>
+            <a href="#servicios" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Servicios')">🧰 Servicios</a>
         </li>
     </ul>
 </nav>
@@ -417,36 +418,57 @@
     if (e.key === "ArrowRight") cambiarModal(1);
     if (e.key === "ArrowLeft") cambiarModal(-1);
   });
-</script><div class="scroll-section" id="contacto">
+</script>
 
+
+
+
+
+<div class="scroll-section" id="contacto">
 
         <h3>Contacto</h3>
 
         <h4>visite o llame para programar una consulta y descubrir cómo podemos ayudarle.</h4>
 
-                    <a class="button button1" href="tel:null" aria-label="Llamar por teléfono (No disponible)" title="Llamar por teléfono (No disponible)">
-            <i class="fa fa-phone" aria-hidden="true"></i> ¡Haz click para llamar! (No disponible)
-        </a>
-        <a class="button button1" href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0A%20Encuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A" onclick="trackDynamicWhatsAppClick(this)" target="_blank" rel="noopener noreferrer nofollow" aria-label="Enviar un WhatsApp" title="Enviar un WhatsApp">
-            <i class="fa fa-whatsapp"></i> ¡Haz click para enviar WhatsApp! (No disponible)
-        </a>
 
-        
-            <p style="margin-bottom: 1em;">Al llamar o mandar un mensaje, confirmas que has leído y aceptas los 
-        <a href="                    ../terminos-y-condiciones.html
+
+                <a class="button button1" href="tel:null"
+        aria-label="Llamar por teléfono (No disponible)"
+        title="Llamar por teléfono (No disponible)">
+        <i class="fa fa-phone"></i> ¡Haz click para llamar! (No disponible)
+    </a>
+
+    <a class="button button1"
+        href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%5CnEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%5Cn-%20cerrajero.net.ar%0A-%20electricista.net.ar%5Cn%5CnSi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+        onclick="trackDynamicWhatsAppClick(this)"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        aria-label="Enviar un WhatsApp"
+        title="Enviar un WhatsApp">
+        <i class="fa fa-whatsapp"></i> ¡Haz click para enviar WhatsApp! (No disponible)
+    </a>
+
+
+
+        <p style="margin-bottom: 1em;">
+    Al llamar o mandar un mensaje, confirmas que has leído y aceptas los 
+    <a href="                ../terminos-y-condiciones.html
 ">
-            Términos y Condiciones
-        </a>.
-        <br>
+        Términos y Condiciones
+    </a>.
+    <br>
         * Los botones de contacto son una demo, no hay un proveedor de servicios en este espacio publicitario.
-    </p>
+</p>
 
 
-        <iframe class="responsive-iframe" title="Mapa de argentina."
+        <iframe class="responsive-iframe"
+            title="Mapa de argentina."
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26290430.240346003!2d-84.9416501488576!3d-36.450764058612755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1743374176678!5m2!1ses!2sar"
-            width="100%" height="450" style="border:0; max-width: 100%;" allowfullscreen loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
+            width="100%" height="450"
+            style="border:0; max-width: 100%;"
+            allowfullscreen loading="lazy">
         </iframe>
+
 
 </div>
         </div>
@@ -459,711 +481,481 @@
 
                 <p>En nuestra empresa de plomería en piedra del águila, ofrecemos soluciones confiables para el correcto funcionamiento de cañerías, sanitarios y sistemas de agua.</p>
 
-<p style="font-size: 1.25em;text-align: center;text-align: left;padding: 1em;">* Los servicios son una demo, no hay un proveedor de servicios en este espacio publicitario.</p>
+
+
+
+<p style="font-size: 1.25em;text-align: center;padding: 1em;">* Los servicios son una demo, no hay un proveedor de servicios en este espacio publicitario.</p>
 
 <div class="scroll-section" id="servicios-listado">
     <ul>
-        <li>
-            <a href="#Reparaci%C3%B3n%20de%20ca%C3%B1er%C3%ADas%20rotas%20o%20con%20fugas">Reparación de cañerías rotas o con fugas</a>
-        </li>
-        <li>
-            <a href="#Reparaci%C3%B3n%20de%20inodoros%20y%20mecanismos%20de%20descarga">Reparación de inodoros y mecanismos de descarga</a>
-        </li>
-        <li>
-            <a href="#Arreglo%20de%20filtraciones%20en%20techos%20y%20paredes">Arreglo de filtraciones en techos y paredes</a>
-        </li>
-        <li>
-            <a href="#Reparaci%C3%B3n%20de%20calefones%2C%20termotanques%20y%20calderas">Reparación de calefones, termotanques y calderas</a>
-        </li>
-        <li>
-            <a href="#Instalaci%C3%B3n%20de%20grifer%C3%ADas%20y%20artefactos%20sanitarios">Instalación de griferías y artefactos sanitarios</a>
-        </li>
-        <li>
-            <a href="#Instalaci%C3%B3n%20de%20termotanques%20y%20calefones">Instalación de termotanques y calefones</a>
-        </li>
-        <li>
-            <a href="#Instalaci%C3%B3n%20de%20sistemas%20de%20riego%20autom%C3%A1tico">Instalación de sistemas de riego automático</a>
-        </li>
-        <li>
-            <a href="#Instalaci%C3%B3n%20de%20ca%C3%B1er%C3%ADas%20de%20gas%20seg%C3%BAn%20normativa">Instalación de cañerías de gas según normativa</a>
-        </li>
-        <li>
-            <a href="#Destape%20de%20ca%C3%B1er%C3%ADas%20de%20cocina%2C%20ba%C3%B1o%20y%20lavadero">Destape de cañerías de cocina, baño y lavadero</a>
-        </li>
-        <li>
-            <a href="#Desobstrucci%C3%B3n%20de%20cloacas%20y%20c%C3%A1maras%20s%C3%A9pticas">Desobstrucción de cloacas y cámaras sépticas</a>
-        </li>
-        <li>
-            <a href="#Limpieza%20de%20drenajes%20pluviales%20y%20rejillas%20tapadas">Limpieza de drenajes pluviales y rejillas tapadas</a>
-        </li>
-        <li>
-            <a href="#Resoluci%C3%B3n%20de%20inundaciones%20por%20taponamientos">Resolución de inundaciones por taponamientos</a>
-        </li>
-        <li>
-            <a href="#Mantenimiento%20preventivo%20de%20instalaciones%20sanitarias">Mantenimiento preventivo de instalaciones sanitarias</a>
-        </li>
-        <li>
-            <a href="#Mantenimiento%20de%20bombas%20de%20agua%20y%20presurizadores">Mantenimiento de bombas de agua y presurizadores</a>
-        </li>
-        <li>
-            <a href="#Limpieza%20de%20tanques%20de%20agua%20potable">Limpieza de tanques de agua potable</a>
-        </li>
-        <li>
-            <a href="#Mantenimiento%20de%20sistemas%20cloacales%20y%20pluviales">Mantenimiento de sistemas cloacales y pluviales</a>
-        </li>
-        <li>
-            <a href="#Emergencias%20de%20plomer%C3%ADa%2024/7">Emergencias de plomería 24/7</a>
-        </li>
-        <li>
-            <a href="#Intervenci%C3%B3n%20por%20fugas%20de%20agua%20o%20gas">Intervención por fugas de agua o gas</a>
-        </li>
-        <li>
-            <a href="#Desagote%20por%20rebalses%20o%20taponamientos%20graves">Desagote por rebalses o taponamientos graves</a>
-        </li>
-        <li>
-            <a href="#Instalaci%C3%B3n%20completa%20de%20redes%20sanitarias%20para%20obras%20nuevas">Instalación completa de redes sanitarias para obras nuevas</a>
-        </li>
-        <li>
-            <a href="#Plomer%C3%ADa%20para%20hoteles%2C%20restaurantes%20y%20cocinas%20industriales">Plomería para hoteles, restaurantes y cocinas industriales</a>
-        </li>
-        <li>
-            <a href="#Instalaci%C3%B3n%20de%20sistemas%20de%20bombeo%20y%20presurizaci%C3%B3n%20para%20edificios">Instalación de sistemas de bombeo y presurización para edificios</a>
-        </li>
-        <li>
-            <a href="#Plomer%C3%ADa%20para%20piscinas%20y%20espacios%20recreativos">Plomería para piscinas y espacios recreativos</a>
-        </li>
+        <li><a href="#Reparaci%C3%B3n%20de%20ca%C3%B1er%C3%ADas%20rotas%20o%20con%20fugas">#Reparación de cañerías rotas o con fugas</a></li>
+        <li><a href="#Reparaci%C3%B3n%20de%20inodoros%20y%20mecanismos%20de%20descarga">#Reparación de inodoros y mecanismos de descarga</a></li>
+        <li><a href="#Arreglo%20de%20filtraciones%20en%20techos%20y%20paredes">#Arreglo de filtraciones en techos y paredes</a></li>
+        <li><a href="#Reparaci%C3%B3n%20de%20calefones%2C%20termotanques%20y%20calderas">#Reparación de calefones, termotanques y calderas</a></li>
+        <li><a href="#Instalaci%C3%B3n%20de%20grifer%C3%ADas%20y%20artefactos%20sanitarios">#Instalación de griferías y artefactos sanitarios</a></li>
+        <li><a href="#Instalaci%C3%B3n%20de%20termotanques%20y%20calefones">#Instalación de termotanques y calefones</a></li>
+        <li><a href="#Instalaci%C3%B3n%20de%20sistemas%20de%20riego%20autom%C3%A1tico">#Instalación de sistemas de riego automático</a></li>
+        <li><a href="#Instalaci%C3%B3n%20de%20ca%C3%B1er%C3%ADas%20de%20gas%20seg%C3%BAn%20normativa">#Instalación de cañerías de gas según normativa</a></li>
+        <li><a href="#Destape%20de%20ca%C3%B1er%C3%ADas%20de%20cocina%2C%20ba%C3%B1o%20y%20lavadero">#Destape de cañerías de cocina, baño y lavadero</a></li>
+        <li><a href="#Desobstrucci%C3%B3n%20de%20cloacas%20y%20c%C3%A1maras%20s%C3%A9pticas">#Desobstrucción de cloacas y cámaras sépticas</a></li>
+        <li><a href="#Limpieza%20de%20drenajes%20pluviales%20y%20rejillas%20tapadas">#Limpieza de drenajes pluviales y rejillas tapadas</a></li>
+        <li><a href="#Resoluci%C3%B3n%20de%20inundaciones%20por%20taponamientos">#Resolución de inundaciones por taponamientos</a></li>
+        <li><a href="#Mantenimiento%20preventivo%20de%20instalaciones%20sanitarias">#Mantenimiento preventivo de instalaciones sanitarias</a></li>
+        <li><a href="#Mantenimiento%20de%20bombas%20de%20agua%20y%20presurizadores">#Mantenimiento de bombas de agua y presurizadores</a></li>
+        <li><a href="#Limpieza%20de%20tanques%20de%20agua%20potable">#Limpieza de tanques de agua potable</a></li>
+        <li><a href="#Mantenimiento%20de%20sistemas%20cloacales%20y%20pluviales">#Mantenimiento de sistemas cloacales y pluviales</a></li>
+        <li><a href="#Emergencias%20de%20plomer%C3%ADa%2024/7">#Emergencias de plomería 24/7</a></li>
+        <li><a href="#Intervenci%C3%B3n%20por%20fugas%20de%20agua%20o%20gas">#Intervención por fugas de agua o gas</a></li>
+        <li><a href="#Desagote%20por%20rebalses%20o%20taponamientos%20graves">#Desagote por rebalses o taponamientos graves</a></li>
+        <li><a href="#Instalaci%C3%B3n%20completa%20de%20redes%20sanitarias%20para%20obras%20nuevas">#Instalación completa de redes sanitarias para obras nuevas</a></li>
+        <li><a href="#Plomer%C3%ADa%20para%20hoteles%2C%20restaurantes%20y%20cocinas%20industriales">#Plomería para hoteles, restaurantes y cocinas industriales</a></li>
+        <li><a href="#Instalaci%C3%B3n%20de%20sistemas%20de%20bombeo%20y%20presurizaci%C3%B3n%20para%20edificios">#Instalación de sistemas de bombeo y presurización para edificios</a></li>
+        <li><a href="#Plomer%C3%ADa%20para%20piscinas%20y%20espacios%20recreativos">#Plomería para piscinas y espacios recreativos</a></li>
     </ul>
 </div>
 
-
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; padding: 1.25rem;">
 
-    
-    
 
     <div class="service-box">
         <div id="Reparaci%C3%B3n%20de%20ca%C3%B1er%C3%ADas%20rotas%20o%20con%20fugas" class="scroll-section">
-            <h3 class="scroll-section">Reparación de cañerías rotas o con fugas</h3>
+            <h3>Reparación de cañerías rotas o con fugas</h3>
             <p>Reparación profesional de caños de agua, gas y desagüe con materiales certificados. Soluciones rápidas, sin roturas innecesarias, para hogares y comercios.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Reparación de cañerías rotas o con fugas"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Reparación de cañerías rotas o con fugas
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Reparación de cañerías rotas o con fugas"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Reparación de cañerías rotas o con fugas
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Reparaci%C3%B3n%20de%20inodoros%20y%20mecanismos%20de%20descarga" class="scroll-section">
-            <h3 class="scroll-section">Reparación de inodoros y mecanismos de descarga</h3>
+            <h3>Reparación de inodoros y mecanismos de descarga</h3>
             <p>Reemplazo y ajuste de mecanismos internos de inodoros, mochilas, válvulas y flotantes. Servicio rápido para eliminar pérdidas y mejorar el rendimiento.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Reparación de inodoros y mecanismos de descarga"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Reparación de inodoros y mecanismos de descarga
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Reparación de inodoros y mecanismos de descarga"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Reparación de inodoros y mecanismos de descarga
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Arreglo%20de%20filtraciones%20en%20techos%20y%20paredes" class="scroll-section">
-            <h3 class="scroll-section">Arreglo de filtraciones en techos y paredes</h3>
+            <h3>Arreglo de filtraciones en techos y paredes</h3>
             <p>Detección y reparación de filtraciones provocadas por cañerías dañadas, conexiones defectuosas o condensación. Soluciones duraderas sin romper.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Arreglo de filtraciones en techos y paredes"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Arreglo de filtraciones en techos y paredes
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Arreglo de filtraciones en techos y paredes"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Arreglo de filtraciones en techos y paredes
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Reparaci%C3%B3n%20de%20calefones%2C%20termotanques%20y%20calderas" class="scroll-section">
-            <h3 class="scroll-section">Reparación de calefones, termotanques y calderas</h3>
+            <h3>Reparación de calefones, termotanques y calderas</h3>
             <p>Servicio técnico para termotanques y calefones a gas o eléctricos. Diagnóstico y reparación de fallas comunes, limpieza y mantenimiento.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Reparación de calefones, termotanques y calderas"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Reparación de calefones, termotanques y calderas
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Reparación de calefones, termotanques y calderas"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Reparación de calefones, termotanques y calderas
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20de%20grifer%C3%ADas%20y%20artefactos%20sanitarios" class="scroll-section">
-            <h3 class="scroll-section">Instalación de griferías y artefactos sanitarios</h3>
+            <h3>Instalación de griferías y artefactos sanitarios</h3>
             <p>Colocación profesional de grifos, duchas, lavatorios, bidets e inodoros. Conexiones seguras y prueba de funcionamiento. Ideal para reformas o baños nuevos.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Instalación de griferías y artefactos sanitarios"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Instalación de griferías y artefactos sanitarios
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Instalación de griferías y artefactos sanitarios"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Instalación de griferías y artefactos sanitarios
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20de%20termotanques%20y%20calefones" class="scroll-section">
-            <h3 class="scroll-section">Instalación de termotanques y calefones</h3>
+            <h3>Instalación de termotanques y calefones</h3>
             <p>Instalación segura de termotanques eléctricos o a gas y calefones. Incluye materiales y prueba final. Apto profesional con garantía escrita.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Instalación de termotanques y calefones"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Instalación de termotanques y calefones
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Instalación de termotanques y calefones"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Instalación de termotanques y calefones
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20de%20sistemas%20de%20riego%20autom%C3%A1tico" class="scroll-section">
-            <h3 class="scroll-section">Instalación de sistemas de riego automático</h3>
+            <h3>Instalación de sistemas de riego automático</h3>
             <p>Diseño e instalación de sistemas de riego automatizado para jardines. Ahorro de agua y eficiencia con sensores y controladores programables.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Instalación de sistemas de riego automático"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Instalación de sistemas de riego automático
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Instalación de sistemas de riego automático"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Instalación de sistemas de riego automático
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20de%20ca%C3%B1er%C3%ADas%20de%20gas%20seg%C3%BAn%20normativa" class="scroll-section">
-            <h3 class="scroll-section">Instalación de cañerías de gas según normativa</h3>
+            <h3>Instalación de cañerías de gas según normativa</h3>
             <p>Colocación y extensión de redes de gas internas con materiales aprobados y pruebas de estanqueidad. Servicio matriculado habilitado.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Instalación de cañerías de gas según normativa"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Instalación de cañerías de gas según normativa
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Instalación de cañerías de gas según normativa"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Instalación de cañerías de gas según normativa
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Destape%20de%20ca%C3%B1er%C3%ADas%20de%20cocina%2C%20ba%C3%B1o%20y%20lavadero" class="scroll-section">
-            <h3 class="scroll-section">Destape de cañerías de cocina, baño y lavadero</h3>
+            <h3>Destape de cañerías de cocina, baño y lavadero</h3>
             <p>Eliminación de obstrucciones en desagües con herramientas manuales y máquinas. Servicio sin romper y con limpieza final incluida.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Destape de cañerías de cocina, baño y lavadero"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Destape de cañerías de cocina, baño y lavadero
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Destape de cañerías de cocina, baño y lavadero"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Destape de cañerías de cocina, baño y lavadero
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Desobstrucci%C3%B3n%20de%20cloacas%20y%20c%C3%A1maras%20s%C3%A9pticas" class="scroll-section">
-            <h3 class="scroll-section">Desobstrucción de cloacas y cámaras sépticas</h3>
+            <h3>Desobstrucción de cloacas y cámaras sépticas</h3>
             <p>Destape y limpieza profunda de redes cloacales principales y secundarias. Incluye cámara de inspección si es necesario.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Desobstrucción de cloacas y cámaras sépticas"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Desobstrucción de cloacas y cámaras sépticas
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Desobstrucción de cloacas y cámaras sépticas"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Desobstrucción de cloacas y cámaras sépticas
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Limpieza%20de%20drenajes%20pluviales%20y%20rejillas%20tapadas" class="scroll-section">
-            <h3 class="scroll-section">Limpieza de drenajes pluviales y rejillas tapadas</h3>
+            <h3>Limpieza de drenajes pluviales y rejillas tapadas</h3>
             <p>Desobstrucción de desagües de patios, terrazas y pluviales para evitar anegamientos por lluvias intensas.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Limpieza de drenajes pluviales y rejillas tapadas"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Limpieza de drenajes pluviales y rejillas tapadas
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Limpieza de drenajes pluviales y rejillas tapadas"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Limpieza de drenajes pluviales y rejillas tapadas
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Resoluci%C3%B3n%20de%20inundaciones%20por%20taponamientos" class="scroll-section">
-            <h3 class="scroll-section">Resolución de inundaciones por taponamientos</h3>
+            <h3>Resolución de inundaciones por taponamientos</h3>
             <p>Extracción de agua acumulada y reparación del problema que causó la inundación. Atención rápida y profesional.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Resolución de inundaciones por taponamientos"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Resolución de inundaciones por taponamientos
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Resolución de inundaciones por taponamientos"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Resolución de inundaciones por taponamientos
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Mantenimiento%20preventivo%20de%20instalaciones%20sanitarias" class="scroll-section">
-            <h3 class="scroll-section">Mantenimiento preventivo de instalaciones sanitarias</h3>
+            <h3>Mantenimiento preventivo de instalaciones sanitarias</h3>
             <p>Revisión completa de instalaciones hidráulicas, presión de agua, válvulas, uniones y cañerías. Prevención de fugas y roturas futuras.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Mantenimiento preventivo de instalaciones sanitarias"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Mantenimiento preventivo de instalaciones sanitarias
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Mantenimiento preventivo de instalaciones sanitarias"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Mantenimiento preventivo de instalaciones sanitarias
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Mantenimiento%20de%20bombas%20de%20agua%20y%20presurizadores" class="scroll-section">
-            <h3 class="scroll-section">Mantenimiento de bombas de agua y presurizadores</h3>
+            <h3>Mantenimiento de bombas de agua y presurizadores</h3>
             <p>Revisión y ajuste de bombas centrífugas, elevadoras o de presión. Incluye limpieza de filtros y chequeo eléctrico.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Mantenimiento de bombas de agua y presurizadores"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Mantenimiento de bombas de agua y presurizadores
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Mantenimiento de bombas de agua y presurizadores"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Mantenimiento de bombas de agua y presurizadores
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Limpieza%20de%20tanques%20de%20agua%20potable" class="scroll-section">
-            <h3 class="scroll-section">Limpieza de tanques de agua potable</h3>
+            <h3>Limpieza de tanques de agua potable</h3>
             <p>Limpieza, desinfección y mantenimiento de tanques de agua y cisternas. Evitá bacterias y suciedad en el consumo diario.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Limpieza de tanques de agua potable"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Limpieza de tanques de agua potable
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Limpieza de tanques de agua potable"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Limpieza de tanques de agua potable
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Mantenimiento%20de%20sistemas%20cloacales%20y%20pluviales" class="scroll-section">
-            <h3 class="scroll-section">Mantenimiento de sistemas cloacales y pluviales</h3>
+            <h3>Mantenimiento de sistemas cloacales y pluviales</h3>
             <p>Servicio programado para limpieza y revisión de cloacas y desagües pluviales. Ideal para evitar taponamientos crónicos.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Mantenimiento de sistemas cloacales y pluviales"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Mantenimiento de sistemas cloacales y pluviales
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Mantenimiento de sistemas cloacales y pluviales"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Mantenimiento de sistemas cloacales y pluviales
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Emergencias%20de%20plomer%C3%ADa%2024/7" class="scroll-section">
-            <h3 class="scroll-section">Emergencias de plomería 24/7</h3>
+            <h3>Emergencias de plomería 24/7</h3>
             <p>Atención urgente por fugas, caños rotos, inundaciones o fallas críticas. Servicio rápido en toda la zona con personal disponible las 24 horas.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Emergencias de plomería 24/7"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Emergencias de plomería 24/7
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Emergencias de plomería 24/7"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Emergencias de plomería 24/7
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Intervenci%C3%B3n%20por%20fugas%20de%20agua%20o%20gas" class="scroll-section">
-            <h3 class="scroll-section">Intervención por fugas de agua o gas</h3>
+            <h3>Intervención por fugas de agua o gas</h3>
             <p>Corte de suministro, localización del escape y reparación inmediata. Seguridad garantizada con técnicos matriculados.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Intervención por fugas de agua o gas"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Intervención por fugas de agua o gas
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Intervención por fugas de agua o gas"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Intervención por fugas de agua o gas
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Desagote%20por%20rebalses%20o%20taponamientos%20graves" class="scroll-section">
-            <h3 class="scroll-section">Desagote por rebalses o taponamientos graves</h3>
+            <h3>Desagote por rebalses o taponamientos graves</h3>
             <p>Extracción de líquidos, limpieza y reparación del sistema para evitar nuevos incidentes. Atención urgente en consorcios y viviendas.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Desagote por rebalses o taponamientos graves"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Desagote por rebalses o taponamientos graves
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Desagote por rebalses o taponamientos graves"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Desagote por rebalses o taponamientos graves
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20completa%20de%20redes%20sanitarias%20para%20obras%20nuevas" class="scroll-section">
-            <h3 class="scroll-section">Instalación completa de redes sanitarias para obras nuevas</h3>
+            <h3>Instalación completa de redes sanitarias para obras nuevas</h3>
             <p>Diseño y ejecución de instalaciones de agua, gas y desagües para viviendas, edificios, naves industriales y locales comerciales.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Instalación completa de redes sanitarias para obras nuevas"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Instalación completa de redes sanitarias para obras nuevas
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Instalación completa de redes sanitarias para obras nuevas"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Instalación completa de redes sanitarias para obras nuevas
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Plomer%C3%ADa%20para%20hoteles%2C%20restaurantes%20y%20cocinas%20industriales" class="scroll-section">
-            <h3 class="scroll-section">Plomería para hoteles, restaurantes y cocinas industriales</h3>
+            <h3>Plomería para hoteles, restaurantes y cocinas industriales</h3>
             <p>Servicios adaptados a normativa bromatológica para gastronomía. Instalación de cocinas, cámaras de refrigeración y redes sanitarias.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Plomería para hoteles, restaurantes y cocinas industriales"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Plomería para hoteles, restaurantes y cocinas industriales
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Plomería para hoteles, restaurantes y cocinas industriales"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Plomería para hoteles, restaurantes y cocinas industriales
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Instalaci%C3%B3n%20de%20sistemas%20de%20bombeo%20y%20presurizaci%C3%B3n%20para%20edificios" class="scroll-section">
-            <h3 class="scroll-section">Instalación de sistemas de bombeo y presurización para edificios</h3>
+            <h3>Instalación de sistemas de bombeo y presurización para edificios</h3>
             <p>Colocación de bombas, tableros automáticos y sistemas de presión constante para consorcios, oficinas y obras grandes.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Instalación de sistemas de bombeo y presurización para edificios"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Instalación de sistemas de bombeo y presurización para edificios
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Instalación de sistemas de bombeo y presurización para edificios"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Instalación de sistemas de bombeo y presurización para edificios
+</a>
 
             </div>
         </div>
     </div>
-
     <div class="service-box">
         <div id="Plomer%C3%ADa%20para%20piscinas%20y%20espacios%20recreativos" class="scroll-section">
-            <h3 class="scroll-section">Plomería para piscinas y espacios recreativos</h3>
+            <h3>Plomería para piscinas y espacios recreativos</h3>
             <p>Instalación y mantenimiento de cañerías, filtros, bombas de recirculación y duchas externas para piletas y clubes.</p>
-            
             <div class="servicio">
-
-
-                <a class="button button1"
-                    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-                    data-servicio="Consultar por Plomería para piscinas y espacios recreativos"
-                    onclick="trackDynamicWhatsAppClick(this)"
-                    aria-label="Consultar sobre el servicio por whatsapp"
-                    title="Consultar sobre el servicio por whatsapp"
-                    target="_blank" rel="noopener noreferrer nofollow">
-                    Consultar por Plomería para piscinas y espacios recreativos
-                </a>
-
-                
-                
-                
-
+                    <a class="button button1"
+    href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/neuquen/piedra-del-aguila.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+    data-servicio="Consultar por Plomería para piscinas y espacios recreativos"
+    onclick="trackDynamicWhatsAppClick(this)"
+    aria-label="Consultar sobre el servicio por whatsapp"
+    title="Consultar sobre el servicio por whatsapp"
+    target="_blank"
+    rel="noopener noreferrer nofollow">
+    Consultar por Plomería para piscinas y espacios recreativos
+</a>
 
             </div>
         </div>
     </div>
-    
 
-    
+
 </div>            </div>
 
             <p style="font-size:1.25em;text-align:right;padding:1em;">Fin del Espacio Publicitario</p>
@@ -1180,7 +972,7 @@
     <input type="number" id="umbral-km" value="50" step="0.1" min="0" style="width: 100%; text-align: center;">
   </label>
   <br><br>
-  <button onclick="buscarPorUbicacion(); trackEvent(this, 'click_buscar_proveedor_geolocalizacion', 'buscar proveedor geolocalización', 'click', 'buscar proveedor de servicios')" class="button button1">Buscar
+  <button onclick="buscarPorUbicacion(); trackEvent(this, 'click_buscar_proveedor_geolocalizacion', 'buscar proveedor geolocalización', 'click', 'buscar proveedor de servicios')" class="button button1">🔍 Buscar
     proveedor de servicios</button>
   <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Al usar el buscador confirmas que has
     leído y aceptas <a href="                    ../terminos-y-condiciones.html
@@ -1229,43 +1021,47 @@
 </section>                </div>
             </div>
 
+
+
+
 <div class="scroll-section" id="formulario-publicidad">
     <h3>Formulario para publicitar aquí</h3>
+    <p>Este espacio publicitario se encuentra sin un proveedor de servicios. ¿Ofrecés de servicios de plomería? <br> ¡Este espacio esta disponible, publicita aquí!</p>
     <form id="whatsapp-form">
 
 
-        <label for="section" style="font-size: 2rem;">Sección</label>
+        <label for="section" >Sección</label>
         <input id="section" name="section" value="https://www.plomero.net.ar/neuquen/piedra-del-aguila.html" readonly
-            style="width: 80%; height: 2rem; background-color: #f0f0f0; color: #333; font-family: Bebas Neue;">
+            style="width: 80%; height: 2rem; background-color: #f0f0f0; color: #333;">
 
-        <label for="name" style="font-size: 2rem; font-family: Bebas Neue;">Nombre del Negocio:</label>
+        <label for="name">Nombre del Negocio:</label>
         <input id="name" name="name" placeholder="Nombre de usted si es particular, de fantasía o razón social"
-            required="" style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text">
-        <label for="cellphone" style="font-size: 2rem;">Número de Celular (WhatsApp):</label>
+            required="" style="width: 80%; height: 2rem;" type="text">
+        <label for="cellphone" >Número de Celular (WhatsApp):</label>
         <input id="cellphone" name="cellphone" placeholder="Ejemplo: +5491122413762" required=""
-            style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text">
-        <label for="phone" style="font-size: 2rem;">Número de Teléfono Fijo:</label>
-        <input id="phone" name="phone" placeholder="Opcional" style="width: 80%; height: 2rem; font-family: Bebas Neue;"
+            style="width: 80%; height: 2rem;" type="text">
+        <label for="phone" >Número de Teléfono Fijo:</label>
+        <input id="phone" name="phone" placeholder="Opcional" style="width: 80%; height: 2rem;"
             type="text">
-        <label for="address" style="font-size: 2rem;">Dirección:</label>
+        <label for="address" >Dirección:</label>
         <input id="address" name="address" placeholder="Opcional"
-            style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text">
-        <label for="mapLink" style="font-size: 2rem;">Link de Google Maps:</label>
+            style="width: 80%; height: 2rem;" type="text">
+        <label for="mapLink" >Link de Google Maps:</label>
         <input id="mapLink" name="mapLink" placeholder="Opcional"
-            style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text">
-        <label for="payment" style="font-size: 2rem;">Medios de Pago que aceptas:</label>
+            style="width: 80%; height: 2rem;" type="text">
+        <label for="payment" >Medios de Pago que aceptas:</label>
         <input id="payment" name="payment" placeholder="Ejemplo: Efectivo, Transferencia"
-            style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text">
-        <label for="details" style="font-size: 2rem;">Detalles adicionales:</label>
+            style="width: 80%; height: 2rem;" type="text">
+        <label for="details" >Detalles adicionales:</label>
         <input id="details" name="details"
             placeholder="En la plantilla se incluyen varios servicios. ¿Hay alguno que falte o necesite ser removido? Por favor, cuéntanos cualquier otro detalle adicional."
-            style="width: 80%; height: 2rem; font-family: Bebas Neue;" type="text">
+            style="width: 80%; height: 2rem;" type="text">
 
         <p>Al enviar este formulario, confirmas que has leído y aceptas los <a href="../terminos-y-condiciones.html">Términos y Condiciones</a>.</p>
-        <button id="whatsapp-button" style="margin-top: 2em; width: 80%; height: 4rem; font-family: Bebas Neue"
+        <button id="whatsapp-button" style="margin-top: 2em; width: 80%; height: 4rem;"
             type="button" class="button button1" onclick="trackEvent(this, 'click_enviar_formulario_whatsapp', 'anunciantes', 'click_enviar_formulario_whatsapp', 'botón enviar formulario whatsapp')">Enviar por
             WhatsApp</button>
-        <button id="messenger-button" style="margin-top: 2em; width: 80%; height: 4rem; font-family: Bebas Neue"
+        <button id="messenger-button" style="margin-top: 2em; width: 80%; height: 4rem;"
             type="button" class="button button1" onclick="trackEvent(this, 'click_enviar_formulario_messenger', 'anunciantes', 'click_enviar_formulario_messenger', 'botón enviar formulario messenger')">Enviar por
             Messenger</button>
     </form>
@@ -1296,15 +1092,22 @@
 
     </div>
 </footer>
+
 <div id="modal-aviso" style="display: none;" class="modal-overlay">
     <div class="modal-contenido">
+        <!-- Texto de prueba -->
+        <p style="color: var(--texto);text-decoration: underline;text-align: left;font-size: 0.75rem;">Cantidad de plomeros registrados: 0 de 4223 secciones</p>
+        <p style="color: var(--texto);text-decoration: underline;text-align: left;font-size: 0.75rem;">*Las secciones incluyen provincias, ciudades, localidades y barrios del sitio.*</p>
+        <!-- fin texto de prueba -->
+         
         <p id="modal-texto"></p>
         <div class="modal-botones">
-            <button id="modal-cancelar" class="button button1" onclick="trackEvent(this, 'click_cancelar', 'Cancelar', 'click', 'Salir del modal demo')">Cancelar</button>
-            <button id="modal-continuar" class="button button1" onclick="trackEvent(this, 'click_whatsapp', 'Enviar mensaje', 'click', 'Enviar mensaje por whatsapp a serviciosweb.net.ar desde modal demo')">Continuar</button>
+            <button id="modal-cancelar" class="button button1"
+                onclick="trackEvent(this, 'click_cancelar', 'Cancelar', 'click', 'Salir del modal demo')">❌ Cancelar</button>
+            <button id="modal-continuar" class="button button1"
+                onclick="trackEvent(this, 'click_whatsapp', 'Enviar mensaje', 'click', 'Enviar mensaje por whatsapp a serviciosweb.net.ar desde modal demo')">Continuar</button>
             <a href="#encontrar_proveedor" class="button button1"
-                onclick="trackEvent(this, 'click_buscar_proveedor_geolocalizacion_modal_demo', 'buscar proveedor geolocalización modal demo', 'click', 'buscar proveedor de servicios desde modal demo')">Buscar otro proveedor en el
-                sitio</a>
+                onclick="trackEvent(this, 'click_buscar_proveedor_geolocalizacion_modal_demo', 'buscar proveedor geolocalización modal demo', 'click', 'buscar proveedor de servicios desde modal demo')">🔍 Buscar otro proveedor en el sitio</a>
         </div>
         <p style="margin-bottom: 1em;">Al llamar, mandar un mensaje o buscar un proveedor de servicios en otras
             secciones del sitio web, confirmas que has leído y aceptas los
@@ -1423,11 +1226,13 @@
 
 
 
+
+
 <script>
   function compartirSeccion() {
     const urlBase = window.location.href;
     const urlTag = `${urlBase}?referido=plomero_amigo`;
-  
+
 
     // Compartir vía navegador
     if (navigator.share) {
@@ -1490,9 +1295,9 @@
       const userLon = posicion.coords.longitude;
       const umbral = parseFloat(document.getElementById("umbral-km").value) || 50;
 
-      // const res = await fetch("disponibles.json", { signal });
+      
+      
       const res = await fetch("../disponibles.json", { signal });
-
 
       const data = await res.json();
 
@@ -1509,23 +1314,23 @@
         const modal = document.getElementById("modal");
         modal.style.display = "block";
         cont.innerHTML = `
-        <p style="color: var(--texto);text-decoration: underline;text-align: left;font-size: 1.2rem;">Cantidad de plomeros registrados: 0 de 4223 secciones</p>
-<h2 style="color: red;">⚠️ No hay proveedor de servicios disponibles en tu zona aún.</h2>
+        <!-- <p style="color: var(--texto);text-decoration: underline;text-align: left;font-size: 1.2rem;">Cantidad de plomeros registrados: 0 de 4223 secciones<br>*Las secciones incluyen provincias, ciudades, localidades y barrios del sitio.*</p> -->
+        <h2 style="color: red;">⚠️ No hay proveedor de servicios disponibles en tu zona aún.</h2>
 
-<p style="font-size: 1.2rem;">¿Ofrecés servicios de plomería en esta zona?</p>
+        <p style="font-size: 1.2rem;">¿Ofrecés servicios de plomería en esta zona?</p>
 
-<a href="#formulario-publicidad" class="button button1" onclick="trackEvent(this, 'click_anunciar_aqui', 'buscar proveedor geolocalización', 'click', 'Botón Anunciar Aquí')">📣 ¡Anunciate aquí!</a>
-<a onclick="compartirSeccion();" class="button button1">Compartir a un plomero conocido</a>
-<p style="font-size: 1.2rem;">O probá con una distancia máxima más alta.</p>
+        <a href="#formulario-publicidad" class="button button1" onclick="trackEvent(this, 'click_anunciar_aqui', 'buscar proveedor geolocalización', 'click', 'Botón Anunciar Aquí')">📣 ¡Anunciate aquí!</a>
+        <a onclick="compartirSeccion();" class="button button1">🗣️ Compartir a un plomero conocido</a>
+        <p style="font-size: 1.2rem;">O probá con una distancia máxima más alta.</p>
 
-<button onclick="cerrarModal(); trackEvent(this, 'click_cerrar_modal_buscador_geolocalizacion', 'buscar proveedor geolocalización', 'click', 'boton cerrar modal buscador geolocalización')" class="button button1">Cerrar</button>
+        <button onclick="cerrarModal(); trackEvent(this, 'click_cerrar_modal_buscador_geolocalizacion', 'buscar proveedor geolocalización', 'click', 'boton cerrar modal buscador geolocalización')" class="button button1">❌ Cerrar</button>
 
-<p style="font-size: 1.25em; text-align: right; padding: 1em;">
-  Al usar el buscador confirmás que leíste y aceptás 
-  <a href="../terminos-y-condiciones.html">
-    Términos y Condiciones
-  </a>.
-</p>
+        <p style="font-size: 1.25em; text-align: right; padding: 1em;">
+          Al usar el buscador confirmás que leíste y aceptás 
+          <a href="../terminos-y-condiciones.html">
+            Términos y Condiciones
+          </a>.
+        </p>
         `;
       } else {
         mostrarModalMultiples(resultados);
@@ -1608,7 +1413,7 @@
           </li>
         `).join("")}
       </ul>
-      <button onclick="cerrarModal()" class="button button1">Cerrar</button>
+      <button onclick="cerrarModal()" class="button button1">❌ Cerrar</button>
       <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Al usar el buscador y contactar a un proveedor de servicios confirmás que has
     leído y aceptas <a href="                    ../terminos-y-condiciones.html
 ">
@@ -1621,7 +1426,7 @@
 </script><section id="stats-widget" data-price="10000" aria-live="polite">
   <div class="stats-card">
     <header class="stats-head">
-      <strong>Estadísticas de este espacio (últimos 30 días)</strong>
+      <strong>📊 Estadísticas de este espacio (últimos 30 días)</strong>
       <span class="stats-path">https://www.plomero.net.ar/neuquen/piedra-del-aguila.html</span>
     </header>
 
@@ -1632,35 +1437,34 @@
       </div>
       <div class="stat">
         <div class="stat-label">Clics a WhatsApp</div>
-        <div class="stat-value">0</div>
+        <div class="stat-value">-</div>
       </div>
       <div class="stat">
         <div class="stat-label">Tasa de clic (CTR)</div>
         <div class="stat-value">
-            0%
+ -
         </div>
       </div>
       <div class="stat">
         <div class="stat-label">Clics a Teléfono</div>
-        <div class="stat-value">0</div>
+        <div class="stat-value">-</div>
       </div>
     </div>
 
     <footer class="stats-foot">
         <span class="badge badge-gray">Espacio disponible</span>
-        <span>Podés anunciar aquí por <b>ARS 10.000</b>/mes.</span>
+        <span>Podés anunciar aquí por <b>ARS 10.000</b>/mes o <b>ARS 25.000</b>/3 meses.</span>
     </footer>
   </div>
 </section>
 
 <style>
 /* WIDGET ESTADÍSTICAS */
-#stats-widget { margin: 1rem auto; max-width: 780px;}
+#stats-widget { margin: 5rem auto; max-width: 780px;}
 #stats-widget .stats-card{
-  border:1px solid var(--gris-oscuro, #ccc);
+  border:0.063rem solid var(--gris-oscuro, #ccc);
   border-radius:.75rem; padding:1rem; background:#fff;
-  box-shadow: 0 2px 12px rgba(0,0,0,.06);
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif;
+  box-shadow: 0 0.125rem 0.75rem rgba(0,0,0,.06);
 }
 #stats-widget .stats-head{ display:flex; justify-content:space-between; gap:.5rem; margin-bottom:.75rem; }
 #stats-widget .stats-head strong{ font-size:1.05rem }
@@ -1673,7 +1477,7 @@
 #stats-widget .stat-label{ font-size:.85rem; opacity:.8; margin-bottom:.35rem }
 #stats-widget .stat-value{ font-size:1.35rem; font-weight:700 }
 #stats-widget .stats-foot{ font-size:.9rem; opacity:.9; display:flex; gap:.5rem; align-items:center; color:var(--texto)}
-#stats-widget .badge{ display:inline-block; padding:.15rem .5rem; border-radius:999px; font-size:.75rem;}
+#stats-widget .badge{ display:inline-block; padding:.15rem .5rem; border-radius:62.438rem; font-size:.75rem;}
 #stats-widget .badge-green{ background:#e6f4ea; }
 #stats-widget .badge-gray{ background:#eef1f4; }
 </style>
