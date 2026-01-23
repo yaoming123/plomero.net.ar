@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html lang="es" style="--estado: var(--rojo);">
+
 
 <head>
     <meta charset="UTF-8">
@@ -19,9 +21,11 @@
     <link rel="icon" type="image/x-icon"
         href="logo.ico">
 
-    <title>🛠️ Servicios de plomería | Plomero a domicilio en provincia de jujuy las 24 horas.</title>
+    <title>🛠️ Servicios de plomería | Plomero a domicilio en provincia de jujuy las 24 horas.
+    </title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <link rel="stylesheet" href="estilos.css">
@@ -74,17 +78,221 @@
         gtag('config', 'G-18J0H89SVT');
     </script>
 
-    <script>(function (w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-        var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-        f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W4NSZ7JP');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W4NSZ7JP');</script>
 
     <link rel="stylesheet" href="votacion.css">
     <script defer src="votacion.js"></script>
 </head>
 
 <body>
-    <a class="button-flotante" href="#footer" aria-label="Ir a la sección del pie de pagina"
-        title="Ir a la sección del pie de pagina">⬇️ Pie de Página</a>
+
+
+
+
+
+
+<script>
+  function compartirSeccion() {
+    const urlBase = window.location.href;
+    const urlTag = `${urlBase}?referido=plomero_amigo`;
+
+
+    // Compartir vía navegador
+    if (navigator.share) {
+      navigator.share({
+        title: 'Servicios de plomería',
+        text: 'Mirá esta sección, quizás te interese anunciarte como plomero.',
+        url: urlTag
+      }).catch(console.error);
+    } else {
+      alert("Copiá este link y compartilo: " + urlTag);
+    }
+  }
+
+  function cerrarModal() {
+    document.getElementById("modal").style.display = "none";
+
+    // Cierre con tecla Escape
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        cerrarModal();
+      }
+    });
+
+    // Cierre si se hace clic fuera del contenido del modal
+    window.addEventListener("click", function (event) {
+      const modal = document.getElementById("modal");
+      if (event.target === modal) {
+        cerrarModal();
+      }
+    });
+  }
+
+  let estaBuscando = false;
+  let abortController = null;
+
+  async function buscarPorUbicacion() {
+    if (estaBuscando) {
+      console.warn("Búsqueda ya en curso. Cancelando la anterior...");
+      if (abortController) abortController.abort();
+    }
+
+    estaBuscando = true;
+    abortController = new AbortController();
+    const signal = abortController.signal;
+
+    const loader = document.getElementById("loader");
+    const progress = document.getElementById("progress-bar");
+
+    loader.style.display = "block";
+    progress.style.display = "block";
+
+    try {
+      if (!navigator.geolocation) {
+        throw new Error("Tu navegador no permite geolocalización.");
+      }
+
+      const posicion = await obtenerUbicacionConFallback();
+
+      const userLat = posicion.coords.latitude;
+      const userLon = posicion.coords.longitude;
+      const umbral = parseFloat(document.getElementById("umbral-km").value) || 50;
+
+      
+      
+      const res = await fetch("disponibles.json", { signal });
+
+      const data = await res.json();
+
+      data.forEach(item => {
+        item.dist = haversine(userLat, userLon, item.lat, item.lon);
+      });
+
+      const resultados = data
+        .filter(item => item.dist <= umbral)
+        .sort((a, b) => a.dist - b.dist);
+
+      if (resultados.length === 0) {
+        const cont = document.getElementById("modal-contenido");
+        const modal = document.getElementById("modal");
+        modal.style.display = "block";
+        cont.innerHTML = `
+        <h2 style="color: red;">⚠️ No hay proveedor de servicios disponibles en tu zona aún.</h2>
+
+        <p style="font-size: 1.2rem;">¿Ofrecés servicios de plomería en esta zona?</p>
+
+        <a href="#formulario-publicidad" class="button button1" onclick="trackEvent(this, 'click_anunciar_aqui', 'buscar proveedor geolocalización', 'click', 'Botón Anunciar Aquí')">📣 ¡Anunciate aquí!</a>
+        <a onclick="compartirSeccion();" class="button button1">🗣️ Compartir a un plomero conocido</a>
+        <p style="font-size: 1.2rem;">O probá con una distancia máxima más alta.</p>
+
+        <button onclick="cerrarModal(); trackEvent(this, 'click_cerrar_modal_buscador_geolocalizacion', 'buscar proveedor geolocalización', 'click', 'boton cerrar modal buscador geolocalización')" class="button button1">❌ Cerrar</button>
+
+        <p style="font-size: 1.25em; text-align: right; padding: 1em;">
+          Al usar el buscador confirmás que leíste y aceptás 
+          <a href="terminos-y-condiciones.html">
+            Términos y Condiciones
+          </a>.
+        </p>
+        `;
+      } else {
+        mostrarModalMultiples(resultados);
+      }
+
+    } catch (error) {
+      if (error.name === "AbortError") {
+        console.log("Búsqueda anterior cancelada.");
+      } else {
+        console.error("Error en búsqueda por ubicación:", error);
+        alert(error.message);
+      }
+    } finally {
+      loader.style.display = "none";
+      progress.style.display = "none";
+      estaBuscando = false;
+    }
+  }
+
+  // Fallback automático de geolocalización
+  function obtenerUbicacion(opciones) {
+    return new Promise((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(resolve, reject, opciones);
+    });
+  }
+
+  async function obtenerUbicacionConFallback() {
+    try {
+      console.log("📍 Intentando con alta precisión...");
+      return await obtenerUbicacion({
+        enableHighAccuracy: true,
+        timeout: 8000,
+        maximumAge: 0
+      });
+    } catch (error) {
+      if (error.code === 2 || error.code === 3) {
+        console.warn("⚠️ Alta precisión falló. Probando con baja precisión...");
+        return await obtenerUbicacion({
+          enableHighAccuracy: false,
+          timeout: 7000,
+          maximumAge: 0
+        });
+      } else if (error.code === 1) {
+        throw new Error("📍 El permiso de geolocalización fue denegado.");
+      } else {
+        throw new Error("❌ No se pudo obtener tu ubicación.");
+      }
+    }
+  }
+
+  function haversine(lat1, lon1, lat2, lon2) {
+    const R = 6371;
+    const toRad = x => x * Math.PI / 180;
+    const dLat = toRad(lat2 - lat1);
+    const dLon = toRad(lon2 - lon1);
+    const a = Math.sin(dLat / 2) ** 2 +
+      Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+      Math.sin(dLon / 2) ** 2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  function mostrarModalMultiples(zonas) {
+    const modal = document.getElementById("modal");
+    const cont = document.getElementById("modal-contenido");
+
+    function formatoZona(zona) {
+      return [zona.provincia, zona.localidad, zona.barrio]
+        .filter(x => x && x.trim() !== "")
+        .join(", ");
+    }
+
+    cont.innerHTML = `
+      <h2>Servicios disponibles cerca de ti:</h2>
+      <ul style="list-style: none; padding-left: 0; max-height: 70vh; overflow-y: auto;">
+        ${zonas.map(z => `
+          <li style="margin-bottom: 1em; font-size: 1.5rem; border-bottom: dotted; margin-top: 1rem;">
+            <strong>Zona:</strong> ${formatoZona(z)}<br>
+            <strong>Distancia:</strong> ${z.dist.toFixed(2)} km<br>
+            <a href="${z.url}" target="_blank" class="button button1">🔗 Ir a la sección</a>
+          </li>
+        `).join("")}
+      </ul>
+      <button onclick="cerrarModal()" class="button button1">❌ Cerrar</button>
+      <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Al usar el buscador y contactar a un proveedor de servicios confirmás que has
+    leído y aceptas <a href="                    terminos-y-condiciones.html
+">
+      Términos y Condiciones
+    </a>.</p>
+    `;
+
+    modal.style.display = "block";
+  }
+</script>
+
+<a class="button-flotante" href="#footer" aria-label="Ir a la sección del pie de pagina"
+    title="Ir a la sección del pie de pagina">⬇️ Pie de Página</a>
 
 
 
@@ -125,7 +333,10 @@
         <li><a href="#stats-widget" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Estadísticas')">📊 Estadísticas</a></li>
     </ul>
     
-    <ul style="background-color: var(--verde-intenso);">
+
+    
+    <ul style="background-color: var(--rojo);">
+
         <li>
             <a href="#" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Top')">⬆️ Top</a>
         </li>
@@ -145,7 +356,8 @@
 
                 <h1>¿Busca un plomero en provincia de jujuy?</h1>
 
-                <p>¡Llámenos! Ofrecemos servicios rápidos y profesionales de plomería. Urgencias 24/7 en provincia de jujuy.</p>
+                <p>¡Llámenos! Ofrecemos servicios rápidos y profesionales de plomería.
+                    Urgencias 24/7 en provincia de jujuy.</p>
 
                 <p>Aceptamos efectivo y transferencias.</p>
             </div>
@@ -479,7 +691,8 @@
             <div class="scroll-section" id="servicios">
                 <h2>¿Necesita un servicio de plomería confiable cerca de jujuy?</h2>
 
-                <p>En nuestra empresa de plomería en jujuy, brindamos instalaciones, reparaciones y mantenimiento de confianza con atención personalizada.</p>
+                <p>En nuestra empresa de plomería en jujuy, brindamos
+                    instalaciones, reparaciones y mantenimiento de confianza con atención personalizada.</p>
 
 
 
@@ -960,8 +1173,12 @@
 
             <p style="font-size:1.25em;text-align:right;padding:1em;">Fin del Espacio Publicitario</p>
 
-            <div id="opciones">
-                <div class="scroll-section" id="encontrar_proveedor">
+
+                <div id="opciones" style="background-color: var(--rojo);">
+
+
+
+                        <div class="scroll-section" id="encontrar_proveedor">
 <section id="busqueda-por-ubicacion" class="contenedor"
   style="width: 90%;padding: 2em;background: var(--gris-claro);color: var(--texto);margin: 1em auto;">
   <h2>📍 Buscar  plomero  por geolocalización</h2>
@@ -1018,10 +1235,13 @@
       }
     }
   </style>
-</section>                </div>
-                <h2>Encuentre un Plomero/Plomería en las localidades de la provincia de jujuy, Argentina.</h2>
-                <p>Botones en <span style="color:darkred;font-size:1.2em;">Rojo</span>: sin plomero disponible.</p>
-                <p>Botones en <span style="color:darkgreen;font-size:1.2em;">Verde</span>: plomero disponible.</p>
+</section>                        </div>
+                        <h2>Encuentre un Plomero/Plomería en las localidades de la provincia de jujuy,
+                            Argentina.</h2>
+                        <p>Botones en <span style="color:darkred;font-size:1.2em;">Rojo</span>: sin plomero disponible.
+                        </p>
+                        <p>Botones en <span style="color:darkgreen;font-size:1.2em;">Verde</span>: plomero disponible.
+                        </p>
 
 <select id="localidades" onchange="window.location.href=this.value;" class="button button2"
 style="width:80%;">
@@ -1630,7 +1850,7 @@ style="width:80%;">
 </option>
 </select>
 
-            </div>
+                    </div>
 
 
 
@@ -1642,31 +1862,30 @@ style="width:80%;">
 
 
         <label for="section" >Sección</label>
-        <input id="section" name="section" value="https://www.plomero.net.ar/jujuy.html" readonly
-            style="width: 80%; height: 2rem; background-color: #f0f0f0; color: #333;">
+        <input id="section" name="section" value="https://www.plomero.net.ar/jujuy.html" readonly >
 
         <label for="name">Nombre del Negocio:</label>
         <input id="name" name="name" placeholder="Nombre de usted si es particular, de fantasía o razón social"
-            required="" style="width: 80%; height: 2rem;" type="text">
+            required=""  type="text">
         <label for="cellphone" >Número de Celular (WhatsApp):</label>
         <input id="cellphone" name="cellphone" placeholder="Ejemplo: +5491122413762" required=""
-            style="width: 80%; height: 2rem;" type="text">
+             type="text">
         <label for="phone" >Número de Teléfono Fijo:</label>
-        <input id="phone" name="phone" placeholder="Opcional" style="width: 80%; height: 2rem;"
+        <input id="phone" name="phone" placeholder="Opcional" 
             type="text">
         <label for="address" >Dirección:</label>
         <input id="address" name="address" placeholder="Opcional"
-            style="width: 80%; height: 2rem;" type="text">
+             type="text">
         <label for="mapLink" >Link de Google Maps:</label>
         <input id="mapLink" name="mapLink" placeholder="Opcional"
-            style="width: 80%; height: 2rem;" type="text">
+             type="text">
         <label for="payment" >Medios de Pago que aceptas:</label>
         <input id="payment" name="payment" placeholder="Ejemplo: Efectivo, Transferencia"
-            style="width: 80%; height: 2rem;" type="text">
+             type="text">
         <label for="details" >Detalles adicionales:</label>
         <input id="details" name="details"
             placeholder="En la plantilla se incluyen varios servicios. ¿Hay alguno que falte o necesite ser removido? Por favor, cuéntanos cualquier otro detalle adicional."
-            style="width: 80%; height: 2rem;" type="text">
+             type="text">
 
         <p>Al enviar este formulario, confirmas que has leído y aceptas los <a href="terminos-y-condiciones.html">Términos y Condiciones</a>.</p>
         <button id="whatsapp-button" style="margin-top: 2em; width: 80%; height: 4rem;"
@@ -1677,7 +1896,7 @@ style="width:80%;">
             Messenger</button>
     </form>
 </div>
-        </div>
+                </div>
     </main>
 
 
@@ -1706,29 +1925,26 @@ style="width:80%;">
 
 <div id="modal-aviso" style="display: none;" class="modal-overlay">
     <div class="modal-contenido">
-        <!-- Texto de prueba -->
         <p style="color: var(--texto);text-decoration: underline;text-align: left;font-size: 0.75rem;">Cantidad de plomeros registrados: 0 de 4223 secciones</p>
         <p style="color: var(--texto);text-decoration: underline;text-align: left;font-size: 0.75rem;">*Las secciones incluyen provincias, ciudades, localidades y barrios del sitio.*</p>
-        <!-- fin texto de prueba -->
          
         <p id="modal-texto"></p>
         <div class="modal-botones">
             <button id="modal-cancelar" class="button button1"
                 onclick="trackEvent(this, 'click_cancelar', 'Cancelar', 'click', 'Salir del modal demo')">❌ Cancelar</button>
             <button id="modal-continuar" class="button button1"
-                onclick="trackEvent(this, 'click_whatsapp', 'Enviar mensaje', 'click', 'Enviar mensaje por whatsapp a serviciosweb.net.ar desde modal demo')">Continuar</button>
+                onclick="trackEvent(this, 'click_whatsapp', 'Enviar mensaje', 'click', 'Enviar mensaje por whatsapp a serviciosweb.net.ar desde modal demo')">✅ Continuar</button>
             <a href="#encontrar_proveedor" class="button button1"
                 onclick="trackEvent(this, 'click_buscar_proveedor_geolocalizacion_modal_demo', 'buscar proveedor geolocalización modal demo', 'click', 'buscar proveedor de servicios desde modal demo')">🔍 Buscar otro proveedor en el sitio</a>
         </div>
-        <p style="margin-bottom: 1em;">Al llamar, mandar un mensaje o buscar un proveedor de servicios en otras
+        <p style="margin-bottom: 1em;">Al llamar, mandar un mensaje o buscar un proveedor de servicios en esta y otras
             secciones del sitio web, confirmas que has leído y aceptas los
             <a href="                    terminos-y-condiciones.html
-">
-                Términos y Condiciones
-            </a>.
+">Términos y Condiciones</a>.
         </p>
     </div>
 </div>
+
 </body>
 
 <script>
@@ -1744,8 +1960,7 @@ style="width:80%;">
             nav.classList.toggle('active');
         });
     });
-</script>
-<script>
+</script><script>
     const modal = document.getElementById("modal-aviso");
     const modalTexto = document.getElementById("modal-texto");
     const modalCancelar = document.getElementById("modal-cancelar");
@@ -1772,6 +1987,7 @@ style="width:80%;">
         }
     });
 
+
     // Botón de llamar
     const botonLlamar = document.querySelector('a[href^="tel:"]');
     if (botonLlamar) {
@@ -1782,7 +1998,7 @@ style="width:80%;">
     }
 
     // Botón principal de WhatsApp (contacto)
-    const botonWhatsApp = document.querySelector('a[href*="wa.me"][title*="WhatsApp"]');
+    const botonWhatsApp = document.querySelector('#contacto a[href*="wa.me"], #contacto a[href*="api.whatsapp.com"]');
     if (botonWhatsApp) {
         botonWhatsApp.addEventListener("click", function (e) {
             e.preventDefault();
@@ -1798,6 +2014,8 @@ style="width:80%;">
             mostrarModal("⚠️ No hay un  plomero  en este espacio publicitario.\nLos servicios son una demo. Si continuas serás redirigido al WhatsApp de serviciosweb.net.ar a modo de ejemplo (No respondemos consultas relacionadas con servicios solo ofrecemos publicidad).", this.href);
         });
     });
+
+
 
     // Cerrar modal al hacer clic en el enlace Buscar proveedor
     const enlaceBuscarProveedor = document.querySelector('a[href="#encontrar_proveedor"]');
@@ -1832,208 +2050,6 @@ style="width:80%;">
         }
     });
 
-</script>
-
-
-
-
-
-
-<script>
-  function compartirSeccion() {
-    const urlBase = window.location.href;
-    const urlTag = `${urlBase}?referido=plomero_amigo`;
-
-
-    // Compartir vía navegador
-    if (navigator.share) {
-      navigator.share({
-        title: 'Servicios de plomería',
-        text: 'Mirá esta sección, quizás te interese anunciarte como plomero.',
-        url: urlTag
-      }).catch(console.error);
-    } else {
-      alert("Copiá este link y compartilo: " + urlTag);
-    }
-  }
-
-  function cerrarModal() {
-    document.getElementById("modal").style.display = "none";
-
-    // Cierre con tecla Escape
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") {
-        cerrarModal();
-      }
-    });
-
-    // Cierre si se hace clic fuera del contenido del modal
-    window.addEventListener("click", function (event) {
-      const modal = document.getElementById("modal");
-      if (event.target === modal) {
-        cerrarModal();
-      }
-    });
-  }
-
-  let estaBuscando = false;
-  let abortController = null;
-
-  async function buscarPorUbicacion() {
-    if (estaBuscando) {
-      console.warn("Búsqueda ya en curso. Cancelando la anterior...");
-      if (abortController) abortController.abort();
-    }
-
-    estaBuscando = true;
-    abortController = new AbortController();
-    const signal = abortController.signal;
-
-    const loader = document.getElementById("loader");
-    const progress = document.getElementById("progress-bar");
-
-    loader.style.display = "block";
-    progress.style.display = "block";
-
-    try {
-      if (!navigator.geolocation) {
-        throw new Error("Tu navegador no permite geolocalización.");
-      }
-
-      const posicion = await obtenerUbicacionConFallback();
-
-      const userLat = posicion.coords.latitude;
-      const userLon = posicion.coords.longitude;
-      const umbral = parseFloat(document.getElementById("umbral-km").value) || 50;
-
-      
-      
-      const res = await fetch("disponibles.json", { signal });
-
-      const data = await res.json();
-
-      data.forEach(item => {
-        item.dist = haversine(userLat, userLon, item.lat, item.lon);
-      });
-
-      const resultados = data
-        .filter(item => item.dist <= umbral)
-        .sort((a, b) => a.dist - b.dist);
-
-      if (resultados.length === 0) {
-        const cont = document.getElementById("modal-contenido");
-        const modal = document.getElementById("modal");
-        modal.style.display = "block";
-        cont.innerHTML = `
-        <!-- <p style="color: var(--texto);text-decoration: underline;text-align: left;font-size: 1.2rem;">Cantidad de plomeros registrados: 0 de 4223 secciones<br>*Las secciones incluyen provincias, ciudades, localidades y barrios del sitio.*</p> -->
-        <h2 style="color: red;">⚠️ No hay proveedor de servicios disponibles en tu zona aún.</h2>
-
-        <p style="font-size: 1.2rem;">¿Ofrecés servicios de plomería en esta zona?</p>
-
-        <a href="#formulario-publicidad" class="button button1" onclick="trackEvent(this, 'click_anunciar_aqui', 'buscar proveedor geolocalización', 'click', 'Botón Anunciar Aquí')">📣 ¡Anunciate aquí!</a>
-        <a onclick="compartirSeccion();" class="button button1">🗣️ Compartir a un plomero conocido</a>
-        <p style="font-size: 1.2rem;">O probá con una distancia máxima más alta.</p>
-
-        <button onclick="cerrarModal(); trackEvent(this, 'click_cerrar_modal_buscador_geolocalizacion', 'buscar proveedor geolocalización', 'click', 'boton cerrar modal buscador geolocalización')" class="button button1">❌ Cerrar</button>
-
-        <p style="font-size: 1.25em; text-align: right; padding: 1em;">
-          Al usar el buscador confirmás que leíste y aceptás 
-          <a href="terminos-y-condiciones.html">
-            Términos y Condiciones
-          </a>.
-        </p>
-        `;
-      } else {
-        mostrarModalMultiples(resultados);
-      }
-
-    } catch (error) {
-      if (error.name === "AbortError") {
-        console.log("Búsqueda anterior cancelada.");
-      } else {
-        console.error("Error en búsqueda por ubicación:", error);
-        alert(error.message);
-      }
-    } finally {
-      loader.style.display = "none";
-      progress.style.display = "none";
-      estaBuscando = false;
-    }
-  }
-
-  // Fallback automático de geolocalización
-  function obtenerUbicacion(opciones) {
-    return new Promise((resolve, reject) => {
-      navigator.geolocation.getCurrentPosition(resolve, reject, opciones);
-    });
-  }
-
-  async function obtenerUbicacionConFallback() {
-    try {
-      console.log("📍 Intentando con alta precisión...");
-      return await obtenerUbicacion({
-        enableHighAccuracy: true,
-        timeout: 8000,
-        maximumAge: 0
-      });
-    } catch (error) {
-      if (error.code === 2 || error.code === 3) {
-        console.warn("⚠️ Alta precisión falló. Probando con baja precisión...");
-        return await obtenerUbicacion({
-          enableHighAccuracy: false,
-          timeout: 7000,
-          maximumAge: 0
-        });
-      } else if (error.code === 1) {
-        throw new Error("📍 El permiso de geolocalización fue denegado.");
-      } else {
-        throw new Error("❌ No se pudo obtener tu ubicación.");
-      }
-    }
-  }
-
-  function haversine(lat1, lon1, lat2, lon2) {
-    const R = 6371;
-    const toRad = x => x * Math.PI / 180;
-    const dLat = toRad(lat2 - lat1);
-    const dLon = toRad(lon2 - lon1);
-    const a = Math.sin(dLat / 2) ** 2 +
-      Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
-      Math.sin(dLon / 2) ** 2;
-    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  }
-
-  function mostrarModalMultiples(zonas) {
-    const modal = document.getElementById("modal");
-    const cont = document.getElementById("modal-contenido");
-
-    function formatoZona(zona) {
-      return [zona.provincia, zona.localidad, zona.barrio]
-        .filter(x => x && x.trim() !== "")
-        .join(", ");
-    }
-
-    cont.innerHTML = `
-      <h2>Servicios disponibles cerca de ti:</h2>
-      <ul style="list-style: none; padding-left: 0; max-height: 70vh; overflow-y: auto;">
-        ${zonas.map(z => `
-          <li style="margin-bottom: 1em; font-size: 1.5rem; border-bottom: dotted; margin-top: 1rem;">
-            <strong>Zona:</strong> ${formatoZona(z)}<br>
-            <strong>Distancia:</strong> ${z.dist.toFixed(2)} km<br>
-            <a href="${z.url}" target="_blank" class="button button1">🔗 Ir a la sección</a>
-          </li>
-        `).join("")}
-      </ul>
-      <button onclick="cerrarModal()" class="button button1">❌ Cerrar</button>
-      <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Al usar el buscador y contactar a un proveedor de servicios confirmás que has
-    leído y aceptas <a href="                    terminos-y-condiciones.html
-">
-      Términos y Condiciones
-    </a>.</p>
-    `;
-
-    modal.style.display = "block";
-  }
 </script><section id="stats-widget" data-price="10000" aria-live="polite">
   <div class="stats-card">
     <header class="stats-head">
@@ -2092,5 +2108,7 @@ style="width:80%;">
 #stats-widget .badge-green{ background:#e6f4ea; }
 #stats-widget .badge-gray{ background:#eef1f4; }
 </style>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4NSZ7JP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4NSZ7JP" height="0"
+        width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 </html>
