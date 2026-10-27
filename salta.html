@@ -93,7 +93,6 @@
 </head>
 
 <body>
-
 <a class="button-flotante" href="#footer" aria-label="Ir a la sección del pie de pagina"
     title="Ir a la sección del pie de pagina">⬇️ Pie de Página</a>
 
@@ -127,19 +126,17 @@
             <a href="index.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'index')">🗺️ Plomeros en Argentina</a>
         </li>
         <li>
-            <a href="#encontrar_proveedor" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Encontrar proveedor')">🔍 Encontrar Plomeros</a>
+            <a onclick="mostrarModalBuscarProveedor(); trackEvent(this, 'click_menu', 'navegacion', 'click', 'Encontrar proveedor')">🔍 Encontrar Plomeros</a>
         </li>
         <li>
             <a href="terminos-y-condiciones.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Términos y Condiciones')">📋 Términos y Condiciones</a>
         </li>
 
-        <li><a href="#stats-widget" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Estadísticas')">📊 Estadísticas</a></li>
     </ul>
     
 
     
     <ul style="background-color: var(--rojo);">
-
         <li>
             <a href="#" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Top')">⬆️ Top</a>
         </li>
@@ -155,14 +152,13 @@
     <header>
         <div class="contenedor">
             <div id="contenido-principal">
-                <p style="font-size:1.25em;text-align:left;padding:1em;">Inicio del Espacio Publicitario</p>
 
                 <h1>¿Busca un plomero en provincia de salta?</h1>
 
                 <p>¡Llámenos! Ofrecemos servicios rápidos y profesionales de plomería.
                     Urgencias 24/7 en provincia de salta.</p>
 
-                <p>Aceptamos efectivo y transferencias.</p>
+                <p>Aceptamos los siguientes medios de pago: Aceptamos efectivo y transferencias.</p>
             </div>
 
 
@@ -284,7 +280,6 @@
 
 
 
-
 <div class="scroll-section" id="contacto">
 
         <h3>Contacto</h3>
@@ -300,7 +295,7 @@
     </a>
 
     <a class="button button1"
-        href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/salta.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%5CnEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%5Cn-%20cerrajero.net.ar%0A-%20electricista.net.ar%5Cn%5CnSi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+        href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/salta.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
         onclick="trackDynamicWhatsAppClick(this)"
         target="_blank"
         rel="noopener noreferrer nofollow"
@@ -820,574 +815,6 @@
 
 </div>            </div>
 
-            <p style="font-size:1.25em;text-align:right;padding:1em;">Fin del Espacio Publicitario</p>
-
-
-                <div id="opciones" style="background-color: var(--rojo);">
-
-
-
-                        <div class="scroll-section" id="encontrar_proveedor">
-<section id="busqueda-por-ubicacion" class="contenedor"
-    style="width: 90%;padding: 2em;background: var(--gris-claro);color: var(--texto);margin: 1em auto;">
-    <h2>📍 Buscar  plomero  por geolocalización</h2>
-
-    <p>Escribe una distancia máxima para mostrar resultados y si hay proveedores aparecerán del más cercano al más lejano</p>
-
-    <label>
-        Distancia máxima (km):
-        <input type="number" id="umbral-km" value="50" step="0.1" min="0" style="width: 100%; text-align: center;">
-    </label>
-
-    <br><br>
-    <button
-        onclick="buscarPorUbicacion(); trackEvent(this, 'click_buscar_proveedor_geolocalizacion', 'buscar proveedor geolocalización', 'click', 'buscar proveedor de servicios')"
-        class="button button1">🔍 Buscar
-        proveedor de servicios</button>
-        
-    <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Al usar el buscador confirmas que
-        has
-        leído y aceptas <a href="                    terminos-y-condiciones.html
-">
-            Términos y Condiciones
-        </a>.</p>
-
-</section>                        </div>
-                        <h2>Encuentre un Plomero/Plomería en las localidades de la provincia de salta,
-                            Argentina.</h2>
-                        <p>Botones en <span style="color:darkred;font-size:1.2em;">Rojo</span>: sin plomero disponible.
-                        </p>
-                        <p>Botones en <span style="color:darkgreen;font-size:1.2em;">Verde</span>: plomero disponible.
-                        </p>
-
-<select id="localidades" onchange="window.location.href=this.value;" class="button button2" style="width:80%;">
-<option value="">Seleccione una opción</option>
-
-
-<option value="salta/apolinario-saravia.html" style="color: darkred;">
-    ✘ | apolinario saravia
-</option>
-
-<option value="salta/ceibalito.html" style="color: darkred;">
-    ✘ | ceibalito
-</option>
-
-<option value="salta/centro-25-de-junio.html" style="color: darkred;">
-    ✘ | centro 25 de junio
-</option>
-
-<option value="salta/coronel-mollinedo.html" style="color: darkred;">
-    ✘ | coronel mollinedo
-</option>
-
-<option value="salta/coronel-olleros.html" style="color: darkred;">
-    ✘ | coronel olleros
-</option>
-
-<option value="salta/el-quebrachal.html" style="color: darkred;">
-    ✘ | el quebrachal
-</option>
-
-<option value="salta/gaona.html" style="color: darkred;">
-    ✘ | gaona
-</option>
-
-<option value="salta/general-pizarro.html" style="color: darkred;">
-    ✘ | general pizarro
-</option>
-
-<option value="salta/joaquin-v-gonzalez.html" style="color: darkred;">
-    ✘ | joaquín v. gonzález
-</option>
-
-<option value="salta/las-lajitas.html" style="color: darkred;">
-    ✘ | las lajitas
-</option>
-
-<option value="salta/luis-burela.html" style="color: darkred;">
-    ✘ | luis burela
-</option>
-
-<option value="salta/macapillo.html" style="color: darkred;">
-    ✘ | macapillo
-</option>
-
-<option value="salta/nuestra-senora-de-talavera.html" style="color: darkred;">
-    ✘ | nuestra señora de talavera
-</option>
-
-<option value="salta/piquete-cabado.html" style="color: darkred;">
-    ✘ | piquete cabado
-</option>
-
-<option value="salta/rio-del-valle.html" style="color: darkred;">
-    ✘ | río del valle
-</option>
-
-<option value="salta/tolloche.html" style="color: darkred;">
-    ✘ | tolloche
-</option>
-
-<option value="salta/cachi.html" style="color: darkred;">
-    ✘ | cachi
-</option>
-
-<option value="salta/payogasta.html" style="color: darkred;">
-    ✘ | payogasta
-</option>
-
-<option value="salta/cafayate.html" style="color: darkred;">
-    ✘ | cafayate
-</option>
-
-<option value="salta/tolombon.html" style="color: darkred;">
-    ✘ | tolombón
-</option>
-
-<option value="salta/atocha.html" style="color: darkred;">
-    ✘ | atocha
-</option>
-
-<option value="salta/la-cienaga-y-barrio-san-rafael.html" style="color: darkred;">
-    ✘ | la ciénaga y barrio san rafael
-</option>
-
-<option value="salta/las-costas.html" style="color: darkred;">
-    ✘ | las costas
-</option>
-
-<option value="salta/salta.html" style="color: darkred;">
-    ✘ | salta
-</option>
-
-<option value="salta/villa-san-lorenzo.html" style="color: darkred;">
-    ✘ | villa san lorenzo
-</option>
-
-<option value="salta/cerrillos.html" style="color: darkred;">
-    ✘ | cerrillos
-</option>
-
-<option value="salta/la-merced.html" style="color: darkred;">
-    ✘ | la merced
-</option>
-
-<option value="salta/san-agustin.html" style="color: darkred;">
-    ✘ | san agustín
-</option>
-
-<option value="salta/villa-los-alamos-el-congreso-las-tunas-los-pinares-los-olmos.html" style="color: darkred;">
-    ✘ | villa los álamos - el congreso - las tunas - los pinares - los olmos
-</option>
-
-<option value="salta/barrio-finca-la-maroma.html" style="color: darkred;">
-    ✘ | barrio finca la maroma
-</option>
-
-<option value="salta/barrio-la-rotonda.html" style="color: darkred;">
-    ✘ | barrio la rotonda
-</option>
-
-<option value="salta/barrio-santa-teresita.html" style="color: darkred;">
-    ✘ | barrio santa teresita
-</option>
-
-<option value="salta/chicoana.html" style="color: darkred;">
-    ✘ | chicoana
-</option>
-
-<option value="salta/el-carril.html" style="color: darkred;">
-    ✘ | el carril
-</option>
-
-<option value="salta/campo-santo.html" style="color: darkred;">
-    ✘ | campo santo
-</option>
-
-<option value="salta/cobos.html" style="color: darkred;">
-    ✘ | cobos
-</option>
-
-<option value="salta/el-bordo.html" style="color: darkred;">
-    ✘ | el bordo
-</option>
-
-<option value="salta/general-guemes.html" style="color: darkred;">
-    ✘ | general güemes
-</option>
-
-<option value="salta/aguaray.html" style="color: darkred;">
-    ✘ | aguaray
-</option>
-
-<option value="salta/campamento-vespucio.html" style="color: darkred;">
-    ✘ | campamento vespucio
-</option>
-
-<option value="salta/campichuelo.html" style="color: darkred;">
-    ✘ | campichuelo
-</option>
-
-<option value="salta/campo-duran.html" style="color: darkred;">
-    ✘ | campo durán
-</option>
-
-<option value="salta/capiazuti.html" style="color: darkred;">
-    ✘ | capiazuti
-</option>
-
-<option value="salta/carboncito.html" style="color: darkred;">
-    ✘ | carboncito
-</option>
-
-<option value="salta/coronel-cornejo.html" style="color: darkred;">
-    ✘ | coronel cornejo
-</option>
-
-<option value="salta/dragones.html" style="color: darkred;">
-    ✘ | dragones
-</option>
-
-<option value="salta/embarcacion.html" style="color: darkred;">
-    ✘ | embarcación
-</option>
-
-<option value="salta/general-ballivian.html" style="color: darkred;">
-    ✘ | general ballivián
-</option>
-
-<option value="salta/general-mosconi.html" style="color: darkred;">
-    ✘ | general mosconi
-</option>
-
-<option value="salta/hickman.html" style="color: darkred;">
-    ✘ | hickman
-</option>
-
-<option value="salta/mision-chaquena.html" style="color: darkred;">
-    ✘ | misión chaqueña
-</option>
-
-<option value="salta/mision-el-cruce-el-milagro-el-jardin-de-san-martin.html" style="color: darkred;">
-    ✘ | misión el cruce - el milagro - el jardín de san martín
-</option>
-
-<option value="salta/mision-kilometro-6.html" style="color: darkred;">
-    ✘ | misión kilómetro 6
-</option>
-
-<option value="salta/pacara.html" style="color: darkred;">
-    ✘ | pacará
-</option>
-
-<option value="salta/padre-lozano.html" style="color: darkred;">
-    ✘ | padre lozano
-</option>
-
-<option value="salta/piquirenda.html" style="color: darkred;">
-    ✘ | piquirenda
-</option>
-
-<option value="salta/profesor-salvador-mazza.html" style="color: darkred;">
-    ✘ | profesor salvador mazza
-</option>
-
-<option value="salta/tartagal.html" style="color: darkred;">
-    ✘ | tartagal
-</option>
-
-<option value="salta/tobantirenda.html" style="color: darkred;">
-    ✘ | tobantirenda
-</option>
-
-<option value="salta/tranquitas.html" style="color: darkred;">
-    ✘ | tranquitas
-</option>
-
-<option value="salta/yacuy.html" style="color: darkred;">
-    ✘ | yacuy
-</option>
-
-<option value="salta/guachipas.html" style="color: darkred;">
-    ✘ | guachipas
-</option>
-
-<option value="salta/iruya.html" style="color: darkred;">
-    ✘ | iruya
-</option>
-
-<option value="salta/isla-de-canas.html" style="color: darkred;">
-    ✘ | isla de cañas
-</option>
-
-<option value="salta/pueblo-viejo.html" style="color: darkred;">
-    ✘ | pueblo viejo
-</option>
-
-<option value="salta/la-caldera.html" style="color: darkred;">
-    ✘ | la caldera
-</option>
-
-<option value="salta/vaqueros.html" style="color: darkred;">
-    ✘ | vaqueros
-</option>
-
-<option value="salta/el-jardin.html" style="color: darkred;">
-    ✘ | el jardín
-</option>
-
-<option value="salta/el-tala.html" style="color: darkred;">
-    ✘ | el tala
-</option>
-
-<option value="salta/la-candelaria.html" style="color: darkred;">
-    ✘ | la candelaria
-</option>
-
-<option value="salta/cobres.html" style="color: darkred;">
-    ✘ | cobres
-</option>
-
-<option value="salta/la-poma.html" style="color: darkred;">
-    ✘ | la poma
-</option>
-
-<option value="salta/ampascachi.html" style="color: darkred;">
-    ✘ | ampascachi
-</option>
-
-<option value="salta/cabra-corral.html" style="color: darkred;">
-    ✘ | cabra corral
-</option>
-
-<option value="salta/coronel-moldes.html" style="color: darkred;">
-    ✘ | coronel moldes
-</option>
-
-<option value="salta/la-vina.html" style="color: darkred;">
-    ✘ | la viña
-</option>
-
-<option value="salta/talapampa.html" style="color: darkred;">
-    ✘ | talapampa
-</option>
-
-<option value="salta/olacapato.html" style="color: darkred;">
-    ✘ | olacapato
-</option>
-
-<option value="salta/san-antonio-de-los-cobres.html" style="color: darkred;">
-    ✘ | san antonio de los cobres
-</option>
-
-<option value="salta/santa-rosa-de-los-pastos-grandes.html" style="color: darkred;">
-    ✘ | santa rosa de los pastos grandes
-</option>
-
-<option value="salta/tolar-grande.html" style="color: darkred;">
-    ✘ | tolar grande
-</option>
-
-<option value="salta/el-galpon.html" style="color: darkred;">
-    ✘ | el galpón
-</option>
-
-<option value="salta/el-tunal.html" style="color: darkred;">
-    ✘ | el tunal
-</option>
-
-<option value="salta/lumbreras.html" style="color: darkred;">
-    ✘ | lumbreras
-</option>
-
-<option value="salta/san-jose-de-metan-est-metan.html" style="color: darkred;">
-    ✘ | san josé de metán (est. metán)
-</option>
-
-<option value="salta/metan-viejo.html" style="color: darkred;">
-    ✘ | metán viejo
-</option>
-
-<option value="salta/rio-piedras.html" style="color: darkred;">
-    ✘ | río piedras
-</option>
-
-<option value="salta/san-jose-de-orquera.html" style="color: darkred;">
-    ✘ | san josé de orquera
-</option>
-
-<option value="salta/la-puerta.html" style="color: darkred;">
-    ✘ | la puerta
-</option>
-
-<option value="salta/molinos.html" style="color: darkred;">
-    ✘ | molinos
-</option>
-
-<option value="salta/seclantas.html" style="color: darkred;">
-    ✘ | seclantás
-</option>
-
-<option value="salta/aguas-blancas.html" style="color: darkred;">
-    ✘ | aguas blancas
-</option>
-
-<option value="salta/colonia-santa-rosa.html" style="color: darkred;">
-    ✘ | colonia santa rosa
-</option>
-
-<option value="salta/el-tabacal.html" style="color: darkred;">
-    ✘ | el tabacal
-</option>
-
-<option value="salta/hipolito-yrigoyen.html" style="color: darkred;">
-    ✘ | hipólito yrigoyen
-</option>
-
-<option value="salta/pichanal.html" style="color: darkred;">
-    ✘ | pichanal
-</option>
-
-<option value="salta/san-ramon-de-la-nueva-oran.html" style="color: darkred;">
-    ✘ | san ramón de la nueva orán
-</option>
-
-<option value="salta/urundel.html" style="color: darkred;">
-    ✘ | urundel
-</option>
-
-<option value="salta/alto-de-la-sierra.html" style="color: darkred;">
-    ✘ | alto de la sierra
-</option>
-
-<option value="salta/capitan-juan-page.html" style="color: darkred;">
-    ✘ | capitán juan pagé
-</option>
-
-<option value="salta/coronel-juan-sola.html" style="color: darkred;">
-    ✘ | coronel juan solá
-</option>
-
-<option value="salta/hito-1.html" style="color: darkred;">
-    ✘ | hito 1
-</option>
-
-<option value="salta/la-union.html" style="color: darkred;">
-    ✘ | la unión
-</option>
-
-<option value="salta/los-blancos.html" style="color: darkred;">
-    ✘ | los blancos
-</option>
-
-<option value="salta/pluma-de-pato.html" style="color: darkred;">
-    ✘ | pluma de pato
-</option>
-
-<option value="salta/rivadavia.html" style="color: darkred;">
-    ✘ | rivadavia
-</option>
-
-<option value="salta/santa-maria.html" style="color: darkred;">
-    ✘ | santa maría
-</option>
-
-<option value="salta/santa-rosa.html" style="color: darkred;">
-    ✘ | santa rosa
-</option>
-
-<option value="salta/santa-victoria-este.html" style="color: darkred;">
-    ✘ | santa victoria este
-</option>
-
-<option value="salta/antilla.html" style="color: darkred;">
-    ✘ | antillá
-</option>
-
-<option value="salta/copo-quile.html" style="color: darkred;">
-    ✘ | copo quile
-</option>
-
-<option value="salta/el-naranjo.html" style="color: darkred;">
-    ✘ | el naranjo
-</option>
-
-<option value="salta/el-potrero.html" style="color: darkred;">
-    ✘ | el potrero
-</option>
-
-<option value="salta/rosario-de-la-frontera.html" style="color: darkred;">
-    ✘ | rosario de la frontera
-</option>
-
-<option value="salta/san-felipe.html" style="color: darkred;">
-    ✘ | san felipe
-</option>
-
-<option value="salta/campo-quijano.html" style="color: darkred;">
-    ✘ | campo quijano
-</option>
-
-<option value="salta/la-merced-del-encon.html" style="color: darkred;">
-    ✘ | la merced del encón
-</option>
-
-<option value="salta/la-silleta.html" style="color: darkred;">
-    ✘ | la silleta
-</option>
-
-<option value="salta/rosario-de-lerma.html" style="color: darkred;">
-    ✘ | rosario de lerma
-</option>
-
-<option value="salta/angastaco.html" style="color: darkred;">
-    ✘ | angastaco
-</option>
-
-<option value="salta/animana.html" style="color: darkred;">
-    ✘ | animaná
-</option>
-
-<option value="salta/el-barrial.html" style="color: darkred;">
-    ✘ | el barrial
-</option>
-
-<option value="salta/san-carlos.html" style="color: darkred;">
-    ✘ | san carlos
-</option>
-
-<option value="salta/acoyte.html" style="color: darkred;">
-    ✘ | acoyte
-</option>
-
-<option value="salta/campo-la-cruz.html" style="color: darkred;">
-    ✘ | campo la cruz
-</option>
-
-<option value="salta/los-toldos.html" style="color: darkred;">
-    ✘ | los toldos
-</option>
-
-<option value="salta/nazareno.html" style="color: darkred;">
-    ✘ | nazareno
-</option>
-
-<option value="salta/poscaya.html" style="color: darkred;">
-    ✘ | poscaya
-</option>
-
-<option value="salta/san-marcos.html" style="color: darkred;">
-    ✘ | san marcos
-</option>
-
-<option value="salta/santa-victoria.html" style="color: darkred;">
-    ✘ | santa victoria
-</option>
-
-
-</select>
-
-                    </div>
 
 
 
@@ -2215,7 +1642,8 @@
                         <input type="checkbox" id="terminos-form" name="terminos" required>
                         <label for="terminos-form">
                             Al enviar este formulario, confirmás que leíste y aceptás los
-                            <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a>.
+                            <a href="                    terminos-y-condiciones.html
+">Términos y Condiciones</a>.
                         </label>
                     </div>
 
@@ -2288,7 +1716,6 @@
 </footer>
 
 
-
 <script>
   // Copiar datos del proveedor
   function copiarDatosProveedor() {
@@ -2354,9 +1781,11 @@
   const modalContent = document.getElementById("modal-content");
   const closeBtn = document.getElementById("modal-close-btn");
   let abortController = null;
+  let ultimoUmbralKm = 50;
 
-  // Cerrar modal
   function cerrarModal() {
+    const umbralInput = document.getElementById("umbral-km");
+    if (umbralInput) ultimoUmbralKm = parseFloat(umbralInput.value) || 50;
     modal.classList.remove("active");
     abortController = null;
   }
@@ -2390,7 +1819,7 @@
         <button class="button button-danger" onclick="cerrarModal();">❌ Cancelar</button>
       </div>
             <div style="margin: 1.5rem 0;">
-        <a href="#encontrar_proveedor" class="button" onclick="cerrarModal();">📣 ¡Encontrar plomero!</a>
+        <a class="button" onclick="mostrarModalBuscarProveedor()">🔍 ¡Encontrar plomero!</a>
         <button class="button" onclick="compartirSeccion();">🗣️ Compartir a un plomero conocido</button>
       </div>
       <div class="modal-legal">
@@ -2473,7 +1902,7 @@
                 <div style="display: flex; justify-content: space-between; padding: 8px 0;">
           <span style="font-weight: 500; color: #5f6368; font-size: 13px;">Fecha y hora</span>
           <span style="color: #202124; font-size: 13px;" id="modal-pagado">
-            <p id="reloj">18/03/2026, 09:26:39</p>
+            <p id="reloj"></p>
           </span>
         </div>
 
@@ -2641,6 +2070,9 @@
     if (abortController) abortController.abort();
     abortController = new AbortController();
 
+    const umbral = parseFloat(document.getElementById("umbral-km")?.value) || 50;
+    ultimoUmbralKm = umbral;
+
     try {
       if (!navigator.geolocation) {
         throw new Error("Tu navegador no permite geolocalización.");
@@ -2657,9 +2089,8 @@
       const posicion = await obtenerUbicacionConFallback();
       const userLat = posicion.coords.latitude;
       const userLon = posicion.coords.longitude;
-      const umbral = parseFloat(document.getElementById("umbral-km")?.value) || 50;
 
-      const res = await fetch("disponibles.json", { signal: abortController.signal });
+      const res = await fetch("/disponibles.json", { signal: abortController.signal });
       const data = await res.json();
 
       data.forEach(item => {
@@ -2682,50 +2113,592 @@
     }
   }
 
- 
-  
-  document.addEventListener("click", function(e) {
-    
-      if (e.target.matches('a[href^="tel:"]')) {
-      e.preventDefault();
-      mostrarModalAdvertencia(
-        `⚠️ No hay un plomero en este espacio publicitario. Este boton es una demostración. <br><b> Este sitio funciona exclusivamente como medio publicitario y no presta servicios de plomería.</b>`,
-        e.target.href
-      );
+
+  const AVISO_FINAL = `<br><b>Este sitio funciona exclusivamente como medio publicitario y no presta servicios de plomería.</b>`;
+
+  const CANALES = [
+    {
+      selector: 'a[href^="tel:"]',
+      msg: `No hay un plomero en este espacio publicitario. Este botón es una demostración.`
+    },
+    {
+      selector: '#contacto a[href*="wa.me"], #contacto a[href*="api.whatsapp.com"], div.servicio a.button1',
+      msg: `No hay un plomero en este espacio publicitario.<br>Si continuás serás redirigido al WhatsApp de serviciosweb.net.ar a modo de ejemplo.`
+    },
+    {
+      selector: '#contacto a[href*="instagram.com"]',
+      msg: `No hay un plomero en este espacio publicitario. El botón es una demo,<br>estás por visitar el Instagram de serviciosweb.net.ar.`
+    },
+    {
+      selector: '#contacto a[href*="facebook.com"]',
+      msg: `No hay un plomero en este espacio publicitario. El botón es una demo,<br>estás por visitar el Facebook de serviciosweb.net.ar.`
     }
+  ];
 
-      if (e.target.matches('#contacto a[href*="wa.me"], #contacto a[href*="api.whatsapp.com"]')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un plomero en este espacio publicitario. <br>Si continuas serás redirigido al WhatsApp de serviciosweb.net.ar a modo de ejemplo <br><b>Este sitio funciona exclusivamente como medio publicitario y no presta servicios de plomería.</b>`,
-          e.target.href
-        );
-      }
+  document.addEventListener("click", function (e) {
+    for (const canal of CANALES) {
+      const link = e.target.closest(canal.selector);
+      if (!link) continue;
 
-      if (e.target.matches('div.servicio a.button1')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un plomero en este espacio publicitario. <br>Si continuas serás redirigido al WhatsApp de serviciosweb.net.ar a modo de ejemplo <br><b>Este sitio funciona exclusivamente como medio publicitario y no presta servicios de plomería.</b>`,
-          e.target.href
-        );
-      }
+      e.preventDefault();
+      mostrarModalAdvertencia(`⚠️ ${canal.msg}${AVISO_FINAL}`, link.href);
+      return;
+    }
+  });
 
-      if (e.target.matches('#contacto a[href*="instagram.com"]')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un plomero en este espacio publicitario. El boton es una demo, <br><b>estás por visitar el Instagram de serviciosweb.net.ar</b>`,
-          e.target.href
-        );
-      }
 
-      if (e.target.matches('#contacto a[href*="facebook.com"]')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un plomero en este espacio publicitario. El boton es una demo. <br><b>Estás por visitar el facebook de serviciosweb.net.ar</b>`,
-          e.target.href
-        );
-      }
-    });
+
+ function mostrarModalBuscarProveedor() {
+    const html = `
+      <h1 id="modal-title">Buscar plomero</h1>
+      
+      <p>Encontrá plomeros cerca tuyo ordenados por distancia.</p>
+      <br>
+      <p>Escribe una Distancia máxima (km):</p>
+      
+      <input type="number" id="umbral-km" value="${ultimoUmbralKm}" step="1" min="0" style="width: 100%; text-align: center;">
+      <p>Si hay proveedores aparecerán del más cercano al más lejano.</p>
+      <button onclick="buscarPorUbicacion();" class="button button1">🔍 Buscar proveedor de servicios</button>
+      <button class="button button-danger" onclick="cerrarModal();">❌ Cerrar</button>
+     
+
+<select id="localidades" onchange="window.location.href=this.value;" class="button button2" style="width:80%;background-color: var(--fondo);color: white;">
+<option value="">Seleccione una opción</option>
+
+
+<option value="salta/apolinario-saravia.html" style="color: darkred;">
+    ✘ | apolinario saravia
+</option>
+
+<option value="salta/ceibalito.html" style="color: darkred;">
+    ✘ | ceibalito
+</option>
+
+<option value="salta/centro-25-de-junio.html" style="color: darkred;">
+    ✘ | centro 25 de junio
+</option>
+
+<option value="salta/coronel-mollinedo.html" style="color: darkred;">
+    ✘ | coronel mollinedo
+</option>
+
+<option value="salta/coronel-olleros.html" style="color: darkred;">
+    ✘ | coronel olleros
+</option>
+
+<option value="salta/el-quebrachal.html" style="color: darkred;">
+    ✘ | el quebrachal
+</option>
+
+<option value="salta/gaona.html" style="color: darkred;">
+    ✘ | gaona
+</option>
+
+<option value="salta/general-pizarro.html" style="color: darkred;">
+    ✘ | general pizarro
+</option>
+
+<option value="salta/joaquin-v-gonzalez.html" style="color: darkred;">
+    ✘ | joaquín v. gonzález
+</option>
+
+<option value="salta/las-lajitas.html" style="color: darkred;">
+    ✘ | las lajitas
+</option>
+
+<option value="salta/luis-burela.html" style="color: darkred;">
+    ✘ | luis burela
+</option>
+
+<option value="salta/macapillo.html" style="color: darkred;">
+    ✘ | macapillo
+</option>
+
+<option value="salta/nuestra-senora-de-talavera.html" style="color: darkred;">
+    ✘ | nuestra señora de talavera
+</option>
+
+<option value="salta/piquete-cabado.html" style="color: darkred;">
+    ✘ | piquete cabado
+</option>
+
+<option value="salta/rio-del-valle.html" style="color: darkred;">
+    ✘ | río del valle
+</option>
+
+<option value="salta/tolloche.html" style="color: darkred;">
+    ✘ | tolloche
+</option>
+
+<option value="salta/cachi.html" style="color: darkred;">
+    ✘ | cachi
+</option>
+
+<option value="salta/payogasta.html" style="color: darkred;">
+    ✘ | payogasta
+</option>
+
+<option value="salta/cafayate.html" style="color: darkred;">
+    ✘ | cafayate
+</option>
+
+<option value="salta/tolombon.html" style="color: darkred;">
+    ✘ | tolombón
+</option>
+
+<option value="salta/atocha.html" style="color: darkred;">
+    ✘ | atocha
+</option>
+
+<option value="salta/la-cienaga-y-barrio-san-rafael.html" style="color: darkred;">
+    ✘ | la ciénaga y barrio san rafael
+</option>
+
+<option value="salta/las-costas.html" style="color: darkred;">
+    ✘ | las costas
+</option>
+
+<option value="salta/salta.html" style="color: darkred;">
+    ✘ | salta
+</option>
+
+<option value="salta/villa-san-lorenzo.html" style="color: darkred;">
+    ✘ | villa san lorenzo
+</option>
+
+<option value="salta/cerrillos.html" style="color: darkred;">
+    ✘ | cerrillos
+</option>
+
+<option value="salta/la-merced.html" style="color: darkred;">
+    ✘ | la merced
+</option>
+
+<option value="salta/san-agustin.html" style="color: darkred;">
+    ✘ | san agustín
+</option>
+
+<option value="salta/villa-los-alamos-el-congreso-las-tunas-los-pinares-los-olmos.html" style="color: darkred;">
+    ✘ | villa los álamos - el congreso - las tunas - los pinares - los olmos
+</option>
+
+<option value="salta/barrio-finca-la-maroma.html" style="color: darkred;">
+    ✘ | barrio finca la maroma
+</option>
+
+<option value="salta/barrio-la-rotonda.html" style="color: darkred;">
+    ✘ | barrio la rotonda
+</option>
+
+<option value="salta/barrio-santa-teresita.html" style="color: darkred;">
+    ✘ | barrio santa teresita
+</option>
+
+<option value="salta/chicoana.html" style="color: darkred;">
+    ✘ | chicoana
+</option>
+
+<option value="salta/el-carril.html" style="color: darkred;">
+    ✘ | el carril
+</option>
+
+<option value="salta/campo-santo.html" style="color: darkred;">
+    ✘ | campo santo
+</option>
+
+<option value="salta/cobos.html" style="color: darkred;">
+    ✘ | cobos
+</option>
+
+<option value="salta/el-bordo.html" style="color: darkred;">
+    ✘ | el bordo
+</option>
+
+<option value="salta/general-guemes.html" style="color: darkred;">
+    ✘ | general güemes
+</option>
+
+<option value="salta/aguaray.html" style="color: darkred;">
+    ✘ | aguaray
+</option>
+
+<option value="salta/campamento-vespucio.html" style="color: darkred;">
+    ✘ | campamento vespucio
+</option>
+
+<option value="salta/campichuelo.html" style="color: darkred;">
+    ✘ | campichuelo
+</option>
+
+<option value="salta/campo-duran.html" style="color: darkred;">
+    ✘ | campo durán
+</option>
+
+<option value="salta/capiazuti.html" style="color: darkred;">
+    ✘ | capiazuti
+</option>
+
+<option value="salta/carboncito.html" style="color: darkred;">
+    ✘ | carboncito
+</option>
+
+<option value="salta/coronel-cornejo.html" style="color: darkred;">
+    ✘ | coronel cornejo
+</option>
+
+<option value="salta/dragones.html" style="color: darkred;">
+    ✘ | dragones
+</option>
+
+<option value="salta/embarcacion.html" style="color: darkred;">
+    ✘ | embarcación
+</option>
+
+<option value="salta/general-ballivian.html" style="color: darkred;">
+    ✘ | general ballivián
+</option>
+
+<option value="salta/general-mosconi.html" style="color: darkred;">
+    ✘ | general mosconi
+</option>
+
+<option value="salta/hickman.html" style="color: darkred;">
+    ✘ | hickman
+</option>
+
+<option value="salta/mision-chaquena.html" style="color: darkred;">
+    ✘ | misión chaqueña
+</option>
+
+<option value="salta/mision-el-cruce-el-milagro-el-jardin-de-san-martin.html" style="color: darkred;">
+    ✘ | misión el cruce - el milagro - el jardín de san martín
+</option>
+
+<option value="salta/mision-kilometro-6.html" style="color: darkred;">
+    ✘ | misión kilómetro 6
+</option>
+
+<option value="salta/pacara.html" style="color: darkred;">
+    ✘ | pacará
+</option>
+
+<option value="salta/padre-lozano.html" style="color: darkred;">
+    ✘ | padre lozano
+</option>
+
+<option value="salta/piquirenda.html" style="color: darkred;">
+    ✘ | piquirenda
+</option>
+
+<option value="salta/profesor-salvador-mazza.html" style="color: darkred;">
+    ✘ | profesor salvador mazza
+</option>
+
+<option value="salta/tartagal.html" style="color: darkred;">
+    ✘ | tartagal
+</option>
+
+<option value="salta/tobantirenda.html" style="color: darkred;">
+    ✘ | tobantirenda
+</option>
+
+<option value="salta/tranquitas.html" style="color: darkred;">
+    ✘ | tranquitas
+</option>
+
+<option value="salta/yacuy.html" style="color: darkred;">
+    ✘ | yacuy
+</option>
+
+<option value="salta/guachipas.html" style="color: darkred;">
+    ✘ | guachipas
+</option>
+
+<option value="salta/iruya.html" style="color: darkred;">
+    ✘ | iruya
+</option>
+
+<option value="salta/isla-de-canas.html" style="color: darkred;">
+    ✘ | isla de cañas
+</option>
+
+<option value="salta/pueblo-viejo.html" style="color: darkred;">
+    ✘ | pueblo viejo
+</option>
+
+<option value="salta/la-caldera.html" style="color: darkred;">
+    ✘ | la caldera
+</option>
+
+<option value="salta/vaqueros.html" style="color: darkred;">
+    ✘ | vaqueros
+</option>
+
+<option value="salta/el-jardin.html" style="color: darkred;">
+    ✘ | el jardín
+</option>
+
+<option value="salta/el-tala.html" style="color: darkred;">
+    ✘ | el tala
+</option>
+
+<option value="salta/la-candelaria.html" style="color: darkred;">
+    ✘ | la candelaria
+</option>
+
+<option value="salta/cobres.html" style="color: darkred;">
+    ✘ | cobres
+</option>
+
+<option value="salta/la-poma.html" style="color: darkred;">
+    ✘ | la poma
+</option>
+
+<option value="salta/ampascachi.html" style="color: darkred;">
+    ✘ | ampascachi
+</option>
+
+<option value="salta/cabra-corral.html" style="color: darkred;">
+    ✘ | cabra corral
+</option>
+
+<option value="salta/coronel-moldes.html" style="color: darkred;">
+    ✘ | coronel moldes
+</option>
+
+<option value="salta/la-vina.html" style="color: darkred;">
+    ✘ | la viña
+</option>
+
+<option value="salta/talapampa.html" style="color: darkred;">
+    ✘ | talapampa
+</option>
+
+<option value="salta/olacapato.html" style="color: darkred;">
+    ✘ | olacapato
+</option>
+
+<option value="salta/san-antonio-de-los-cobres.html" style="color: darkred;">
+    ✘ | san antonio de los cobres
+</option>
+
+<option value="salta/santa-rosa-de-los-pastos-grandes.html" style="color: darkred;">
+    ✘ | santa rosa de los pastos grandes
+</option>
+
+<option value="salta/tolar-grande.html" style="color: darkred;">
+    ✘ | tolar grande
+</option>
+
+<option value="salta/el-galpon.html" style="color: darkred;">
+    ✘ | el galpón
+</option>
+
+<option value="salta/el-tunal.html" style="color: darkred;">
+    ✘ | el tunal
+</option>
+
+<option value="salta/lumbreras.html" style="color: darkred;">
+    ✘ | lumbreras
+</option>
+
+<option value="salta/san-jose-de-metan-est-metan.html" style="color: darkred;">
+    ✘ | san josé de metán (est. metán)
+</option>
+
+<option value="salta/metan-viejo.html" style="color: darkred;">
+    ✘ | metán viejo
+</option>
+
+<option value="salta/rio-piedras.html" style="color: darkred;">
+    ✘ | río piedras
+</option>
+
+<option value="salta/san-jose-de-orquera.html" style="color: darkred;">
+    ✘ | san josé de orquera
+</option>
+
+<option value="salta/la-puerta.html" style="color: darkred;">
+    ✘ | la puerta
+</option>
+
+<option value="salta/molinos.html" style="color: darkred;">
+    ✘ | molinos
+</option>
+
+<option value="salta/seclantas.html" style="color: darkred;">
+    ✘ | seclantás
+</option>
+
+<option value="salta/aguas-blancas.html" style="color: darkred;">
+    ✘ | aguas blancas
+</option>
+
+<option value="salta/colonia-santa-rosa.html" style="color: darkred;">
+    ✘ | colonia santa rosa
+</option>
+
+<option value="salta/el-tabacal.html" style="color: darkred;">
+    ✘ | el tabacal
+</option>
+
+<option value="salta/hipolito-yrigoyen.html" style="color: darkred;">
+    ✘ | hipólito yrigoyen
+</option>
+
+<option value="salta/pichanal.html" style="color: darkred;">
+    ✘ | pichanal
+</option>
+
+<option value="salta/san-ramon-de-la-nueva-oran.html" style="color: darkred;">
+    ✘ | san ramón de la nueva orán
+</option>
+
+<option value="salta/urundel.html" style="color: darkred;">
+    ✘ | urundel
+</option>
+
+<option value="salta/alto-de-la-sierra.html" style="color: darkred;">
+    ✘ | alto de la sierra
+</option>
+
+<option value="salta/capitan-juan-page.html" style="color: darkred;">
+    ✘ | capitán juan pagé
+</option>
+
+<option value="salta/coronel-juan-sola.html" style="color: darkred;">
+    ✘ | coronel juan solá
+</option>
+
+<option value="salta/hito-1.html" style="color: darkred;">
+    ✘ | hito 1
+</option>
+
+<option value="salta/la-union.html" style="color: darkred;">
+    ✘ | la unión
+</option>
+
+<option value="salta/los-blancos.html" style="color: darkred;">
+    ✘ | los blancos
+</option>
+
+<option value="salta/pluma-de-pato.html" style="color: darkred;">
+    ✘ | pluma de pato
+</option>
+
+<option value="salta/rivadavia.html" style="color: darkred;">
+    ✘ | rivadavia
+</option>
+
+<option value="salta/santa-maria.html" style="color: darkred;">
+    ✘ | santa maría
+</option>
+
+<option value="salta/santa-rosa.html" style="color: darkred;">
+    ✘ | santa rosa
+</option>
+
+<option value="salta/santa-victoria-este.html" style="color: darkred;">
+    ✘ | santa victoria este
+</option>
+
+<option value="salta/antilla.html" style="color: darkred;">
+    ✘ | antillá
+</option>
+
+<option value="salta/copo-quile.html" style="color: darkred;">
+    ✘ | copo quile
+</option>
+
+<option value="salta/el-naranjo.html" style="color: darkred;">
+    ✘ | el naranjo
+</option>
+
+<option value="salta/el-potrero.html" style="color: darkred;">
+    ✘ | el potrero
+</option>
+
+<option value="salta/rosario-de-la-frontera.html" style="color: darkred;">
+    ✘ | rosario de la frontera
+</option>
+
+<option value="salta/san-felipe.html" style="color: darkred;">
+    ✘ | san felipe
+</option>
+
+<option value="salta/campo-quijano.html" style="color: darkred;">
+    ✘ | campo quijano
+</option>
+
+<option value="salta/la-merced-del-encon.html" style="color: darkred;">
+    ✘ | la merced del encón
+</option>
+
+<option value="salta/la-silleta.html" style="color: darkred;">
+    ✘ | la silleta
+</option>
+
+<option value="salta/rosario-de-lerma.html" style="color: darkred;">
+    ✘ | rosario de lerma
+</option>
+
+<option value="salta/angastaco.html" style="color: darkred;">
+    ✘ | angastaco
+</option>
+
+<option value="salta/animana.html" style="color: darkred;">
+    ✘ | animaná
+</option>
+
+<option value="salta/el-barrial.html" style="color: darkred;">
+    ✘ | el barrial
+</option>
+
+<option value="salta/san-carlos.html" style="color: darkred;">
+    ✘ | san carlos
+</option>
+
+<option value="salta/acoyte.html" style="color: darkred;">
+    ✘ | acoyte
+</option>
+
+<option value="salta/campo-la-cruz.html" style="color: darkred;">
+    ✘ | campo la cruz
+</option>
+
+<option value="salta/los-toldos.html" style="color: darkred;">
+    ✘ | los toldos
+</option>
+
+<option value="salta/nazareno.html" style="color: darkred;">
+    ✘ | nazareno
+</option>
+
+<option value="salta/poscaya.html" style="color: darkred;">
+    ✘ | poscaya
+</option>
+
+<option value="salta/san-marcos.html" style="color: darkred;">
+    ✘ | san marcos
+</option>
+
+<option value="salta/santa-victoria.html" style="color: darkred;">
+    ✘ | santa victoria
+</option>
+
+
+
+</option>
+</select>
+      <div class="modal-legal">
+        Al contactar a un proveedor, confirmas que aceptas 
+        <a href="terminos-y-condiciones.html">Términos y Condiciones</a>.
+      </div>
+      `;
+    abrirModal(html);
+
+      inicializarSelect2("#localidades", "Buscar localidad");
+  }
 
 </script></body>
 
@@ -2742,40 +2715,7 @@
             nav.classList.toggle('active');
         });
     });
-</script><section id="stats-widget" data-price="10000" aria-live="polite">
-  <div class="stats-card">
-    <header class="stats-head">
-      <strong>📊 Estadísticas de este espacio (últimos 30 días)</strong>
-      <span class="stats-path">https://www.plomero.net.ar/salta.html</span>
-    </header>
-
-    <div class="stats-grid">
-      <div class="stat">
-        <div class="stat-label">Vistas a esta página</div>
-        <div class="stat-value">22</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Clics a WhatsApp</div>
-        <div class="stat-value">-</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Tasa de clic (CTR)</div>
-        <div class="stat-value">
--</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Clics a Teléfono</div>
-        <div class="stat-value">-</div>
-      </div>
-    </div>
-
-    <footer class="stats-foot">
-        <span class="badge badge-gray">Espacio disponible</span>
-        <span>Podés anunciar aquí por <b>ARS 10.000</b>/mes o <b>ARS 25.000</b>/3 meses.</span>
-    </footer>
-  </div>
-</section>
-
+</script>
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4NSZ7JP" height="0"
         width="0" style="display:none;visibility:hidden"></iframe></noscript>

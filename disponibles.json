@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "provincia": "cordoba",
+    "localidad": "valle-de-anisacate",
+    "barrio": null,
+    "lat": -31.693096009162,
+    "lon": -64.40208281848939,
+    "url": "/cordoba/valle-de-anisacate.html?utm_source=geolocalizacion&utm_campaign=buscador"
+  }
+]

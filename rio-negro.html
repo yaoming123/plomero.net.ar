@@ -93,7 +93,6 @@
 </head>
 
 <body>
-
 <a class="button-flotante" href="#footer" aria-label="Ir a la sección del pie de pagina"
     title="Ir a la sección del pie de pagina">⬇️ Pie de Página</a>
 
@@ -127,19 +126,17 @@
             <a href="index.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'index')">🗺️ Plomeros en Argentina</a>
         </li>
         <li>
-            <a href="#encontrar_proveedor" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Encontrar proveedor')">🔍 Encontrar Plomeros</a>
+            <a onclick="mostrarModalBuscarProveedor(); trackEvent(this, 'click_menu', 'navegacion', 'click', 'Encontrar proveedor')">🔍 Encontrar Plomeros</a>
         </li>
         <li>
             <a href="terminos-y-condiciones.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Términos y Condiciones')">📋 Términos y Condiciones</a>
         </li>
 
-        <li><a href="#stats-widget" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Estadísticas')">📊 Estadísticas</a></li>
     </ul>
     
 
     
     <ul style="background-color: var(--rojo);">
-
         <li>
             <a href="#" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Top')">⬆️ Top</a>
         </li>
@@ -155,14 +152,13 @@
     <header>
         <div class="contenedor">
             <div id="contenido-principal">
-                <p style="font-size:1.25em;text-align:left;padding:1em;">Inicio del Espacio Publicitario</p>
 
                 <h1>¿Busca un plomero en provincia de río negro?</h1>
 
                 <p>¡Llámenos! Ofrecemos servicios rápidos y profesionales de plomería.
                     Urgencias 24/7 en provincia de río negro.</p>
 
-                <p>Aceptamos efectivo y transferencias.</p>
+                <p>Aceptamos los siguientes medios de pago: Aceptamos efectivo y transferencias.</p>
             </div>
 
 
@@ -284,7 +280,6 @@
 
 
 
-
 <div class="scroll-section" id="contacto">
 
         <h3>Contacto</h3>
@@ -300,7 +295,7 @@
     </a>
 
     <a class="button button1"
-        href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/rio-negro.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%5CnEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%5Cn-%20cerrajero.net.ar%0A-%20electricista.net.ar%5Cn%5CnSi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
+        href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.plomero.net.ar/rio-negro.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20plomero%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20electricista.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
         onclick="trackDynamicWhatsAppClick(this)"
         target="_blank"
         rel="noopener noreferrer nofollow"
@@ -820,638 +815,6 @@
 
 </div>            </div>
 
-            <p style="font-size:1.25em;text-align:right;padding:1em;">Fin del Espacio Publicitario</p>
-
-
-                <div id="opciones" style="background-color: var(--rojo);">
-
-
-
-                        <div class="scroll-section" id="encontrar_proveedor">
-<section id="busqueda-por-ubicacion" class="contenedor"
-    style="width: 90%;padding: 2em;background: var(--gris-claro);color: var(--texto);margin: 1em auto;">
-    <h2>📍 Buscar  plomero  por geolocalización</h2>
-
-    <p>Escribe una distancia máxima para mostrar resultados y si hay proveedores aparecerán del más cercano al más lejano</p>
-
-    <label>
-        Distancia máxima (km):
-        <input type="number" id="umbral-km" value="50" step="0.1" min="0" style="width: 100%; text-align: center;">
-    </label>
-
-    <br><br>
-    <button
-        onclick="buscarPorUbicacion(); trackEvent(this, 'click_buscar_proveedor_geolocalizacion', 'buscar proveedor geolocalización', 'click', 'buscar proveedor de servicios')"
-        class="button button1">🔍 Buscar
-        proveedor de servicios</button>
-        
-    <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Al usar el buscador confirmas que
-        has
-        leído y aceptas <a href="                    terminos-y-condiciones.html
-">
-            Términos y Condiciones
-        </a>.</p>
-
-</section>                        </div>
-                        <h2>Encuentre un Plomero/Plomería en las localidades de la provincia de río negro,
-                            Argentina.</h2>
-                        <p>Botones en <span style="color:darkred;font-size:1.2em;">Rojo</span>: sin plomero disponible.
-                        </p>
-                        <p>Botones en <span style="color:darkgreen;font-size:1.2em;">Verde</span>: plomero disponible.
-                        </p>
-
-<select id="localidades" onchange="window.location.href=this.value;" class="button button2" style="width:80%;">
-<option value="">Seleccione una opción</option>
-
-
-<option value="rio-negro/bahia-creek.html" style="color: darkred;">
-    ✘ | bahía creek
-</option>
-
-<option value="rio-negro/el-condor.html" style="color: darkred;">
-    ✘ | el cóndor
-</option>
-
-<option value="rio-negro/el-juncal.html" style="color: darkred;">
-    ✘ | el juncal
-</option>
-
-<option value="rio-negro/guardia-mitre.html" style="color: darkred;">
-    ✘ | guardia mitre
-</option>
-
-<option value="rio-negro/la-loberia.html" style="color: darkred;">
-    ✘ | la lobería
-</option>
-
-<option value="rio-negro/loteo-costa-de-rio.html" style="color: darkred;">
-    ✘ | loteo costa de río
-</option>
-
-<option value="rio-negro/pozo-salado.html" style="color: darkred;">
-    ✘ | pozo salado
-</option>
-
-<option value="rio-negro/san-javier.html" style="color: darkred;">
-    ✘ | san javier
-</option>
-
-<option value="rio-negro/viedma.html" style="color: darkred;">
-    ✘ | viedma
-</option>
-
-<option value="rio-negro/barrio-union.html" style="color: darkred;">
-    ✘ | barrio unión
-</option>
-
-<option value="rio-negro/chelforo.html" style="color: darkred;">
-    ✘ | chelforó
-</option>
-
-<option value="rio-negro/chimpay.html" style="color: darkred;">
-    ✘ | chimpay
-</option>
-
-<option value="rio-negro/choele-choel.html" style="color: darkred;">
-    ✘ | choele choel
-</option>
-
-<option value="rio-negro/coronel-belisle.html" style="color: darkred;">
-    ✘ | coronel belisle
-</option>
-
-<option value="rio-negro/darwin.html" style="color: darkred;">
-    ✘ | darwin
-</option>
-
-<option value="rio-negro/lamarque.html" style="color: darkred;">
-    ✘ | lamarque
-</option>
-
-<option value="rio-negro/luis-beltran.html" style="color: darkred;">
-    ✘ | luis beltrán
-</option>
-
-<option value="rio-negro/pomona.html" style="color: darkred;">
-    ✘ | pomona
-</option>
-
-<option value="rio-negro/arelauquen.html" style="color: darkred;">
-    ✘ | arelauquen
-</option>
-
-<option value="rio-negro/barrio-el-pilar.html" style="color: darkred;">
-    ✘ | barrio el pilar
-</option>
-
-<option value="rio-negro/colonia-suiza.html" style="color: darkred;">
-    ✘ | colonia suiza
-</option>
-
-<option value="rio-negro/el-bolson.html" style="color: darkred;">
-    ✘ | el bolsón
-</option>
-
-<option value="rio-negro/el-foyel.html" style="color: darkred;">
-    ✘ | el foyel
-</option>
-
-<option value="rio-negro/mallin-ahogado.html" style="color: darkred;">
-    ✘ | mallín ahogado
-</option>
-
-<option value="rio-negro/rio-villegas.html" style="color: darkred;">
-    ✘ | río villegas
-</option>
-
-<option value="rio-negro/san-carlos-de-bariloche.html" style="color: darkred;">
-    ✘ | san carlos de bariloche
-</option>
-
-<option value="rio-negro/villa-catedral.html" style="color: darkred;">
-    ✘ | villa catedral
-</option>
-
-<option value="rio-negro/villa-los-coihues.html" style="color: darkred;">
-    ✘ | villa los coihues
-</option>
-
-<option value="rio-negro/villa-mascardi.html" style="color: darkred;">
-    ✘ | villa mascardi
-</option>
-
-<option value="rio-negro/barrio-colonia-conesa.html" style="color: darkred;">
-    ✘ | barrio colonia conesa
-</option>
-
-<option value="rio-negro/general-conesa.html" style="color: darkred;">
-    ✘ | general conesa
-</option>
-
-<option value="rio-negro/barrio-planta-compresora-de-gas.html" style="color: darkred;">
-    ✘ | barrio planta compresora de gas
-</option>
-
-<option value="rio-negro/aguada-guzman.html" style="color: darkred;">
-    ✘ | aguada guzmán
-</option>
-
-<option value="rio-negro/cerro-policia.html" style="color: darkred;">
-    ✘ | cerro policía
-</option>
-
-<option value="rio-negro/el-cuy.html" style="color: darkred;">
-    ✘ | el cuy
-</option>
-
-<option value="rio-negro/las-perlas.html" style="color: darkred;">
-    ✘ | las perlas
-</option>
-
-<option value="rio-negro/mencue.html" style="color: darkred;">
-    ✘ | mencué
-</option>
-
-<option value="rio-negro/naupa-huen.html" style="color: darkred;">
-    ✘ | naupa huen
-</option>
-
-<option value="rio-negro/paso-cordova.html" style="color: darkred;">
-    ✘ | paso córdova
-</option>
-
-<option value="rio-negro/valle-azul.html" style="color: darkred;">
-    ✘ | valle azul
-</option>
-
-<option value="rio-negro/allen.html" style="color: darkred;">
-    ✘ | allen
-</option>
-
-<option value="rio-negro/paraje-arroyon-bajo-san-cayetano.html" style="color: darkred;">
-    ✘ | paraje arroyón (bajo san cayetano)
-</option>
-
-<option value="rio-negro/barda-del-medio.html" style="color: darkred;">
-    ✘ | barda del medio
-</option>
-
-<option value="rio-negro/barrio-blanco.html" style="color: darkred;">
-    ✘ | barrio blanco
-</option>
-
-<option value="rio-negro/barrio-calle-ciega-no-10.html" style="color: darkred;">
-    ✘ | barrio calle ciega nº 10
-</option>
-
-<option value="rio-negro/barrio-calle-ciega-no-6.html" style="color: darkred;">
-    ✘ | barrio calle ciega nº 6
-</option>
-
-<option value="rio-negro/barrio-canale.html" style="color: darkred;">
-    ✘ | barrio canale
-</option>
-
-<option value="rio-negro/barrio-chacra-monte.html" style="color: darkred;">
-    ✘ | barrio chacra monte
-</option>
-
-<option value="rio-negro/barrio-costa-este.html" style="color: darkred;">
-    ✘ | barrio costa este
-</option>
-
-<option value="rio-negro/barrio-costa-linda.html" style="color: darkred;">
-    ✘ | barrio costa linda
-</option>
-
-<option value="rio-negro/barrio-costa-oeste.html" style="color: darkred;">
-    ✘ | barrio costa oeste
-</option>
-
-<option value="rio-negro/barrio-destacamento.html" style="color: darkred;">
-    ✘ | barrio destacamento
-</option>
-
-<option value="rio-negro/barrio-el-labrador.html" style="color: darkred;">
-    ✘ | barrio el labrador
-</option>
-
-<option value="rio-negro/barrio-el-maruchito.html" style="color: darkred;">
-    ✘ | barrio el maruchito
-</option>
-
-<option value="rio-negro/barrio-el-petroleo.html" style="color: darkred;">
-    ✘ | barrio el petróleo
-</option>
-
-<option value="rio-negro/barrio-emergente.html" style="color: darkred;">
-    ✘ | barrio emergente
-</option>
-
-<option value="rio-negro/barrio-fatima.html" style="color: darkred;">
-    ✘ | barrio fátima
-</option>
-
-<option value="rio-negro/barrio-frontera.html" style="color: darkred;">
-    ✘ | barrio frontera
-</option>
-
-<option value="rio-negro/barrio-guerrico.html" style="color: darkred;">
-    ✘ | barrio guerrico
-</option>
-
-<option value="rio-negro/barrio-isla-10.html" style="color: darkred;">
-    ✘ | barrio isla 10
-</option>
-
-<option value="rio-negro/barrio-la-barda.html" style="color: darkred;">
-    ✘ | barrio la barda
-</option>
-
-<option value="rio-negro/barrio-la-costa.html" style="color: darkred;">
-    ✘ | barrio la costa
-</option>
-
-<option value="rio-negro/barrio-la-defensa.html" style="color: darkred;">
-    ✘ | barrio la defensa
-</option>
-
-<option value="rio-negro/barrio-la-herradura.html" style="color: darkred;">
-    ✘ | barrio la herradura
-</option>
-
-<option value="rio-negro/barrio-la-ribera-barrio-apycar.html" style="color: darkred;">
-    ✘ | barrio la ribera - barrio apycar
-</option>
-
-<option value="rio-negro/puente-cero.html" style="color: darkred;">
-    ✘ | puente cero
-</option>
-
-<option value="rio-negro/barrio-luisillo.html" style="color: darkred;">
-    ✘ | barrio luisillo
-</option>
-
-<option value="rio-negro/barrio-mar-del-plata.html" style="color: darkred;">
-    ✘ | barrio mar del plata
-</option>
-
-<option value="rio-negro/barrio-maria-elvira.html" style="color: darkred;">
-    ✘ | barrio maría elvira
-</option>
-
-<option value="rio-negro/barrio-mono-azul.html" style="color: darkred;">
-    ✘ | barrio moño azul
-</option>
-
-<option value="rio-negro/barrio-mosconi.html" style="color: darkred;">
-    ✘ | barrio mosconi
-</option>
-
-<option value="rio-negro/barrio-norte.html" style="color: darkred;">
-    ✘ | barrio norte
-</option>
-
-<option value="rio-negro/barrio-pinar.html" style="color: darkred;">
-    ✘ | barrio pinar
-</option>
-
-<option value="rio-negro/barrio-porvenir.html" style="color: darkred;">
-    ✘ | barrio porvenir
-</option>
-
-<option value="rio-negro/barrio-puente-83.html" style="color: darkred;">
-    ✘ | barrio puente 83
-</option>
-
-<option value="rio-negro/barrio-santa-lucia.html" style="color: darkred;">
-    ✘ | barrio santa lucia
-</option>
-
-<option value="rio-negro/barrio-santa-rita.html" style="color: darkred;">
-    ✘ | barrio santa rita
-</option>
-
-<option value="rio-negro/catriel.html" style="color: darkred;">
-    ✘ | catriel
-</option>
-
-<option value="rio-negro/cervantes.html" style="color: darkred;">
-    ✘ | cervantes
-</option>
-
-<option value="rio-negro/chichinales.html" style="color: darkred;">
-    ✘ | chichinales
-</option>
-
-<option value="rio-negro/cinco-saltos.html" style="color: darkred;">
-    ✘ | cinco saltos
-</option>
-
-<option value="rio-negro/cipolletti.html" style="color: darkred;">
-    ✘ | cipolletti
-</option>
-
-<option value="rio-negro/contralmirante-cordero.html" style="color: darkred;">
-    ✘ | contralmirante cordero
-</option>
-
-<option value="rio-negro/ferri.html" style="color: darkred;">
-    ✘ | ferri
-</option>
-
-<option value="rio-negro/general-enrique-godoy.html" style="color: darkred;">
-    ✘ | general enrique godoy
-</option>
-
-<option value="rio-negro/general-fernandez-oro.html" style="color: darkred;">
-    ✘ | general fernández oro
-</option>
-
-<option value="rio-negro/general-roca.html" style="color: darkred;">
-    ✘ | general roca
-</option>
-
-<option value="rio-negro/ingeniero-luis-a-huergo.html" style="color: darkred;">
-    ✘ | ingeniero luis a. huergo
-</option>
-
-<option value="rio-negro/ingeniero-otto-krause.html" style="color: darkred;">
-    ✘ | ingeniero otto krause
-</option>
-
-<option value="rio-negro/mainque.html" style="color: darkred;">
-    ✘ | mainqué
-</option>
-
-<option value="rio-negro/peninsula-ruca-co.html" style="color: darkred;">
-    ✘ | península ruca co
-</option>
-
-<option value="rio-negro/sargento-vidal.html" style="color: darkred;">
-    ✘ | sargento vidal
-</option>
-
-<option value="rio-negro/villa-alberdi.html" style="color: darkred;">
-    ✘ | villa alberdi
-</option>
-
-<option value="rio-negro/villa-del-parque.html" style="color: darkred;">
-    ✘ | villa del parque
-</option>
-
-<option value="rio-negro/villa-manzano.html" style="color: darkred;">
-    ✘ | villa manzano
-</option>
-
-<option value="rio-negro/villa-regina.html" style="color: darkred;">
-    ✘ | villa regina
-</option>
-
-<option value="rio-negro/villa-san-isidro.html" style="color: darkred;">
-    ✘ | villa san isidro
-</option>
-
-<option value="rio-negro/comico.html" style="color: darkred;">
-    ✘ | comicó
-</option>
-
-<option value="rio-negro/cona-niyeu.html" style="color: darkred;">
-    ✘ | cona niyeu
-</option>
-
-<option value="rio-negro/ministro-ramos-mexia.html" style="color: darkred;">
-    ✘ | ministro ramos mexía
-</option>
-
-<option value="rio-negro/prahuaniyeu.html" style="color: darkred;">
-    ✘ | prahuaniyeu
-</option>
-
-<option value="rio-negro/sierra-colorada.html" style="color: darkred;">
-    ✘ | sierra colorada
-</option>
-
-<option value="rio-negro/treneta.html" style="color: darkred;">
-    ✘ | treneta
-</option>
-
-<option value="rio-negro/yaminue.html" style="color: darkred;">
-    ✘ | yaminué
-</option>
-
-<option value="rio-negro/las-bayas.html" style="color: darkred;">
-    ✘ | las bayas
-</option>
-
-<option value="rio-negro/mamuel-choique.html" style="color: darkred;">
-    ✘ | mamuel choique
-</option>
-
-<option value="rio-negro/norquinco.html" style="color: darkred;">
-    ✘ | ñorquincó
-</option>
-
-<option value="rio-negro/ojos-de-agua.html" style="color: darkred;">
-    ✘ | ojos de agua
-</option>
-
-<option value="rio-negro/rio-chico.html" style="color: darkred;">
-    ✘ | río chico
-</option>
-
-<option value="rio-negro/barrio-esperanza.html" style="color: darkred;">
-    ✘ | barrio esperanza
-</option>
-
-<option value="rio-negro/colonia-julia-y-echarren.html" style="color: darkred;">
-    ✘ | colonia juliá y echarren
-</option>
-
-<option value="rio-negro/juventud-unida.html" style="color: darkred;">
-    ✘ | juventud unida
-</option>
-
-<option value="rio-negro/pichi-mahuida.html" style="color: darkred;">
-    ✘ | pichi mahuida
-</option>
-
-<option value="rio-negro/rio-colorado.html" style="color: darkred;">
-    ✘ | río colorado
-</option>
-
-<option value="rio-negro/salto-andersen.html" style="color: darkred;">
-    ✘ | salto andersen
-</option>
-
-<option value="rio-negro/canadon-chileno.html" style="color: darkred;">
-    ✘ | cañadón chileno
-</option>
-
-<option value="rio-negro/comallo.html" style="color: darkred;">
-    ✘ | comallo
-</option>
-
-<option value="rio-negro/dina-huapi.html" style="color: darkred;">
-    ✘ | dina huapi
-</option>
-
-<option value="rio-negro/laguna-blanca.html" style="color: darkred;">
-    ✘ | laguna blanca
-</option>
-
-<option value="rio-negro/nirihuau.html" style="color: darkred;">
-    ✘ | ñirihuau
-</option>
-
-<option value="rio-negro/pilcaniyeu.html" style="color: darkred;">
-    ✘ | pilcaniyeu
-</option>
-
-<option value="rio-negro/pilquiniyeu-del-limay.html" style="color: darkred;">
-    ✘ | pilquiniyeu del limay
-</option>
-
-<option value="rio-negro/villa-llanquin.html" style="color: darkred;">
-    ✘ | villa llanquín
-</option>
-
-<option value="rio-negro/el-empalme.html" style="color: darkred;">
-    ✘ | el empalme
-</option>
-
-<option value="rio-negro/las-grutas.html" style="color: darkred;">
-    ✘ | las grutas
-</option>
-
-<option value="rio-negro/playas-doradas.html" style="color: darkred;">
-    ✘ | playas doradas
-</option>
-
-<option value="rio-negro/puerto-san-antonio-este.html" style="color: darkred;">
-    ✘ | puerto san antonio este
-</option>
-
-<option value="rio-negro/punta-colorada.html" style="color: darkred;">
-    ✘ | punta colorada
-</option>
-
-<option value="rio-negro/saco-viejo.html" style="color: darkred;">
-    ✘ | saco viejo
-</option>
-
-<option value="rio-negro/san-antonio-oeste.html" style="color: darkred;">
-    ✘ | san antonio oeste
-</option>
-
-<option value="rio-negro/sierra-grande.html" style="color: darkred;">
-    ✘ | sierra grande
-</option>
-
-<option value="rio-negro/aguada-cecilio.html" style="color: darkred;">
-    ✘ | aguada cecilio
-</option>
-
-<option value="rio-negro/arroyo-los-berros.html" style="color: darkred;">
-    ✘ | arroyo los berros
-</option>
-
-<option value="rio-negro/arroyo-ventana.html" style="color: darkred;">
-    ✘ | arroyo ventana
-</option>
-
-<option value="rio-negro/nahuel-niyeu.html" style="color: darkred;">
-    ✘ | nahuel niyeu
-</option>
-
-<option value="rio-negro/sierra-paileman.html" style="color: darkred;">
-    ✘ | sierra pailemán
-</option>
-
-<option value="rio-negro/valcheta.html" style="color: darkred;">
-    ✘ | valcheta
-</option>
-
-<option value="rio-negro/aguada-de-guerra.html" style="color: darkred;">
-    ✘ | aguada de guerra
-</option>
-
-<option value="rio-negro/clemente-onelli.html" style="color: darkred;">
-    ✘ | clemente onelli
-</option>
-
-<option value="rio-negro/colan-conhue.html" style="color: darkred;">
-    ✘ | colan conhue
-</option>
-
-<option value="rio-negro/el-cain.html" style="color: darkred;">
-    ✘ | el caín
-</option>
-
-<option value="rio-negro/ingeniero-jacobacci.html" style="color: darkred;">
-    ✘ | ingeniero jacobacci
-</option>
-
-<option value="rio-negro/los-menucos.html" style="color: darkred;">
-    ✘ | los menucos
-</option>
-
-<option value="rio-negro/maquinchao.html" style="color: darkred;">
-    ✘ | maquinchao
-</option>
-
-<option value="rio-negro/mina-santa-teresita.html" style="color: darkred;">
-    ✘ | mina santa teresita
-</option>
-
-<option value="rio-negro/pilquiniyeu.html" style="color: darkred;">
-    ✘ | pilquiniyeu
-</option>
-
-
-</select>
-
-                    </div>
 
 
 
@@ -2279,7 +1642,8 @@
                         <input type="checkbox" id="terminos-form" name="terminos" required>
                         <label for="terminos-form">
                             Al enviar este formulario, confirmás que leíste y aceptás los
-                            <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a>.
+                            <a href="                    terminos-y-condiciones.html
+">Términos y Condiciones</a>.
                         </label>
                     </div>
 
@@ -2352,7 +1716,6 @@
 </footer>
 
 
-
 <script>
   // Copiar datos del proveedor
   function copiarDatosProveedor() {
@@ -2418,9 +1781,11 @@
   const modalContent = document.getElementById("modal-content");
   const closeBtn = document.getElementById("modal-close-btn");
   let abortController = null;
+  let ultimoUmbralKm = 50;
 
-  // Cerrar modal
   function cerrarModal() {
+    const umbralInput = document.getElementById("umbral-km");
+    if (umbralInput) ultimoUmbralKm = parseFloat(umbralInput.value) || 50;
     modal.classList.remove("active");
     abortController = null;
   }
@@ -2454,7 +1819,7 @@
         <button class="button button-danger" onclick="cerrarModal();">❌ Cancelar</button>
       </div>
             <div style="margin: 1.5rem 0;">
-        <a href="#encontrar_proveedor" class="button" onclick="cerrarModal();">📣 ¡Encontrar plomero!</a>
+        <a class="button" onclick="mostrarModalBuscarProveedor()">🔍 ¡Encontrar plomero!</a>
         <button class="button" onclick="compartirSeccion();">🗣️ Compartir a un plomero conocido</button>
       </div>
       <div class="modal-legal">
@@ -2537,7 +1902,7 @@
                 <div style="display: flex; justify-content: space-between; padding: 8px 0;">
           <span style="font-weight: 500; color: #5f6368; font-size: 13px;">Fecha y hora</span>
           <span style="color: #202124; font-size: 13px;" id="modal-pagado">
-            <p id="reloj">18/03/2026, 09:26:39</p>
+            <p id="reloj"></p>
           </span>
         </div>
 
@@ -2705,6 +2070,9 @@
     if (abortController) abortController.abort();
     abortController = new AbortController();
 
+    const umbral = parseFloat(document.getElementById("umbral-km")?.value) || 50;
+    ultimoUmbralKm = umbral;
+
     try {
       if (!navigator.geolocation) {
         throw new Error("Tu navegador no permite geolocalización.");
@@ -2721,9 +2089,8 @@
       const posicion = await obtenerUbicacionConFallback();
       const userLat = posicion.coords.latitude;
       const userLon = posicion.coords.longitude;
-      const umbral = parseFloat(document.getElementById("umbral-km")?.value) || 50;
 
-      const res = await fetch("disponibles.json", { signal: abortController.signal });
+      const res = await fetch("/disponibles.json", { signal: abortController.signal });
       const data = await res.json();
 
       data.forEach(item => {
@@ -2746,50 +2113,656 @@
     }
   }
 
- 
-  
-  document.addEventListener("click", function(e) {
-    
-      if (e.target.matches('a[href^="tel:"]')) {
-      e.preventDefault();
-      mostrarModalAdvertencia(
-        `⚠️ No hay un plomero en este espacio publicitario. Este boton es una demostración. <br><b> Este sitio funciona exclusivamente como medio publicitario y no presta servicios de plomería.</b>`,
-        e.target.href
-      );
+
+  const AVISO_FINAL = `<br><b>Este sitio funciona exclusivamente como medio publicitario y no presta servicios de plomería.</b>`;
+
+  const CANALES = [
+    {
+      selector: 'a[href^="tel:"]',
+      msg: `No hay un plomero en este espacio publicitario. Este botón es una demostración.`
+    },
+    {
+      selector: '#contacto a[href*="wa.me"], #contacto a[href*="api.whatsapp.com"], div.servicio a.button1',
+      msg: `No hay un plomero en este espacio publicitario.<br>Si continuás serás redirigido al WhatsApp de serviciosweb.net.ar a modo de ejemplo.`
+    },
+    {
+      selector: '#contacto a[href*="instagram.com"]',
+      msg: `No hay un plomero en este espacio publicitario. El botón es una demo,<br>estás por visitar el Instagram de serviciosweb.net.ar.`
+    },
+    {
+      selector: '#contacto a[href*="facebook.com"]',
+      msg: `No hay un plomero en este espacio publicitario. El botón es una demo,<br>estás por visitar el Facebook de serviciosweb.net.ar.`
     }
+  ];
 
-      if (e.target.matches('#contacto a[href*="wa.me"], #contacto a[href*="api.whatsapp.com"]')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un plomero en este espacio publicitario. <br>Si continuas serás redirigido al WhatsApp de serviciosweb.net.ar a modo de ejemplo <br><b>Este sitio funciona exclusivamente como medio publicitario y no presta servicios de plomería.</b>`,
-          e.target.href
-        );
-      }
+  document.addEventListener("click", function (e) {
+    for (const canal of CANALES) {
+      const link = e.target.closest(canal.selector);
+      if (!link) continue;
 
-      if (e.target.matches('div.servicio a.button1')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un plomero en este espacio publicitario. <br>Si continuas serás redirigido al WhatsApp de serviciosweb.net.ar a modo de ejemplo <br><b>Este sitio funciona exclusivamente como medio publicitario y no presta servicios de plomería.</b>`,
-          e.target.href
-        );
-      }
+      e.preventDefault();
+      mostrarModalAdvertencia(`⚠️ ${canal.msg}${AVISO_FINAL}`, link.href);
+      return;
+    }
+  });
 
-      if (e.target.matches('#contacto a[href*="instagram.com"]')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un plomero en este espacio publicitario. El boton es una demo, <br><b>estás por visitar el Instagram de serviciosweb.net.ar</b>`,
-          e.target.href
-        );
-      }
 
-      if (e.target.matches('#contacto a[href*="facebook.com"]')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un plomero en este espacio publicitario. El boton es una demo. <br><b>Estás por visitar el facebook de serviciosweb.net.ar</b>`,
-          e.target.href
-        );
-      }
-    });
+
+ function mostrarModalBuscarProveedor() {
+    const html = `
+      <h1 id="modal-title">Buscar plomero</h1>
+      
+      <p>Encontrá plomeros cerca tuyo ordenados por distancia.</p>
+      <br>
+      <p>Escribe una Distancia máxima (km):</p>
+      
+      <input type="number" id="umbral-km" value="${ultimoUmbralKm}" step="1" min="0" style="width: 100%; text-align: center;">
+      <p>Si hay proveedores aparecerán del más cercano al más lejano.</p>
+      <button onclick="buscarPorUbicacion();" class="button button1">🔍 Buscar proveedor de servicios</button>
+      <button class="button button-danger" onclick="cerrarModal();">❌ Cerrar</button>
+     
+
+<select id="localidades" onchange="window.location.href=this.value;" class="button button2" style="width:80%;background-color: var(--fondo);color: white;">
+<option value="">Seleccione una opción</option>
+
+
+<option value="rio-negro/bahia-creek.html" style="color: darkred;">
+    ✘ | bahía creek
+</option>
+
+<option value="rio-negro/el-condor.html" style="color: darkred;">
+    ✘ | el cóndor
+</option>
+
+<option value="rio-negro/el-juncal.html" style="color: darkred;">
+    ✘ | el juncal
+</option>
+
+<option value="rio-negro/guardia-mitre.html" style="color: darkred;">
+    ✘ | guardia mitre
+</option>
+
+<option value="rio-negro/la-loberia.html" style="color: darkred;">
+    ✘ | la lobería
+</option>
+
+<option value="rio-negro/loteo-costa-de-rio.html" style="color: darkred;">
+    ✘ | loteo costa de río
+</option>
+
+<option value="rio-negro/pozo-salado.html" style="color: darkred;">
+    ✘ | pozo salado
+</option>
+
+<option value="rio-negro/san-javier.html" style="color: darkred;">
+    ✘ | san javier
+</option>
+
+<option value="rio-negro/viedma.html" style="color: darkred;">
+    ✘ | viedma
+</option>
+
+<option value="rio-negro/barrio-union.html" style="color: darkred;">
+    ✘ | barrio unión
+</option>
+
+<option value="rio-negro/chelforo.html" style="color: darkred;">
+    ✘ | chelforó
+</option>
+
+<option value="rio-negro/chimpay.html" style="color: darkred;">
+    ✘ | chimpay
+</option>
+
+<option value="rio-negro/choele-choel.html" style="color: darkred;">
+    ✘ | choele choel
+</option>
+
+<option value="rio-negro/coronel-belisle.html" style="color: darkred;">
+    ✘ | coronel belisle
+</option>
+
+<option value="rio-negro/darwin.html" style="color: darkred;">
+    ✘ | darwin
+</option>
+
+<option value="rio-negro/lamarque.html" style="color: darkred;">
+    ✘ | lamarque
+</option>
+
+<option value="rio-negro/luis-beltran.html" style="color: darkred;">
+    ✘ | luis beltrán
+</option>
+
+<option value="rio-negro/pomona.html" style="color: darkred;">
+    ✘ | pomona
+</option>
+
+<option value="rio-negro/arelauquen.html" style="color: darkred;">
+    ✘ | arelauquen
+</option>
+
+<option value="rio-negro/barrio-el-pilar.html" style="color: darkred;">
+    ✘ | barrio el pilar
+</option>
+
+<option value="rio-negro/colonia-suiza.html" style="color: darkred;">
+    ✘ | colonia suiza
+</option>
+
+<option value="rio-negro/el-bolson.html" style="color: darkred;">
+    ✘ | el bolsón
+</option>
+
+<option value="rio-negro/el-foyel.html" style="color: darkred;">
+    ✘ | el foyel
+</option>
+
+<option value="rio-negro/mallin-ahogado.html" style="color: darkred;">
+    ✘ | mallín ahogado
+</option>
+
+<option value="rio-negro/rio-villegas.html" style="color: darkred;">
+    ✘ | río villegas
+</option>
+
+<option value="rio-negro/san-carlos-de-bariloche.html" style="color: darkred;">
+    ✘ | san carlos de bariloche
+</option>
+
+<option value="rio-negro/villa-catedral.html" style="color: darkred;">
+    ✘ | villa catedral
+</option>
+
+<option value="rio-negro/villa-los-coihues.html" style="color: darkred;">
+    ✘ | villa los coihues
+</option>
+
+<option value="rio-negro/villa-mascardi.html" style="color: darkred;">
+    ✘ | villa mascardi
+</option>
+
+<option value="rio-negro/barrio-colonia-conesa.html" style="color: darkred;">
+    ✘ | barrio colonia conesa
+</option>
+
+<option value="rio-negro/general-conesa.html" style="color: darkred;">
+    ✘ | general conesa
+</option>
+
+<option value="rio-negro/barrio-planta-compresora-de-gas.html" style="color: darkred;">
+    ✘ | barrio planta compresora de gas
+</option>
+
+<option value="rio-negro/aguada-guzman.html" style="color: darkred;">
+    ✘ | aguada guzmán
+</option>
+
+<option value="rio-negro/cerro-policia.html" style="color: darkred;">
+    ✘ | cerro policía
+</option>
+
+<option value="rio-negro/el-cuy.html" style="color: darkred;">
+    ✘ | el cuy
+</option>
+
+<option value="rio-negro/las-perlas.html" style="color: darkred;">
+    ✘ | las perlas
+</option>
+
+<option value="rio-negro/mencue.html" style="color: darkred;">
+    ✘ | mencué
+</option>
+
+<option value="rio-negro/naupa-huen.html" style="color: darkred;">
+    ✘ | naupa huen
+</option>
+
+<option value="rio-negro/paso-cordova.html" style="color: darkred;">
+    ✘ | paso córdova
+</option>
+
+<option value="rio-negro/valle-azul.html" style="color: darkred;">
+    ✘ | valle azul
+</option>
+
+<option value="rio-negro/allen.html" style="color: darkred;">
+    ✘ | allen
+</option>
+
+<option value="rio-negro/paraje-arroyon-bajo-san-cayetano.html" style="color: darkred;">
+    ✘ | paraje arroyón (bajo san cayetano)
+</option>
+
+<option value="rio-negro/barda-del-medio.html" style="color: darkred;">
+    ✘ | barda del medio
+</option>
+
+<option value="rio-negro/barrio-blanco.html" style="color: darkred;">
+    ✘ | barrio blanco
+</option>
+
+<option value="rio-negro/barrio-calle-ciega-no-10.html" style="color: darkred;">
+    ✘ | barrio calle ciega nº 10
+</option>
+
+<option value="rio-negro/barrio-calle-ciega-no-6.html" style="color: darkred;">
+    ✘ | barrio calle ciega nº 6
+</option>
+
+<option value="rio-negro/barrio-canale.html" style="color: darkred;">
+    ✘ | barrio canale
+</option>
+
+<option value="rio-negro/barrio-chacra-monte.html" style="color: darkred;">
+    ✘ | barrio chacra monte
+</option>
+
+<option value="rio-negro/barrio-costa-este.html" style="color: darkred;">
+    ✘ | barrio costa este
+</option>
+
+<option value="rio-negro/barrio-costa-linda.html" style="color: darkred;">
+    ✘ | barrio costa linda
+</option>
+
+<option value="rio-negro/barrio-costa-oeste.html" style="color: darkred;">
+    ✘ | barrio costa oeste
+</option>
+
+<option value="rio-negro/barrio-destacamento.html" style="color: darkred;">
+    ✘ | barrio destacamento
+</option>
+
+<option value="rio-negro/barrio-el-labrador.html" style="color: darkred;">
+    ✘ | barrio el labrador
+</option>
+
+<option value="rio-negro/barrio-el-maruchito.html" style="color: darkred;">
+    ✘ | barrio el maruchito
+</option>
+
+<option value="rio-negro/barrio-el-petroleo.html" style="color: darkred;">
+    ✘ | barrio el petróleo
+</option>
+
+<option value="rio-negro/barrio-emergente.html" style="color: darkred;">
+    ✘ | barrio emergente
+</option>
+
+<option value="rio-negro/barrio-fatima.html" style="color: darkred;">
+    ✘ | barrio fátima
+</option>
+
+<option value="rio-negro/barrio-frontera.html" style="color: darkred;">
+    ✘ | barrio frontera
+</option>
+
+<option value="rio-negro/barrio-guerrico.html" style="color: darkred;">
+    ✘ | barrio guerrico
+</option>
+
+<option value="rio-negro/barrio-isla-10.html" style="color: darkred;">
+    ✘ | barrio isla 10
+</option>
+
+<option value="rio-negro/barrio-la-barda.html" style="color: darkred;">
+    ✘ | barrio la barda
+</option>
+
+<option value="rio-negro/barrio-la-costa.html" style="color: darkred;">
+    ✘ | barrio la costa
+</option>
+
+<option value="rio-negro/barrio-la-defensa.html" style="color: darkred;">
+    ✘ | barrio la defensa
+</option>
+
+<option value="rio-negro/barrio-la-herradura.html" style="color: darkred;">
+    ✘ | barrio la herradura
+</option>
+
+<option value="rio-negro/barrio-la-ribera-barrio-apycar.html" style="color: darkred;">
+    ✘ | barrio la ribera - barrio apycar
+</option>
+
+<option value="rio-negro/puente-cero.html" style="color: darkred;">
+    ✘ | puente cero
+</option>
+
+<option value="rio-negro/barrio-luisillo.html" style="color: darkred;">
+    ✘ | barrio luisillo
+</option>
+
+<option value="rio-negro/barrio-mar-del-plata.html" style="color: darkred;">
+    ✘ | barrio mar del plata
+</option>
+
+<option value="rio-negro/barrio-maria-elvira.html" style="color: darkred;">
+    ✘ | barrio maría elvira
+</option>
+
+<option value="rio-negro/barrio-mono-azul.html" style="color: darkred;">
+    ✘ | barrio moño azul
+</option>
+
+<option value="rio-negro/barrio-mosconi.html" style="color: darkred;">
+    ✘ | barrio mosconi
+</option>
+
+<option value="rio-negro/barrio-norte.html" style="color: darkred;">
+    ✘ | barrio norte
+</option>
+
+<option value="rio-negro/barrio-pinar.html" style="color: darkred;">
+    ✘ | barrio pinar
+</option>
+
+<option value="rio-negro/barrio-porvenir.html" style="color: darkred;">
+    ✘ | barrio porvenir
+</option>
+
+<option value="rio-negro/barrio-puente-83.html" style="color: darkred;">
+    ✘ | barrio puente 83
+</option>
+
+<option value="rio-negro/barrio-santa-lucia.html" style="color: darkred;">
+    ✘ | barrio santa lucia
+</option>
+
+<option value="rio-negro/barrio-santa-rita.html" style="color: darkred;">
+    ✘ | barrio santa rita
+</option>
+
+<option value="rio-negro/catriel.html" style="color: darkred;">
+    ✘ | catriel
+</option>
+
+<option value="rio-negro/cervantes.html" style="color: darkred;">
+    ✘ | cervantes
+</option>
+
+<option value="rio-negro/chichinales.html" style="color: darkred;">
+    ✘ | chichinales
+</option>
+
+<option value="rio-negro/cinco-saltos.html" style="color: darkred;">
+    ✘ | cinco saltos
+</option>
+
+<option value="rio-negro/cipolletti.html" style="color: darkred;">
+    ✘ | cipolletti
+</option>
+
+<option value="rio-negro/contralmirante-cordero.html" style="color: darkred;">
+    ✘ | contralmirante cordero
+</option>
+
+<option value="rio-negro/ferri.html" style="color: darkred;">
+    ✘ | ferri
+</option>
+
+<option value="rio-negro/general-enrique-godoy.html" style="color: darkred;">
+    ✘ | general enrique godoy
+</option>
+
+<option value="rio-negro/general-fernandez-oro.html" style="color: darkred;">
+    ✘ | general fernández oro
+</option>
+
+<option value="rio-negro/general-roca.html" style="color: darkred;">
+    ✘ | general roca
+</option>
+
+<option value="rio-negro/ingeniero-luis-a-huergo.html" style="color: darkred;">
+    ✘ | ingeniero luis a. huergo
+</option>
+
+<option value="rio-negro/ingeniero-otto-krause.html" style="color: darkred;">
+    ✘ | ingeniero otto krause
+</option>
+
+<option value="rio-negro/mainque.html" style="color: darkred;">
+    ✘ | mainqué
+</option>
+
+<option value="rio-negro/peninsula-ruca-co.html" style="color: darkred;">
+    ✘ | península ruca co
+</option>
+
+<option value="rio-negro/sargento-vidal.html" style="color: darkred;">
+    ✘ | sargento vidal
+</option>
+
+<option value="rio-negro/villa-alberdi.html" style="color: darkred;">
+    ✘ | villa alberdi
+</option>
+
+<option value="rio-negro/villa-del-parque.html" style="color: darkred;">
+    ✘ | villa del parque
+</option>
+
+<option value="rio-negro/villa-manzano.html" style="color: darkred;">
+    ✘ | villa manzano
+</option>
+
+<option value="rio-negro/villa-regina.html" style="color: darkred;">
+    ✘ | villa regina
+</option>
+
+<option value="rio-negro/villa-san-isidro.html" style="color: darkred;">
+    ✘ | villa san isidro
+</option>
+
+<option value="rio-negro/comico.html" style="color: darkred;">
+    ✘ | comicó
+</option>
+
+<option value="rio-negro/cona-niyeu.html" style="color: darkred;">
+    ✘ | cona niyeu
+</option>
+
+<option value="rio-negro/ministro-ramos-mexia.html" style="color: darkred;">
+    ✘ | ministro ramos mexía
+</option>
+
+<option value="rio-negro/prahuaniyeu.html" style="color: darkred;">
+    ✘ | prahuaniyeu
+</option>
+
+<option value="rio-negro/sierra-colorada.html" style="color: darkred;">
+    ✘ | sierra colorada
+</option>
+
+<option value="rio-negro/treneta.html" style="color: darkred;">
+    ✘ | treneta
+</option>
+
+<option value="rio-negro/yaminue.html" style="color: darkred;">
+    ✘ | yaminué
+</option>
+
+<option value="rio-negro/las-bayas.html" style="color: darkred;">
+    ✘ | las bayas
+</option>
+
+<option value="rio-negro/mamuel-choique.html" style="color: darkred;">
+    ✘ | mamuel choique
+</option>
+
+<option value="rio-negro/norquinco.html" style="color: darkred;">
+    ✘ | ñorquincó
+</option>
+
+<option value="rio-negro/ojos-de-agua.html" style="color: darkred;">
+    ✘ | ojos de agua
+</option>
+
+<option value="rio-negro/rio-chico.html" style="color: darkred;">
+    ✘ | río chico
+</option>
+
+<option value="rio-negro/barrio-esperanza.html" style="color: darkred;">
+    ✘ | barrio esperanza
+</option>
+
+<option value="rio-negro/colonia-julia-y-echarren.html" style="color: darkred;">
+    ✘ | colonia juliá y echarren
+</option>
+
+<option value="rio-negro/juventud-unida.html" style="color: darkred;">
+    ✘ | juventud unida
+</option>
+
+<option value="rio-negro/pichi-mahuida.html" style="color: darkred;">
+    ✘ | pichi mahuida
+</option>
+
+<option value="rio-negro/rio-colorado.html" style="color: darkred;">
+    ✘ | río colorado
+</option>
+
+<option value="rio-negro/salto-andersen.html" style="color: darkred;">
+    ✘ | salto andersen
+</option>
+
+<option value="rio-negro/canadon-chileno.html" style="color: darkred;">
+    ✘ | cañadón chileno
+</option>
+
+<option value="rio-negro/comallo.html" style="color: darkred;">
+    ✘ | comallo
+</option>
+
+<option value="rio-negro/dina-huapi.html" style="color: darkred;">
+    ✘ | dina huapi
+</option>
+
+<option value="rio-negro/laguna-blanca.html" style="color: darkred;">
+    ✘ | laguna blanca
+</option>
+
+<option value="rio-negro/nirihuau.html" style="color: darkred;">
+    ✘ | ñirihuau
+</option>
+
+<option value="rio-negro/pilcaniyeu.html" style="color: darkred;">
+    ✘ | pilcaniyeu
+</option>
+
+<option value="rio-negro/pilquiniyeu-del-limay.html" style="color: darkred;">
+    ✘ | pilquiniyeu del limay
+</option>
+
+<option value="rio-negro/villa-llanquin.html" style="color: darkred;">
+    ✘ | villa llanquín
+</option>
+
+<option value="rio-negro/el-empalme.html" style="color: darkred;">
+    ✘ | el empalme
+</option>
+
+<option value="rio-negro/las-grutas.html" style="color: darkred;">
+    ✘ | las grutas
+</option>
+
+<option value="rio-negro/playas-doradas.html" style="color: darkred;">
+    ✘ | playas doradas
+</option>
+
+<option value="rio-negro/puerto-san-antonio-este.html" style="color: darkred;">
+    ✘ | puerto san antonio este
+</option>
+
+<option value="rio-negro/punta-colorada.html" style="color: darkred;">
+    ✘ | punta colorada
+</option>
+
+<option value="rio-negro/saco-viejo.html" style="color: darkred;">
+    ✘ | saco viejo
+</option>
+
+<option value="rio-negro/san-antonio-oeste.html" style="color: darkred;">
+    ✘ | san antonio oeste
+</option>
+
+<option value="rio-negro/sierra-grande.html" style="color: darkred;">
+    ✘ | sierra grande
+</option>
+
+<option value="rio-negro/aguada-cecilio.html" style="color: darkred;">
+    ✘ | aguada cecilio
+</option>
+
+<option value="rio-negro/arroyo-los-berros.html" style="color: darkred;">
+    ✘ | arroyo los berros
+</option>
+
+<option value="rio-negro/arroyo-ventana.html" style="color: darkred;">
+    ✘ | arroyo ventana
+</option>
+
+<option value="rio-negro/nahuel-niyeu.html" style="color: darkred;">
+    ✘ | nahuel niyeu
+</option>
+
+<option value="rio-negro/sierra-paileman.html" style="color: darkred;">
+    ✘ | sierra pailemán
+</option>
+
+<option value="rio-negro/valcheta.html" style="color: darkred;">
+    ✘ | valcheta
+</option>
+
+<option value="rio-negro/aguada-de-guerra.html" style="color: darkred;">
+    ✘ | aguada de guerra
+</option>
+
+<option value="rio-negro/clemente-onelli.html" style="color: darkred;">
+    ✘ | clemente onelli
+</option>
+
+<option value="rio-negro/colan-conhue.html" style="color: darkred;">
+    ✘ | colan conhue
+</option>
+
+<option value="rio-negro/el-cain.html" style="color: darkred;">
+    ✘ | el caín
+</option>
+
+<option value="rio-negro/ingeniero-jacobacci.html" style="color: darkred;">
+    ✘ | ingeniero jacobacci
+</option>
+
+<option value="rio-negro/los-menucos.html" style="color: darkred;">
+    ✘ | los menucos
+</option>
+
+<option value="rio-negro/maquinchao.html" style="color: darkred;">
+    ✘ | maquinchao
+</option>
+
+<option value="rio-negro/mina-santa-teresita.html" style="color: darkred;">
+    ✘ | mina santa teresita
+</option>
+
+<option value="rio-negro/pilquiniyeu.html" style="color: darkred;">
+    ✘ | pilquiniyeu
+</option>
+
+
+
+</option>
+</select>
+      <div class="modal-legal">
+        Al contactar a un proveedor, confirmas que aceptas 
+        <a href="terminos-y-condiciones.html">Términos y Condiciones</a>.
+      </div>
+      `;
+    abrirModal(html);
+
+      inicializarSelect2("#localidades", "Buscar localidad");
+  }
 
 </script></body>
 
@@ -2806,40 +2779,7 @@
             nav.classList.toggle('active');
         });
     });
-</script><section id="stats-widget" data-price="10000" aria-live="polite">
-  <div class="stats-card">
-    <header class="stats-head">
-      <strong>📊 Estadísticas de este espacio (últimos 30 días)</strong>
-      <span class="stats-path">https://www.plomero.net.ar/rio-negro.html</span>
-    </header>
-
-    <div class="stats-grid">
-      <div class="stat">
-        <div class="stat-label">Vistas a esta página</div>
-        <div class="stat-value">3</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Clics a WhatsApp</div>
-        <div class="stat-value">-</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Tasa de clic (CTR)</div>
-        <div class="stat-value">
--</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Clics a Teléfono</div>
-        <div class="stat-value">-</div>
-      </div>
-    </div>
-
-    <footer class="stats-foot">
-        <span class="badge badge-gray">Espacio disponible</span>
-        <span>Podés anunciar aquí por <b>ARS 10.000</b>/mes o <b>ARS 25.000</b>/3 meses.</span>
-    </footer>
-  </div>
-</section>
-
+</script>
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4NSZ7JP" height="0"
         width="0" style="display:none;visibility:hidden"></iframe></noscript>
